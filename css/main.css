@@ -80,7 +80,8 @@ header {
   color: #fff;
 }
 header h1 {
-  font-size: 30px;
+  margin-top: 40px;
+  font-size: 2.5rem;
   font-family: "Russo One", sans-serif;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px black;
@@ -115,8 +116,8 @@ header .hero-text {
   z-index: 5;
 }
 header .hero-text .btn {
-  padding: 15px 30px;
-  font-size: 2rem;
+  padding: 10px 20px;
+  font-size: 1.6rem;
   background-color: #ddd;
   color: black;
   font-weight: bold;
@@ -128,10 +129,10 @@ header .hero-text .btn:hover {
   scale: 1.1;
 }
 header .logo-hw {
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
   margin-bottom: 2rem;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 header .btn-outline-light {
   text-transform: uppercase;
@@ -144,84 +145,7 @@ header .fa-chevron-down {
   color: #fff;
 }
 
-.info-hw {
-  color: #fff;
-}
-.info-hw h1 {
-  font-size: 30px;
-  font-family: "Russo One", sans-serif;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 2px black;
-}
-.info-hw p {
-  font-size: 14px;
-}
-.info-hw .info-text {
-  width: 500px;
-  height: 500px;
-  font-size: 1.6rem;
-}
-.info-hw .napis-hw {
-  width: 300px;
-  height: 50px;
-  margin: 0 0 0 90px;
-}
-.info-hw .info-hw-img {
-  position: relative;
+.aboutus {
   height: 100vh;
-  background-image: url("../img/Aboutus2_1900.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
-}
-.info-hw .gps55-info {
-  position: absolute;
-  width: 300px;
-  height: 500px;
-  top: 100px;
-  left: 100px;
-}
-.info-hw .info-hw-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: -10;
-}
-.info-hw .info-hw-text {
-  position: absolute;
-  top: 100px;
-  left: 200px;
-  height: 100%;
-  text-align: center;
-  z-index: 5;
-}
-.info-hw .info-hw-text .btn {
-  padding: 15px 30px;
-  font-size: 2rem;
-  background-color: #ddd;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.info-hw .info-hw-text .btn:hover {
-  background-color: rgb(3, 157, 255);
-  scale: 1.1;
-}
-.info-hw .info-hw-text .napis-hw {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 2rem;
-}
-.info-hw .btn-outline-light {
-  text-transform: uppercase;
-}
-.info-hw .fa-chevron-down {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  font-size: 30px;
-  color: #fff;
+  width: auto;
 }/*# sourceMappingURL=main.css.map */
