@@ -184,12 +184,12 @@ header {
 		z-index: 0;
 	}
 
-	.info-hw-img-right {
-		 
-		top: 100px;
-		right: 200px;
-		height: 50%;
-		width: auto;
+	.gps55-info{
+		position: absolute;
+		width: 300px;
+		height: 500px;
+		top:100px;
+		left: 100px;
 	}
 
 	.info-hw-shadow {

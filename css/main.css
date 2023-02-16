@@ -175,11 +175,12 @@ header .fa-chevron-down {
   background-attachment: fixed;
   z-index: 0;
 }
-.info-hw .info-hw-img-right {
+.info-hw .gps55-info {
+  position: absolute;
+  width: 300px;
+  height: 500px;
   top: 100px;
-  right: 200px;
-  height: 50%;
-  width: auto;
+  left: 100px;
 }
 .info-hw .info-hw-shadow {
   position: absolute;
