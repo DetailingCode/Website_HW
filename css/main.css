@@ -196,17 +196,6 @@ header .fa-chevron-down {
   font-size: 4rem;
   text-shadow: 2px 2px 2px black;
 }
-.aboutus p {
-  font-size: 20px;
-  padding: 10px 30px;
-  letter-spacing: 1px;
-}
-.aboutus .aboutus-gps55 {
-  width: 400px;
-  height: auto;
-  border-radius: 15px;
-  margin-top: 25px;
-}
 .aboutus .aboutus-hover {
   margin-top: 100px;
 }
@@ -218,6 +207,7 @@ header .fa-chevron-down {
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
+  overflow: scroll;
 }
 .aboutus .hero-shadow {
   position: absolute;
@@ -226,7 +216,7 @@ header .fa-chevron-down {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -10;
 }
-.aboutus .hero-text {
+.aboutus .aboutus-card-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,19 +225,6 @@ header .fa-chevron-down {
   padding: 10px;
   text-align: center;
   z-index: 5;
-}
-.aboutus .hero-text .btn {
-  padding: 10px 20px;
-  font-size: 1.6rem;
-  background-color: #ddd;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.aboutus .hero-text .btn:hover {
-  background-color: rgb(3, 157, 255);
-  scale: 1.1;
 }
 .aboutus .logo-hw {
   max-width: 40%;

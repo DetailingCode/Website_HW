@@ -152,23 +152,13 @@ header {
 
 .aboutus {
 	color: $white;
-	.fa-circle-info{
+	
+	
+	.fa-circle-info {
 		font-size: 4rem;
 		text-shadow: 2px 2px 2px black;
 	}
-	p {
-		font-size: 20px;
-		padding: 10px 30px;
-		letter-spacing:1px;
-	}
 
-	.aboutus-gps55{
-		width: 400px;
-		height: auto;
-		border-radius: 15px;
-		margin-top: 25px;
-	}
-	 
 	.aboutus-hover {
 		margin-top: 100px;
 	}
@@ -180,6 +170,7 @@ header {
 		background-size: cover;
 		background-attachment: fixed;
 		z-index: 0;
+		overflow: scroll;
 	}
 
 	.hero-shadow {
@@ -190,7 +181,7 @@ header {
 		z-index: -10;
 	}
 
-	.hero-text {
+	.aboutus-card-text {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -199,19 +190,6 @@ header {
 		padding: 10px;
 		text-align: center;
 		z-index: 5;
-		.btn {
-			padding: 10px 20px;
-			font-size: 1.6rem;
-			background-color: $light-gray;
-			color: $black;
-			font-weight: bold;
-			cursor: pointer;
-			transition: 0.3s;
-		}
-		.btn:hover {
-			background-color: $main-color;
-			scale: 1.1;
-		}
 	}
 
 	.logo-hw {
