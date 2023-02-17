@@ -192,7 +192,7 @@ header .fa-chevron-down {
 .aboutus {
   color: #fff;
 }
-.aboutus i {
+.aboutus .fa-circle-info {
   font-size: 4rem;
   text-shadow: 2px 2px 2px black;
 }
