@@ -76,7 +76,7 @@ header {
 
 	h1 {
 		margin-top: 40px;
-		font-size: 2.5rem;
+		font-size: 2.8rem;
 		font-family: "Russo One", sans-serif;
 		text-transform: uppercase;
 		text-shadow: 2px 2px 2px black;
@@ -115,11 +115,7 @@ header {
 		z-index: 5;
 		.btn {
 			padding: 10px 20px;
-<<<<<<< HEAD
-			font-size: 1.8rem;
-=======
 			font-size: 1.6rem;
->>>>>>> d9f9b1725b842f3578139c2aa351f4067449d59c
 			background-color: $light-gray;
 			color: $black;
 			font-weight: bold;
@@ -152,205 +148,63 @@ header {
 	}
 }
 
-// ABOUT US SECTION
+// INFO SECTION
 
-.aboutus {
-	color: $white;
-	
-	
-	.fa-circle-info {
-		font-size: 4rem;
-		text-shadow: 2px 2px 2px black;
+.info-hw-img {
+	position: relative;
+	height: 75vh;
+	width: auto;
+	background-image: url("../img/Aboutus2_1900.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	button {
+		width: 180px;
+		height: 50px;
+		padding: 10px 20px;
+		font-size: 1.6rem;
+		background-color: $light-gray;
+		color: $black;
+		font-weight: bold;
+		cursor: pointer;
+		transition: 0.3s;
+		text-transform: uppercase;
+	}
+	button:hover {
+		background-color: $main-color;
+		scale: 1.1;
 	}
 
-	.aboutus-hover {
-		margin-top: 100px;
-	}
-	.hero-img {
-		position: relative;
-		height: 100vh;
-		background-image: url("../img/Aboutus-bg.jpg");
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
-		z-index: 0;
-		overflow: scroll;
-	}
-
-	.hero-shadow {
+	.info-hw-shadow {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: rgba(0, 0, 0, 0.6);
 		z-index: -10;
 	}
-	.aboutus-img-gps55{
-		content: url(../img/Info-HW-img.jpg);
-		
-	}
 
-	.aboutus-card-text {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		height: 100%;
-		padding: 10px;
-		text-align: center;
-		z-index: 5;
-	}
-
-	.logo-hw {
-		max-width: 40%;
-		height: auto;
-		margin-bottom: 2rem;
-		margin-left: 20px;
-	}
-
-	.btn-outline-light {
-		text-transform: uppercase;
-	}
-
-	.fa-chevron-down {
-		position: absolute;
-		left: 50%;
-		bottom: 20px;
-		font-size: 30px;
+	.info-text {
 		color: $white;
+		margin: 20px 10px;
+	}
+
+	i {
+		margin-left: -0.5%;
 	}
 }
 
-// INFO HASWING SECTION
+.info-hw-text {
+	position: relative;
+	z-index: 5;
+	overflow-wrap: break-word;
+}
 
-// .info-hw {
-// 	color: $white;
-
-<<<<<<< HEAD
-	.info-hw-img {
-		position: relative;
-		height: 75vh;
-		width: 100vw;
-		background-image: url("../img/Aboutus2_1900.jpg");
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
-		z-index: 0;
-		button{
-			text-transform: uppercase;
-			padding: 10px 20px;
-			font-size: 1.8rem;
-			border: 2px solid white;
-			transition: all .3s;
-		}
-		button:hover{
-			background-color: $light-gray;
-			scale: 1.1;
-			border: 2px solid black;
-			color: $black;
-
-		}
-		i{
-			margin-left: -0.5%;
-		}
-	}
-=======
-// 	h1 {
-// 		font-size: 30px;
-// 		font-family: "Russo One", sans-serif;
-// 		text-transform: uppercase;
-// 		text-shadow: 2px 2px 2px black;
-// 	}
-
-// 	p {
-// 		font-size: 14px;
-// 	}
-
-// 	.info-text {
-// 		width: 500px;
-// 		height: 500px;
-// 		font-size: 1.6rem;
-// 	}
-
-// 	.napis-hw {
-// 		width: 300px;
-// 		height: 50px;
-// 		margin: 0 0 0 90px;
-// 	}
-
-// 	.info-hw-img {
-// 		position: relative;
-// 		height: 100vh;
-// 		background-image: url("../img/Aboutus2_1900.jpg");
-// 		background-position: center;
-// 		background-size: cover;
-// 		background-attachment: fixed;
-// 		z-index: 0;
-// 	}
-
-// 	.gps55-info{
-// 		position: absolute;
-// 		width: 300px;
-// 		height: 500px;
-// 		top:100px;
-// 		left: 100px;
-// 	}
->>>>>>> d9f9b1725b842f3578139c2aa351f4067449d59c
-
-// 	.info-hw-shadow {
-// 		position: absolute;
-// 		width: 100%;
-// 		height: 100%;
-// 		background-color: rgba(0, 0, 0, 0.8);
-// 		z-index: -10;
-// 	}
-
-<<<<<<< HEAD
-	.info-hw-text {
-		position: relative;
-		z-index: 5;
-		overflow-wrap: break-word;
-	}
-=======
-// 	.info-hw-text {
-// 		position: absolute;
-// 		top: 100px;
-// 		left: 200px;
-// 		height: 100%;
-// 		text-align: center;
-// 		z-index: 5;
-
-// 		.btn {
-// 			padding: 15px 30px;
-// 			font-size: 2rem;
-// 			background-color: $light-gray;
-// 			color: $black;
-// 			font-weight: bold;
-// 			cursor: pointer;
-// 			transition: 0.3s;
-// 		}
-// 		.btn:hover {
-// 			background-color: $main-color;
-// 			scale: 1.1;
-// 		}
-
-// 		.napis-hw {
-// 			max-width: 100%;
-// 			height: auto;
-
-// 			margin-bottom: 2rem;
-// 		}
-// 	}
->>>>>>> d9f9b1725b842f3578139c2aa351f4067449d59c
-
-// 	.btn-outline-light {
-// 		text-transform: uppercase;
-// 	}
-
-// 	.fa-chevron-down {
-// 		position: absolute;
-// 		left: 50%;
-// 		bottom: 20px;
-// 		font-size: 30px;
-// 		color: $white;
-// 	}
-// }
+.fa-chevron-down {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	font-size: 30px;
+	color: $white;
+}
