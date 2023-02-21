@@ -17,8 +17,7 @@ html {
 
 .bounce-top {
   display: block;
-  -webkit-animation: bounce-top 2.5s infinite both;
-          animation: bounce-top 2.5s infinite both;
+  animation: bounce-top 2.5s infinite both;
   color: white;
 }
 
@@ -33,42 +32,9 @@ html {
  * animation bounce-top
  * ----------------------------------------
  */
-@-webkit-keyframes bounce-top {
-  0% {
-    transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  65% {
-    transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  25%, 55%, 75%, 87% {
-    transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
 @keyframes bounce-top {
   0% {
     transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 1;
   }
@@ -77,22 +43,18 @@ html {
   }
   40% {
     transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   65% {
     transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   25%, 55%, 75%, 87% {
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   100% {
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     opacity: 1;
   }
@@ -240,9 +202,9 @@ header .fa-chevron-down {
   z-index: 0;
 }
 .info-hw-img .btn1 {
-  width: 180px;
-  height: 50px;
+  width: 220px;
   padding: 10px 20px;
+  margin-left: -40px;
   font-size: 1.6rem;
   background-color: #FF6F00;
   color: black;
@@ -251,6 +213,7 @@ header .fa-chevron-down {
   transition: 0.3s;
   text-transform: uppercase;
   border: 2px solid #fff;
+  border-radius: 5px;
 }
 .info-hw-img .btn1:hover {
   background-color: #6B7F82;

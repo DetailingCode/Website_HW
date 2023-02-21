@@ -116,6 +116,7 @@ header {
 		padding: 10px;
 		text-align: center;
 		z-index: 5;
+		
 		.btn {
 			padding: 10px 20px;
 			font-size: 1.6rem;
@@ -165,9 +166,9 @@ header {
 	z-index: 0;
 
 	.btn1 {
-		width: 180px;
-		height: 50px;
+		width: 220px;
 		padding: 10px 20px;
+		margin-left: -40px;
 		font-size: 1.6rem;
 		background-color: $btn-color;
 		color: $black;
@@ -176,6 +177,7 @@ header {
 		transition: 0.3s;
 		text-transform: uppercase;
 		border: 2px solid $white;
+		border-radius: 5px;
 	}
 	.btn1:hover {
 		background-color: $btn-color-hover;
