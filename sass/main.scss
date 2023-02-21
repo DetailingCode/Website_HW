@@ -14,8 +14,6 @@ h2 {
 	font-size: 2.5rem;
 }
 
-
-
 .underline {
 	margin: 0 auto 40px;
 	width: 60px;
@@ -41,10 +39,11 @@ nav {
 	transition: background-color 0.6s;
 	z-index: 1;
 
-	.nav-link,
-	i {
-		color: $white;
+	.nav-link {
+		position: relative;
 		font-size: 1.5rem;
+		color: $white;
+		text-decoration: none;
 	}
 
 	.logo-nav {
@@ -70,6 +69,31 @@ nav {
 	.nav-link.active {
 		color: $main-color;
 	}
+
+	.link,
+	.link::after,
+	.link::before {
+		transition: 0.3s;
+	}
+
+	.one::after {
+		content: "";
+		position: absolute;
+		height: 2px;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		background-color: #fff;
+		transition: transform 0.3s;
+		transform: scaleX(0);
+		transform-origin: right;
+	}
+
+	.one:hover::after {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+
 }
 
 // HEADER HOME SECTION
@@ -116,7 +140,7 @@ header {
 		padding: 10px;
 		text-align: center;
 		z-index: 5;
-		
+
 		.btn {
 			padding: 10px 20px;
 			font-size: 1.6rem;
@@ -164,6 +188,9 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
+	.info-text {
+		padding: 10px 20px;
+	}
 
 	.btn1 {
 		width: 220px;
@@ -185,7 +212,6 @@ header {
 		font-weight: bold;
 		color: $white;
 		border: 2px solid $white;
-
 	}
 
 	.info-hw-shadow {
@@ -237,8 +263,8 @@ header {
 		font-size: 14px;
 	}
 
-	.features-hover{
-		transition: all .3s;
+	.features-hover {
+		transition: all 0.3s;
 	}
 
 	.features-hover:hover {
