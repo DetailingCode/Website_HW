@@ -388,4 +388,67 @@ header .fa-chevron-down {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+.contact {
+  position: relative;
+  background-image: url("../img/Footer-1920.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.contact h2 {
+  color: #fff;
+}
+.contact .contact-shadow {
+  position: absolute;
+  background-color: rgba(0, 9, 27, 0.8);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+.contact .contact-us {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.contact .contact-us .shorts a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.contact .contact-us .shorts a:hover {
+  cursor: pointer;
+  color: rgb(255, 111, 0);
+}
+.contact .contact-us .contact-items {
+  margin: 30px 0;
+}
+.contact .contact-us .contact-items h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact .contact-us .contact-items .social-media a {
+  padding: 15px;
+  color: #fff;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+  text-shadow: 0px 0px 4px rgba(255, 111, 0, 0.8);
+}
+.contact .contact-us .contact-items .social-media a:hover {
+  color: rgb(255, 111, 0);
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
+}
+
+footer p {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+footer span {
+  color: rgb(255, 111, 0);
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
