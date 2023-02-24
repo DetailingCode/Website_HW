@@ -126,7 +126,6 @@ h2 {
 
 .navbar-nav .nav-link.active {
   color: rgb(255, 111, 0);
-  font-weight: bold;
 }
 
 nav {
@@ -144,8 +143,8 @@ nav .logo-nav {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 150px;
-  height: 75px;
+  width: 110px;
+  height: 55px;
 }
 nav .link,
 nav .link::after,
@@ -173,7 +172,7 @@ nav i {
   color: #fff;
 }
 nav .nav-link {
-  margin-top: 10px;
+  margin-top: 5px;
   position: relative;
   font-size: 1.5rem;
   color: #fff;
@@ -190,27 +189,6 @@ nav .navbar-brand {
 }
 nav .nav-link.active {
   color: rgb(255, 111, 0);
-}
-nav .link,
-nav .link::after,
-nav .link::before {
-  transition: 0.3s;
-}
-nav .one::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transition: transform 0.3s;
-  transform: scaleX(0);
-  transform-origin: right;
-}
-nav .one:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
 }
 
 .link,
@@ -414,6 +392,10 @@ header .fa-chevron-down {
   font-size: 24px;
 }
 
+.portfolio {
+  background: rgb(120, 120, 120);
+  background: radial-gradient(circle, rgb(120, 120, 120) 0%, rgb(0, 0, 0) 100%);
+}
 .portfolio .carousel-item {
   position: relative;
   height: 600px;
@@ -430,7 +412,8 @@ header .fa-chevron-down {
   right: 0;
   bottom: 0;
   padding: 40px 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 111, 0, 0.7);
+  color: black;
 }
 .portfolio .carousel-indicators {
   padding-bottom: 20px;
@@ -505,4 +488,43 @@ footer p {
 footer span {
   color: rgb(255, 111, 0);
   font-weight: bold;
+}
+
+@media (min-width: 386px) {
+  .info-text {
+    margin: 0 5px;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .card-body {
+    height: 150px;
+  }
+  .card img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header h1 {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  nav {
+    height: 82px;
+  }
 }/*# sourceMappingURL=main.css.map */
