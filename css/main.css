@@ -134,12 +134,12 @@ nav {
   transition: background-color 0.6s;
   z-index: 1;
 }
-nav .link {
-  position: relative;
-  padding: 5px 20px;
-  font-size: 3rem;
-  color: rgb(0, 140, 255);
-  text-decoration: none;
+nav .logo-nav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  height: 75px;
 }
 nav .link,
 nav .link::after,
@@ -149,7 +149,7 @@ nav .link::before {
 nav .nav-line::after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -165,14 +165,13 @@ nav .nav-line:hover::after {
 nav .nav-link,
 nav i {
   color: #fff;
-  font-size: 1.5rem;
 }
-nav .logo-nav {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 150px;
-  height: 75px;
+nav .nav-link {
+  margin-top: 10px;
+  position: relative;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
 }
 nav .nav-link:hover {
   color: rgb(255, 111, 0);
@@ -185,6 +184,27 @@ nav .navbar-brand {
 }
 nav .nav-link.active {
   color: rgb(255, 111, 0);
+}
+nav .link,
+nav .link::after,
+nav .link::before {
+  transition: 0.3s;
+}
+nav .one::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: transform 0.3s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+nav .one:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 header {
@@ -267,10 +287,13 @@ header .fa-chevron-down {
   background-attachment: fixed;
   z-index: 0;
 }
-.info-hw-img .btn1 {
-  width: 180px;
-  height: 50px;
+.info-hw-img .info-text {
   padding: 10px 20px;
+}
+.info-hw-img .btn1 {
+  width: 220px;
+  padding: 10px 20px;
+  margin-left: -40px;
   font-size: 1.6rem;
   background-color: #FF6F00;
   color: black;
@@ -279,6 +302,7 @@ header .fa-chevron-down {
   transition: 0.3s;
   text-transform: uppercase;
   border: 2px solid #fff;
+  border-radius: 5px;
 }
 .info-hw-img .btn1:hover {
   background-color: #6B7F82;

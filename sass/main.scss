@@ -38,13 +38,13 @@ nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
 	z-index: 1;
-
-	.link {
-		position: relative;
-		padding: 5px 20px;
-		font-size: 3rem;
-		color: rgb(0, 140, 255);
-		text-decoration: none;
+	
+	.logo-nav {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 150px;
+		height: 75px;
 	}
 
 	.link,
@@ -56,7 +56,7 @@ nav {
 	.nav-line::after {
 		content: "";
 		position: absolute;
-		height: 2px;
+		height: 1px;
 		width: 100%;
 		bottom: 0;
 		left: 0;
@@ -74,33 +74,58 @@ nav {
 	.nav-link,
 	i {
 		color: $white;
-		font-size: 1.5rem;
+	}
+		.nav-link {
+			margin-top: 10px;
+			position: relative;
+			font-size: 1.5rem;
+			color: $white;
+			text-decoration: none;
+		}
+
+	
+
+		.nav-link:hover {
+			color: $main-color;
+		}
+
+		.fa-bars {
+			padding: 10px;
+		}
+
+		.navbar-brand {
+			font-weight: bold;
+		}
+
+		.nav-link.active {
+			color: $main-color;
+		}
+
+		.link,
+		.link::after,
+		.link::before {
+			transition: 0.3s;
+		}
+
+		.one::after {
+			content: "";
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			background-color: #fff;
+			transition: transform 0.3s;
+			transform: scaleX(0);
+			transform-origin: right;
+		}
+
+		.one:hover::after {
+			transform: scaleX(1);
+			transform-origin: left;
+		}
 	}
 
-	.logo-nav {
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		width: 150px;
-		height: 75px;
-	}
-
-	.nav-link:hover {
-		color: $main-color;
-	}
-
-	.fa-bars {
-		padding: 10px;
-	}
-
-	.navbar-brand {
-		font-weight: bold;
-	}
-
-	.nav-link.active {
-		color: $main-color;
-	}
-}
 
 // HEADER HOME SECTION
 
@@ -146,6 +171,7 @@ header {
 		padding: 10px;
 		text-align: center;
 		z-index: 5;
+
 		.btn {
 			padding: 10px 20px;
 			font-size: 1.6rem;
@@ -193,11 +219,14 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
+	.info-text {
+		padding: 10px 20px;
+	}
 
 	.btn1 {
-		width: 180px;
-		height: 50px;
+		width: 220px;
 		padding: 10px 20px;
+		margin-left: -40px;
 		font-size: 1.6rem;
 		background-color: $btn-color;
 		color: $black;
@@ -206,6 +235,7 @@ header {
 		transition: 0.3s;
 		text-transform: uppercase;
 		border: 2px solid $white;
+		border-radius: 5px;
 	}
 	.btn1:hover {
 		background-color: $btn-color-hover;
@@ -365,18 +395,17 @@ header {
 		display: flex;
 		align-items: center;
 
-.shorts{
-		
-			a{
+		.shorts {
+			a {
 				text-decoration: none;
 				color: $white;
-				transition: .3s;
+				transition: 0.3s;
 			}
-			a:hover{
+			a:hover {
 				cursor: pointer;
 				color: $main-color;
 			}
-	}
+		}
 
 		.contact-items {
 			margin: 30px 0;
