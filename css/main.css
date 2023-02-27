@@ -111,7 +111,7 @@ h2 {
 
 .underline {
   margin: 0 auto 40px;
-  width: 60px;
+  width: 200px;
   height: 4px;
   background-color: rgb(255, 111, 0);
 }
@@ -412,8 +412,8 @@ header .fa-chevron-down {
   right: 0;
   bottom: 0;
   padding: 40px 0;
-  background-color: rgba(255, 111, 0, 0.7);
-  color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 .portfolio .carousel-indicators {
   padding-bottom: 20px;
@@ -430,9 +430,8 @@ header .fa-chevron-down {
 .contact {
   position: relative;
   background-image: url("../img/Footer-1920.jpg");
-  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   z-index: 0;
 }
 .contact h2 {
