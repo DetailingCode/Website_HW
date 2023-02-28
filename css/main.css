@@ -547,6 +547,7 @@ nav .nav-link.active {
   position: relative;
   background-image: url("../img/Footer-1920.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   z-index: 0;
 }
