@@ -394,7 +394,7 @@ header .fa-chevron-down {
 
 .portfolio {
   background: rgb(120, 120, 120);
-  background: radial-gradient(circle, rgb(120, 120, 120) 0%, rgb(0, 0, 0) 100%);
+  background: radial-gradient(circle, rgb(255, 111, 0) 0%, rgb(0, 0, 0) 100%);
 }
 .portfolio .carousel-item {
   position: relative;
