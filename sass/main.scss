@@ -4,7 +4,6 @@
 @import "./components";
 @import "./mixins";
 
-
 body {
 	position: relative;
 	font-family: "Ubuntu", sans-serif;
@@ -45,7 +44,7 @@ h2 {
 nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
-	z-index: 1;
+	z-index: 1000;
 
 	.nav-link {
 		position: relative;
@@ -143,29 +142,25 @@ nav {
 // ===================== OFFERS ===============
 
 .offers {
-	height: 100dvh;
+	height: 110dvh;
 	position: relative;
 	overflow: hidden;
 	@include heroImages("../img/aboutus-bg.jpg");
 
 	.section-heading {
 		color: $pure-white;
-		padding-top: 10rem;
+		font-weight: bold;
+		text-shadow: 5px 5px 5px black;
+		padding-top: 7rem;
 	}
 
 	&__option {
-		margin: 1em 0;
-		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.2);
-		
-		
-		&-img {
-			
-		 
+		margin: 1em 0 &-img {
+
 		}
 
 		&-info {
 			padding: 2em;
-			background-color: red;
 			z-index: 11;
 		}
 		&-heading {
@@ -196,15 +191,23 @@ nav {
 }
 
 // ==================== CARD SECTION HEADER=============================
-
+.fa-circle-info {
+	font-size: 20rem;
+	text-shadow: 2px 2px 20px black;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
 .islands {
 	&__card {
 		position: relative;
 		margin: 1em 0;
 		height: 450px;
+		width: 500px;
 		color: $pure-white;
 		text-align: center;
 		perspective: 800px;
+		
 
 		// <!-- ++++++++++ ANIMACJA CALEJ KARTY PO NAJECHANIU  ++++++++++ -->
 		&:hover {
@@ -220,6 +223,10 @@ nav {
 			}
 		}
 
+		&-text {
+			font-size: 1.8rem;
+			margin: 0 5px;
+		}
 		&-img {
 			padding: 2em;
 			height: 100%;
@@ -227,23 +234,7 @@ nav {
 			background-size: cover;
 			// ANIMUJEMY DWIE WŁAŚCIOWOŚCI Z HOVERA \/ ->
 			transition: transform 1s, opacity 1s;
-			// ANIMUJEMY DWIE WŁAŚCIOWOŚCI Z HOVERA \/ ->
-
-			&--first {
-				background-image: $light-blue-gradient,
-					url("../img/card-island1_640.jpg");
-			}
-			&--second {
-				background-image: $blue-gradient, url("../img/card-island2_640.jpg");
-			}
-			&--third {
-				background-image: $purple-gradient, url("../img/card-island3_640.jpg");
-			}
-
-			&-title {
-				font-family: "Dancing Script", cursive;
-				font-size: 2.8rem;
-			}
+			// ANIMUJEMY DWIE WŁAŚCIOWOŚCI Z HOVERA \/ -
 
 			&-info {
 				position: absolute;
@@ -310,24 +301,21 @@ nav {
 	}
 }
 
-
 // =====================
 // START MEDIA QUERIES
 // =====================
 
-@media (min-width: 300px){
-	.offers{
-		&__option{
-			&-text{
+@media (min-width: 300px) {
+	.offers {
+		&__option {
+			&-text {
 				text-align: center;
 			}
 		}
 	}
 }
 
-
 @media (min-width: 576px) {
-	
 	.offers {
 		&__option {
 			display: flex;
@@ -335,26 +323,21 @@ nav {
 			width: 100%;
 
 			&-img {
+				margin-top: 100px;
 				width: 50%;
-				height: auto;
-
-				&--right{
-					order:1;
-
-				}
+				height: 50%;
 			}
-			&-info{
+			&-info {
 				display: flex;
 				flex-direction: column;
-				justify-content: space-between;
 				text-align: center;
 			}
 
-			&-heading{
+			&-heading {
 				margin-bottom: 0.5em;
 				font-size: 3.6rem;
 			}
-			&-btn{
+			&-btn {
 				padding: 1em;
 			}
 		}
@@ -368,19 +351,13 @@ nav {
 	.section-padding {
 		padding: 8em 2em;
 	}
-
 }
 
 @media (min-width: 992px) {
-
-	.offers{
-		background-image: $blue-gradient, url('../img/Aboutus-bg.jpg');
-	
+	.offers {
+		background-image: $blue-gradient, url("../img/Aboutus-bg.jpg");
 	}
-
 }
-
-
 
 // =====================
 // END MEDIA QUERIES
@@ -476,7 +453,7 @@ nav {
 
 	.features-hover:hover {
 		color: $main-color;
-		scale: 1.1;
+		scale: 1.05;
 		cursor: default;
 	}
 }
@@ -517,7 +494,7 @@ nav {
 	background: rgb(120, 120, 120);
 	background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 
-	h2{
+	h2 {
 		color: $white;
 		font-size: 4rem;
 	}
