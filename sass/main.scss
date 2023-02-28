@@ -1,7 +1,8 @@
-@use "./colors" as *;
-@use "./reset" as *;
-@use "./animation" as*;
-@use "./components" as*;
+@import "./colors";
+@import "./reset";
+@import "./animation";
+@import "./components";
+@import "./mixins";
 
 
 body {
@@ -139,86 +140,134 @@ nav {
 	transform-origin: left;
 }
 
-// HEADER HOME SECTION
+// ===================== OFFERS ===============
 
-header {
-	color: $white;
+.offers {
+	height: 100dvh;
+	position: relative;
+	overflow: hidden;
+	@include heroImages("../img/aboutus-bg.jpg");
 
-	h1 {
-		margin-top: 40px;
-		font-size: 2.8rem;
-		font-family: "Russo One", sans-serif;
-		text-transform: uppercase;
-		text-shadow: 2px 2px 2px black;
+	.section-heading {
+		color: $pure-white;
 	}
 
-	p {
-		font-size: 14px;
-	}
+	&__option {
+		margin: 1em 0;
+		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.2);
+		background-color: white;
+		
+		&-img {
+			width: 300px;height: 300px;
+		 
+		}
 
-	.hero-img {
-		position: relative;
-		height: 100vh;
-		background-image: url("../img/Aboutus-bg.jpg");
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
-		z-index: 0;
-	}
-
-	.hero-shadow {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.6);
-		z-index: -10;
-	}
-
-	.hero-text {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		height: 100%;
-		padding: 10px;
-		text-align: center;
-		z-index: 5;
-
-		.btn {
-			padding: 10px 20px;
-			font-size: 1.6rem;
-			background-color: $btn-color;
-			color: $black;
-			font-weight: bold;
+		&-info {
+			padding: 2em;
+			background-color: red;
+			z-index: 11;
+		}
+		&-heading {
+			margin-bottom: 0.5em;
+			text-align: center;
+			font-size: 2.4rem;
+			font-weight: 300;
+		}
+		&-text {
+			margin-bottom: 0.5em;
+			font-size: 1.3rem;
+		}
+		&-btn {
+			margin-top: 1em;
+			padding: 1em;
+			width: 100%;
+			border: none;
+			border-radius: 10px;
+			background: $main-color;
+			color: $pure-white;
 			cursor: pointer;
-			transition: 0.3s;
+
+			&:before {
+				background: $secondary-color;
+			}
 		}
-		.btn:hover {
-			background-color: $btn-color-hover;
-			scale: 1.1;
-			color: $white;
-		}
-	}
-
-	.logo-hw {
-		max-width: 40%;
-		height: auto;
-		margin-bottom: 2rem;
-		margin-left: 20px;
-	}
-
-	.btn-outline-light {
-		text-transform: uppercase;
-	}
-
-	.fa-chevron-down {
-		position: absolute;
-		left: 50%;
-		bottom: 20px;
-		font-size: 30px;
-		color: $white;
 	}
 }
+
+// =====================
+// START MEDIA QUERIES
+// =====================
+
+@media (min-width: 300px){
+	.offers{
+		&__option{
+			&-text{
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+@media (min-width: 576px) {
+	
+	.offers {
+		&__option {
+			display: flex;
+			margin: 2em 0;
+			width: 100%;
+
+			&-img {
+				width: 50%;
+				height: auto;
+
+				&--right{
+					order:1;
+
+				}
+			}
+			&-info{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				text-align: center;
+			}
+
+			&-heading{
+				margin-bottom: 0.5em;
+				font-size: 3.6rem;
+			}
+			&-btn{
+				padding: 1em;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+	.section-padding {
+		padding: 8em 2em;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.offers{
+		background-image: $blue-gradient, url('../img/Aboutus-bg.jpg');
+	
+	}
+
+}
+
+
+
+// =====================
+// END MEDIA QUERIES
+// =====================
 
 // INFO SECTION
 

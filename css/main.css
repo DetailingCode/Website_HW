@@ -211,76 +211,101 @@ nav .nav-link.active {
   transform-origin: left;
 }
 
-header {
-  color: #fff;
-}
-header h1 {
-  margin-top: 40px;
-  font-size: 2.8rem;
-  font-family: "Russo One", sans-serif;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 2px black;
-}
-header p {
-  font-size: 14px;
-}
-header .hero-img {
+.offers {
+  height: 100dvh;
   position: relative;
-  height: 100vh;
-  background-image: url("../img/Aboutus-bg.jpg");
-  background-position: center;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/aboutus-bg.jpg");
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
-  z-index: 0;
 }
-header .hero-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: -10;
+.offers .section-heading {
+  color: #fff;
 }
-header .hero-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  padding: 10px;
+.offers__option {
+  margin: 1em 0;
+  box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.2);
+  background-color: white;
+}
+.offers__option-img {
+  width: 300px;
+  height: 300px;
+}
+.offers__option-info {
+  padding: 2em;
+  background-color: red;
+  z-index: 11;
+}
+.offers__option-heading {
+  margin-bottom: 0.5em;
   text-align: center;
-  z-index: 5;
+  font-size: 2.4rem;
+  font-weight: 300;
 }
-header .hero-text .btn {
-  padding: 10px 20px;
-  font-size: 1.6rem;
-  background-color: #FF6F00;
-  color: black;
-  font-weight: bold;
+.offers__option-text {
+  margin-bottom: 0.5em;
+  font-size: 1.3rem;
+}
+.offers__option-btn {
+  margin-top: 1em;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: rgb(255, 111, 0);
+  color: #fff;
   cursor: pointer;
-  transition: 0.3s;
 }
-header .hero-text .btn:hover {
-  background-color: #6B7F82;
-  scale: 1.1;
-  color: #fff;
-}
-header .logo-hw {
-  max-width: 40%;
-  height: auto;
-  margin-bottom: 2rem;
-  margin-left: 20px;
-}
-header .btn-outline-light {
-  text-transform: uppercase;
-}
-header .fa-chevron-down {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  font-size: 30px;
-  color: #fff;
+.offers__option-btn:before {
+  background: #f30000;
 }
 
+@media (min-width: 300px) {
+  .offers__option-text {
+    text-align: center;
+  }
+}
+@media (min-width: 576px) {
+  .offers__option {
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+  }
+  .offers__option-img {
+    width: 50%;
+    height: auto;
+  }
+  .offers__option-img--right {
+    order: 1;
+  }
+  .offers__option-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .offers__option-heading {
+    margin-bottom: 0.5em;
+    font-size: 3.6rem;
+  }
+  .offers__option-btn {
+    padding: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .section-padding {
+    padding: 8em 2em;
+  }
+}
+@media (min-width: 992px) {
+  .offers {
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/Aboutus-bg.jpg");
+  }
+}
 .info-hw-img {
   position: relative;
   height: 100vh;
