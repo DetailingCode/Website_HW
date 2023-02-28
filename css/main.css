@@ -17,8 +17,7 @@ html {
 
 .bounce-top {
   display: block;
-  -webkit-animation: bounce-top 2.5s infinite both;
-          animation: bounce-top 2.5s infinite both;
+  animation: bounce-top 2.5s infinite both;
   color: white;
 }
 
@@ -33,42 +32,9 @@ html {
  * animation bounce-top
  * ----------------------------------------
  */
-@-webkit-keyframes bounce-top {
-  0% {
-    transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  65% {
-    transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  25%, 55%, 75%, 87% {
-    transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
 @keyframes bounce-top {
   0% {
     transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 1;
   }
@@ -77,22 +43,18 @@ html {
   }
   40% {
     transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   65% {
     transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   25%, 55%, 75%, 87% {
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   100% {
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     opacity: 1;
   }
@@ -126,6 +88,10 @@ h2 {
 
 .navbar-nav .nav-link.active {
   color: rgb(255, 111, 0);
+}
+
+.carousel-inner .carousel-item {
+  transition: transform 2s 3s ease-in-out;
 }
 
 nav {
@@ -394,7 +360,7 @@ header .fa-chevron-down {
 
 .portfolio {
   background: rgb(120, 120, 120);
-  background: radial-gradient(circle, rgb(255, 111, 0) 0%, rgb(0, 0, 0) 100%);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
 .portfolio .carousel-item {
   position: relative;
