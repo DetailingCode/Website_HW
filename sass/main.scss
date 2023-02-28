@@ -1,6 +1,8 @@
 @use "./colors" as *;
 @use "./reset" as *;
-@use "./animation";
+@use "./animation" as*;
+@use "./components" as*;
+
 
 body {
 	position: relative;
@@ -34,9 +36,9 @@ h2 {
 }
 
 .carousel-inner .carousel-item {
-	transition: -webkit-transform 2s 3s ease-in-out;
-	transition: transform 2s 3s ease-in-out;
-	transition: transform 2s 3s ease-in-out, -webkit-transform 2s 3s ease-in-out;
+	transition: -webkit-transform 2s 5s ease-in-out;
+	transition: transform 2s 5s ease-in-out;
+	transition: transform 2s 5s ease-in-out, -webkit-transform 2s 5s ease-in-out;
 }
 
 nav {
@@ -348,6 +350,11 @@ header {
 .portfolio {
 	background: rgb(120, 120, 120);
 	background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
+	h2{
+		color: $white;
+		font-size: 4rem;
+	}
 
 	.carousel-item {
 		position: relative;
