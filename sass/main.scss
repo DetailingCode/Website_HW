@@ -142,7 +142,7 @@ nav {
 // ===================== OFFERS ===============
 
 .offers {
-	height: 110dvh;
+	height: 100dvh;
 	position: relative;
 	overflow: hidden;
 	@include heroImages("../img/aboutus-bg.jpg");
@@ -207,7 +207,6 @@ nav {
 		color: $pure-white;
 		text-align: center;
 		perspective: 800px;
-		
 
 		// <!-- ++++++++++ ANIMACJA CALEJ KARTY PO NAJECHANIU  ++++++++++ -->
 		&:hover {
@@ -306,12 +305,45 @@ nav {
 // =====================
 
 @media (min-width: 300px) {
+	.fa-circle-info {
+		font-size: 8rem;
+		position: relative;
+		top:0;
+	}
 	.offers {
 		&__option {
 			&-text {
 				text-align: center;
 			}
+			&-img {
+				position: relative;
+				top: 20px;
+				left: 5%;
+				height: 150px;
+				width: 300px;
+			}
 		}
+		.islands {
+			&__card {
+				position: relative;
+				top: 200px;
+				left: 10px;
+				margin: 1em 0;
+				height: 150px;
+				width: 250px;
+				color: $pure-white;
+				text-align: center;
+				&-text {
+					font-size: 1.4rem;
+					margin: 0 5px;
+				}
+			}
+		}
+	}
+
+	.section-heading {
+		font-size: 2rem;
+		margin-top: 3rem;
 	}
 }
 
