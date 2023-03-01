@@ -611,6 +611,59 @@ nav .nav-link.active {
   background-size: cover;
 }
 
+.motors {
+  background-image: url("../img/fishing-boat_1920.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.motors h2 {
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+}
+.motors .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.motors .price-box h3 {
+  color: rgb(255, 111, 0);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.motors .price-box span {
+  font-weight: bold;
+}
+.motors .price-box i {
+  padding: 0 5px;
+  font-size: 24px;
+}
+.motors .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.motors .price-box .price-tag {
+  font-size: 20px;
+  font-weight: bold;
+}
+.motors .price-box:hover {
+  transform: scale(1.05);
+}
+.motors .price-info {
+  margin-top: 30px;
+}
+.motors .price-info a {
+  text-decoration: none;
+}
+.motors .gold {
+  border: 2px solid rgb(0, 0, 0);
+}
+
 .contact {
   position: relative;
   background-image: url("../img/Footer-1920.jpg");
