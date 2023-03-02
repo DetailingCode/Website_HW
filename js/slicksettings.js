@@ -1,7 +1,7 @@
 $(".team-carousel").slick({
 	mobileFirst: true,
 	autoplay: true,
-	autoplaySpeed: 3000,
+	autoplaySpeed: 5000,
 	arrows: false,
 	infinite: true,
 	slidesToShow: 1,
@@ -9,16 +9,16 @@ $(".team-carousel").slick({
 	responsive: [
 		{
 			breakpoint: 576,
-			settings: { slidesToShow: 2 },
+			settings: { slidesToShow: 1 },
 		},
 		{
 			breakpoint: 768,
-			settings: { slidesToShow: 2 },
+			settings: { slidesToShow: 1 },
 		},
 
 		{
 			breakpoint: 992,
-			settings: { slidesToShow: 3 },
+			settings: { slidesToShow: 1 },
 		},
 	],
 });

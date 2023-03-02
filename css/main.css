@@ -158,10 +158,6 @@ h2 {
   color: rgb(255, 111, 0);
 }
 
-.carousel-inner .carousel-item {
-  transition: transform 2s 5s ease-in-out;
-}
-
 nav {
   text-transform: uppercase;
   transition: background-color 0.6s;
@@ -217,6 +213,7 @@ nav .nav-link:hover {
 }
 nav .fa-bars {
   padding: 10px;
+  font-size: 3rem;
 }
 nav .navbar-brand {
   font-weight: bold;
@@ -249,50 +246,75 @@ nav .nav-link.active {
   transform-origin: left;
 }
 
-.offers {
-  height: 100dvh;
+header {
+  color: #fff;
+}
+header h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgb(255, 111, 0);
+}
+header p {
+  font-size: 14px;
+}
+header .logo-hw {
+  margin-left: 40px;
+}
+header .hero-img {
   position: relative;
-  overflow: hidden;
-  background-image: url("../img/aboutus-bg.jpg");
-  background-size: cover;
+  height: 100vh;
+  background-image: url("../img/Aboutus2_1900.jpg");
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
+  z-index: 0;
 }
-.offers .section-heading {
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px black;
-  padding-top: 7rem;
-}
-.offers__option {
-  margin: 1em 0 .offers__option -img;
-}
-.offers__option-info {
-  padding: 2em;
-  z-index: 11;
-}
-.offers__option-heading {
-  margin-bottom: 0.5em;
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: 300;
-}
-.offers__option-text {
-  margin-bottom: 0.5em;
-  font-size: 1.3rem;
-}
-.offers__option-btn {
-  margin-top: 1em;
-  padding: 1em;
+header .hero-shadow {
+  position: absolute;
   width: 100%;
-  border: none;
-  border-radius: 10px;
-  background: rgb(255, 111, 0);
-  color: #fff;
-  cursor: pointer;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
 }
-.offers__option-btn:before {
-  background: #f30000;
+header .btn {
+  margin-top: 2em;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  background-color: #FF6F00;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+header .btn:hover {
+  background-color: #6B7F82;
+  scale: 1.1;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #fff;
+}
+header .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 5;
+}
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  font-size: 30px;
+  color: #fff;
 }
 
 .fa-circle-info {
@@ -435,7 +457,9 @@ nav .nav-link.active {
     width: 100%;
   }
   .offers__option-img {
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 50%;
   }
@@ -629,6 +653,13 @@ nav .nav-link.active {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s;
 }
+.motors .price-box .btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+}
+.motors .price-box .btn:hover {
+  background-color: rgba(255, 111, 0, 0.8);
+}
 .motors .price-box h3 {
   color: rgb(255, 111, 0);
   text-transform: uppercase;
@@ -661,7 +692,7 @@ nav .nav-link.active {
   text-decoration: none;
 }
 .motors .gold {
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid silver;
 }
 
 .contact {
@@ -732,6 +763,9 @@ footer span {
     margin: 0 5px;
     font-size: 1.2rem;
   }
+  .logo-hw {
+    margin-left: 0px;
+  }
 }
 @media (min-width: 576px) {
   h1 {
@@ -750,6 +784,9 @@ footer span {
   }
   header h1 {
     font-size: 2.4rem;
+  }
+  header .logo-hw {
+    margin-left: 10px;
   }
 }
 @media (min-width: 768px) {
