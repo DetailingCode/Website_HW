@@ -691,9 +691,6 @@ header .fa-chevron-down {
 .motors .price-info a {
   text-decoration: none;
 }
-.motors .gold {
-  border: 2px solid silver;
-}
 
 .contact {
   position: relative;
@@ -702,6 +699,7 @@ header .fa-chevron-down {
   background-position: center;
   background-size: cover;
   z-index: 0;
+  box-shadow: 0px -3px 20px 5px rgb(85, 85, 85);
 }
 .contact h2 {
   color: #fff;
