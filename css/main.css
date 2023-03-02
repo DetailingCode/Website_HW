@@ -692,6 +692,13 @@ header .fa-chevron-down {
   text-decoration: none;
 }
 
+.help {
+  height: 50dvh;
+}
+.help h2 {
+  margin-top: 30px;
+}
+
 .contact {
   position: relative;
   background-image: url("../img/Footer-1920.jpg");
@@ -799,4 +806,15 @@ footer span {
   nav {
     height: 82px;
   }
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #0e4166;
+  background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }/*# sourceMappingURL=main.css.map */
