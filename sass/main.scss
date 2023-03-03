@@ -146,7 +146,7 @@ header {
 	color: $white;
 
 	h1 {
-		font-size: 30px;
+		font-size: 3rem;
 		text-transform: uppercase;
 		color: $main-color;
 	}
@@ -187,15 +187,11 @@ header {
 		cursor: pointer;
 		transition: 0.3s;
 		text-transform: uppercase;
-		border: 2px solid $white;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 	.btn:hover {
-		background-color: $btn-color-hover;
 		scale: 1.1;
 		font-weight: bold;
-		color: $white;
-		border: 2px solid $white;
 	}
 
 	.hero-text {
@@ -222,113 +218,305 @@ header {
 	}
 }
 
-// ==================== CARD SECTION HEADER=============================
-.fa-circle-info {
-	font-size: 20rem;
-	text-shadow: 2px 2px 20px black;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.islands {
-	&__card {
+// PORTFOLIO SECTION
+
+.portfolio {
+	background: rgb(120, 120, 120);
+	background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
+	h2 {
+		color: $white;
+		font-size: 4rem;
+	}
+
+	.carousel-item {
 		position: relative;
-		margin: 1em 0;
-		height: 450px;
-		width: 500px;
-		color: $pure-white;
-		text-align: center;
-		perspective: 800px;
+		height: 600px;
+		h5 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1.4rem;
+		}
+	}
 
-		// <!-- ++++++++++ ANIMACJA CALEJ KARTY PO NAJECHANIU  ++++++++++ -->
-		&:hover {
-			// <!-- ++++++++++ FRONT CARD ++++++++++ -->
-			.islands__card-img {
-				transform: rotateY(-180deg);
-				opacity: 0;
-			}
-			// <!-- ++++++++++ BACK CARD ++++++++++ -->
-			.islands__card-info {
-				transform: rotateY(0);
-				opacity: 1;
-			}
+	.carousel-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 40px 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: $white;
+	}
+
+	.carousel-indicators {
+		padding-bottom: 20px;
+	}
+
+	.slider-image {
+		width: 100%;
+		height: 600px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+// FEATURES SECTION
+
+.features {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+
+	.features-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	.features-card-text {
+		font-size: 14px;
+	}
+
+	.features-hover {
+		transition: all 0.3s;
+	}
+
+	.features-hover:hover {
+		color: $main-color;
+		scale: 1.05;
+		cursor: default;
+	}
+}
+
+.features-hero {
+	position: relative;
+	background-image: url("../img/about-hero-small.jpg");
+	background-position: center;
+	background-size: cover;
+	color: $light-gray;
+	z-index: 0;
+
+	.features-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -5;
+	}
+
+	.features-hero-item {
+		margin: 10px 0;
+
+		i {
+			font-size: 36px;
 		}
 
-		&-text {
-			font-size: 1.8rem;
-			margin: 0 5px;
+		.features-hero-title {
+			font-size: 24px;
 		}
-		&-img {
-			padding: 2em;
-			height: 100%;
-			border-radius: 8px;
-			background-size: cover;
-			// ANIMUJEMY DWIE WŁAŚCIOWOŚCI Z HOVERA \/ ->
-			transition: transform 1s, opacity 1s;
-			// ANIMUJEMY DWIE WŁAŚCIOWOŚCI Z HOVERA \/ -
+	}
+}
 
-			&-info {
-				position: absolute;
-				bottom: 30px;
-				right: 30px;
-				font-size: 1.8rem;
+// ======================MOTORS CARD SECTION================
 
-				i {
-					margin-right: 0.3em;
-				}
-			}
+.motors {
+	background-image: url("../img/fishing-boat_1920.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	h2 {
+		color: $white;
+		text-shadow: 1px 1px 2px black;
+	}
+	.motors-box {
+		margin: 20px 10px;
+		padding: 30px;
+		background-color: $white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: transform 0.3s;
+		.btn {
+			padding: 12px 30px;
+			font-size: 1.2rem;
+		}
+		.btn:hover {
+			background-color: rgba(255, 111, 0, 0.8);
+		}
+		h3 {
+			color: $main-color;
+			text-transform: uppercase;
+			font-size: 2.5rem;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px black;
 		}
 
-		&-info {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-image: $light-blue-gradient-solid;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			border-radius: 10px;
-			opacity: 0;
-			transform: rotateY(180deg);
-			transition: transform 1s, opacity 1s;
+		span {
+			font-weight: bold;
+		}
 
-			&-title {
-				@include cardPosition;
-				top: 1.2em;
-				font-family: "Dancing Script", cursive;
-				font-size: 2.8rem;
+		i {
+			padding: 0 5px;
+			font-size: 24px;
+		}
+
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+
+		.motors-tag {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+
+	.motors-box:hover {
+		transform: scale(1.05);
+	}
+}
+
+//  --------------------------- SECTION HELP -------------------
+
+.help {
+	height: 70dvh;
+ 
+
+	.help-cards {
+		 
+		box-shadow: 2px 2px 10px $black;
+		background-image: $light-blue-gradient, url();
+		border-radius: 1rem;
+	}
+
+
+	.help-card-title{
+		letter-spacing: 1px;
+		color: $white;
+		text-shadow: 2px 1px 2px $black;
+		
+	}
+
+	.help-img {
+		padding: 0 2rem;
+	}
+	.help-card-text{
+		padding: 10px 10px;
+		font-size: 1.5rem;
+		span{
+			font-weight: bold;
+		}
+	}
+	.help-card-body{
+		position: relative;
+	}
+
+	.btn-help{
+		position: absolute;
+		top: 110%;
+		right: 7%;
+		background: $pure-white;
+		color: $black;
+		padding: 10px 30px;
+		border: 1px solid $black;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		font-weight: bold;
+		transition: all .3s;
+
+		&:hover{
+			background: $main-color;
+			scale: 1.05;
+			font-size: 1.2rem;
+		}
+	}
+
+	h2 {
+		margin-top: 3rem;
+	}
+
+	.help-card-body-bottom{
+		padding-top: 2rem;
+		margin-top: 4rem;
+
+	}
+}
+
+.contact {
+	position: relative;
+	background-image: url("../img/Footer-1920.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+	box-shadow: 0px -3px 20px 5px rgb(85, 85, 85);
+
+	h2 {
+		color: $white;
+	}
+
+	.contact-shadow {
+		position: absolute;
+		background-color: rgba(0, 9, 27, 0.8);
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -5;
+	}
+	.contact-us {
+		color: $white;
+		display: flex;
+		align-items: center;
+
+		.shorts {
+			a {
+				text-decoration: none;
+				color: $white;
+				transition: 0.3s;
 			}
-			&-list {
-				margin: 0 auto;
-				list-style: none;
-				width: 70%;
-				&-item {
-					padding: 1em;
-					border-bottom: 1px solid $pure-white;
-					&:last-child {
-						border-bottom: none;
-					}
-				}
-			}
-			&-btn {
-				@include cardPosition;
-				bottom: 2em;
-				padding: 1em;
-				width: 80%;
-				border: none;
-				border-radius: 10px;
-				font-weight: bold;
-				background: $green-color;
-				color: $dark;
+			a:hover {
 				cursor: pointer;
+				color: $main-color;
+			}
+		}
 
-				&:before {
-					background: $green-color-hover;
+		.contact-items {
+			margin: 30px 0;
+			h3 {
+				margin-bottom: 15px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+			.social-media {
+				a {
+					padding: 15px;
+					color: $white;
+					font-size: 1.6rem;
+					transition: color 0.3s;
+					text-shadow: 0px 0px 4px rgba(255, 111, 0, 0.8);
+				}
+				a:hover {
+					color: $main-color;
+					text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
 				}
 			}
 		}
+	}
+}
+
+footer {
+	p {
+		margin-bottom: 0;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+	}
+	span {
+		color: $main-color;
+		font-weight: bold;
 	}
 }
 
@@ -429,333 +617,6 @@ header {
 // END MEDIA QUERIES
 // =====================
 
-// INFO SECTION
-
-.info-hw-img {
-	position: relative;
-	height: 100vh;
-	width: auto;
-	background-image: url("../img/Aboutus2_1900.jpg");
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	z-index: 0;
-	.info-text {
-		padding: 10px 20px;
-	}
-
-	.btn1 {
-		width: 220px;
-		padding: 10px 20px;
-		margin-left: -40px;
-		font-size: 1.6rem;
-		background-color: $btn-color;
-		color: $black;
-		font-weight: bold;
-		cursor: pointer;
-		transition: 0.3s;
-		text-transform: uppercase;
-		border: 2px solid $white;
-		border-radius: 5px;
-	}
-	.btn1:hover {
-		background-color: $btn-color-hover;
-		scale: 1.1;
-		font-weight: bold;
-		color: $white;
-		border: 2px solid $white;
-	}
-
-	.info-hw-shadow {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.8);
-		z-index: -10;
-	}
-
-	.info-hw-text {
-		position: relative;
-		z-index: 5;
-		overflow-wrap: break-word;
-		color: $white;
-		margin-left: 50px;
-		margin-right: 50px;
-	}
-
-	i {
-		margin-left: -0.5%;
-	}
-}
-
-.fa-chevron-down {
-	position: absolute;
-	left: 50%;
-	bottom: 20px;
-	font-size: 30px;
-	color: $white;
-}
-
-// FEATURES SECTION
-
-.features {
-	i {
-		margin-top: 20px;
-		font-size: 30px;
-	}
-
-	.features-card-title {
-		font-size: 18px;
-		text-transform: uppercase;
-	}
-
-	.features-card-text {
-		font-size: 14px;
-	}
-
-	.features-hover {
-		transition: all 0.3s;
-	}
-
-	.features-hover:hover {
-		color: $main-color;
-		scale: 1.05;
-		cursor: default;
-	}
-}
-
-.features-hero {
-	position: relative;
-	background-image: url("../img/about-hero-small.jpg");
-	background-position: center;
-	background-size: cover;
-	color: $light-gray;
-	z-index: 0;
-
-	.features-shadow {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.7);
-		z-index: -5;
-	}
-
-	.features-hero-item {
-		margin: 10px 0;
-
-		i {
-			font-size: 36px;
-		}
-
-		.features-hero-title {
-			font-size: 24px;
-		}
-	}
-}
-
-// PORTFOLIO SECTION
-
-.portfolio {
-	background: rgb(120, 120, 120);
-	background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-
-	h2 {
-		color: $white;
-		font-size: 4rem;
-	}
-
-	.carousel-item {
-		position: relative;
-		height: 600px;
-		h5 {
-			font-size: 2rem;
-		}
-		p {
-			font-size: 1.4rem;
-		}
-	}
-
-	.carousel-caption {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		padding: 40px 0;
-		background-color: rgba(0, 0, 0, 0.8);
-		color: $white;
-	}
-
-	.carousel-indicators {
-		padding-bottom: 20px;
-	}
-
-	.slider-image {
-		width: 100%;
-		height: 600px;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center;
-		background-size: cover;
-	}
-}
-
-// ======================MOTORS CARD SECTION================
-
-.motors {
-	background-image: url("../img/fishing-boat_1920.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	h2 {
-		color: $white;
-		text-shadow: 1px 1px 2px black;
-	}
-	.price-box {
-		margin: 20px 10px;
-		padding: 30px;
-		background-color: $white;
-		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-		transition: transform 0.3s;
-		.btn {
-			padding: 12px 30px;
-			font-size: 1.2rem;
-		}
-		.btn:hover {
-			background-color: rgba(255, 111, 0, 0.8);
-		}
-		h3 {
-			color: $main-color;
-			text-transform: uppercase;
-			font-size: 2.5rem;
-			font-weight: bold;
-			text-shadow: 1px 1px 1px black;
-		}
-
-		span {
-			font-weight: bold;
-		}
-
-		i {
-			padding: 0 5px;
-			font-size: 24px;
-		}
-
-		button {
-			padding: 10px 20px;
-			text-transform: uppercase;
-		}
-
-		.price-tag {
-			font-size: 20px;
-			font-weight: bold;
-		}
-	}
-
-	.price-box:hover {
-		transform: scale(1.05);
-	}
-
-	.price-info {
-		margin-top: 30px;
-
-		a {
-			text-decoration: none;
-		}
-	}
-}
-
-//  --------------------------- SECTION HELP -------------------
-
- .help{
-	height: 50dvh;
-
-	
-	h2{
-		margin-top: 30px;
-
-	}
- }
-
-.contact {
-	position: relative;
-	background-image: url("../img/Footer-1920.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	z-index: 0;
-	box-shadow: 0px -3px 20px 5px rgb(85, 85, 85);
-
-
-
-	h2 {
-		color: $white;
-	}
-
-	.contact-shadow {
-		position: absolute;
-		background-color: rgba(0, 9, 27, 0.8);
-		top: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -5;
-	}
-	.contact-us {
-		color: $white;
-		display: flex;
-		align-items: center;
-
-		.shorts {
-			a {
-				text-decoration: none;
-				color: $white;
-				transition: 0.3s;
-			}
-			a:hover {
-				cursor: pointer;
-				color: $main-color;
-			}
-		}
-
-		.contact-items {
-			margin: 30px 0;
-			h3 {
-				margin-bottom: 15px;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-			}
-			.social-media {
-				a {
-					padding: 15px;
-					color: $white;
-					font-size: 1.6rem;
-					transition: color 0.3s;
-					text-shadow: 0px 0px 4px rgba(255, 111, 0, 0.8);
-				}
-				a:hover {
-					color: $main-color;
-					text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
-				}
-			}
-		}
-	}
-
- 
-}
-
-footer {
-	p {
-		margin-bottom: 0;
-		text-transform: uppercase;
-		font-size: 1.2rem;
-	}
-	span {
-		color: $main-color;
-		font-weight: bold;
-	}
-}
-
 @media (min-width: 386px) {
 	.info-text {
 		margin: 0 5px;
@@ -768,7 +629,7 @@ footer {
 
 @media (min-width: 576px) {
 	h1 {
-		font-size: 2.2rem;
+		font-size: 2rem;
 	}
 	p {
 		font-size: 1.4rem;
@@ -798,33 +659,17 @@ footer {
 @media (min-width: 768px) {
 	header {
 		h1 {
-			font-size: 2.8rem;
+			font-size: 4rem;
+			font-weight: bold;
 		}
 	}
 }
 
 @media (min-width: 992px) {
 	h1 {
-		font-size: 3.2rem;
+		font-size: 4rem;
 	}
 	nav {
 		height: 82px;
 	}
-}
-
-@media (min-width: 1200px) {
-}
-
-// -------------- BACKGROUND ANIMATION --------------
-
-svg {
-	position: absolute;
-	top: 0;
-	left: 0;
-width: 100%;
-height: 100%;
-	box-sizing: border-box;
-	display: block;
-	background-color: #0e4166;
-background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }

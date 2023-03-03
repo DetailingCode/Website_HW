@@ -250,7 +250,7 @@ header {
   color: #fff;
 }
 header h1 {
-  font-size: 30px;
+  font-size: 3rem;
   text-transform: uppercase;
   color: rgb(255, 111, 0);
 }
@@ -280,21 +280,17 @@ header .btn {
   margin-top: 2em;
   padding: 10px 20px;
   font-size: 1.6rem;
-  background-color: #FF6F00;
+  background-color: #ff6f00;
   color: black;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
   text-transform: uppercase;
-  border: 2px solid #fff;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 header .btn:hover {
-  background-color: #6B7F82;
   scale: 1.1;
   font-weight: bold;
-  color: #fff;
-  border: 2px solid #fff;
 }
 header .hero-text {
   display: flex;
@@ -317,102 +313,256 @@ header .fa-chevron-down {
   color: #fff;
 }
 
-.fa-circle-info {
-  font-size: 20rem;
-  text-shadow: 2px 2px 20px black;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.portfolio {
+  background: rgb(120, 120, 120);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
-
-.islands__card {
-  position: relative;
-  margin: 1em 0;
-  height: 450px;
-  width: 500px;
+.portfolio h2 {
   color: #fff;
-  text-align: center;
-  perspective: 800px;
+  font-size: 4rem;
 }
-.islands__card:hover .islands__card-img {
-  transform: rotateY(-180deg);
-  opacity: 0;
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
 }
-.islands__card:hover .islands__card-info {
-  transform: rotateY(0);
-  opacity: 1;
+.portfolio .carousel-item h5 {
+  font-size: 2rem;
 }
-.islands__card-text {
-  font-size: 1.8rem;
-  margin: 0 5px;
+.portfolio .carousel-item p {
+  font-size: 1.4rem;
 }
-.islands__card-img {
-  padding: 2em;
-  height: 100%;
-  border-radius: 8px;
-  background-size: cover;
-  transition: transform 1s, opacity 1s;
-}
-.islands__card-img-info {
+.portfolio .carousel-caption {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
-  font-size: 1.8rem;
-}
-.islands__card-img-info i {
-  margin-right: 0.3em;
-}
-.islands__card-info {
-  position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(180deg, rgb(255, 111, 0), rgb(0, 0, 0));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 10px;
-  opacity: 0;
-  transform: rotateY(180deg);
-  transition: transform 1s, opacity 1s;
+  bottom: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
-.islands__card-info-title {
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+.portfolio .slider-image {
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.features i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.features .features-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.features .features-card-text {
+  font-size: 14px;
+}
+.features .features-hover {
+  transition: all 0.3s;
+}
+.features .features-hover:hover {
+  color: rgb(255, 111, 0);
+  scale: 1.05;
+  cursor: default;
+}
+
+.features-hero {
+  position: relative;
+  background-image: url("../img/about-hero-small.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ddd;
+  z-index: 0;
+}
+.features-hero .features-shadow {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 1.2em;
-  font-family: "Dancing Script", cursive;
-  font-size: 2.8rem;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
 }
-.islands__card-info-list {
-  margin: 0 auto;
-  list-style: none;
-  width: 70%;
+.features-hero .features-hero-item {
+  margin: 10px 0;
 }
-.islands__card-info-list-item {
-  padding: 1em;
-  border-bottom: 1px solid #fff;
+.features-hero .features-hero-item i {
+  font-size: 36px;
 }
-.islands__card-info-list-item:last-child {
-  border-bottom: none;
+.features-hero .features-hero-item .features-hero-title {
+  font-size: 24px;
 }
-.islands__card-info-btn {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2em;
-  padding: 1em;
-  width: 80%;
-  border: none;
-  border-radius: 10px;
+
+.motors {
+  background-image: url("../img/fishing-boat_1920.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.motors h2 {
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+}
+.motors .motors-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.motors .motors-box .btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+}
+.motors .motors-box .btn:hover {
+  background-color: rgba(255, 111, 0, 0.8);
+}
+.motors .motors-box h3 {
+  color: rgb(255, 111, 0);
+  text-transform: uppercase;
+  font-size: 2.5rem;
   font-weight: bold;
-  background: #00ffaa;
-  color: #2e2e2e;
-  cursor: pointer;
+  text-shadow: 1px 1px 1px black;
 }
-.islands__card-info-btn:before {
-  background: #0fe29c;
+.motors .motors-box span {
+  font-weight: bold;
+}
+.motors .motors-box i {
+  padding: 0 5px;
+  font-size: 24px;
+}
+.motors .motors-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.motors .motors-box .motors-tag {
+  font-size: 20px;
+  font-weight: bold;
+}
+.motors .motors-box:hover {
+  transform: scale(1.05);
+}
+
+.help {
+  height: 70dvh;
+}
+.help .help-cards {
+  box-shadow: 2px 2px 10px black;
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 94, 255, 0.75)), url();
+  border-radius: 1rem;
+}
+.help .help-card-title {
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 2px 1px 2px black;
+}
+.help .help-img {
+  padding: 0 2rem;
+}
+.help .help-card-text {
+  padding: 10px 10px;
+  font-size: 1.5rem;
+}
+.help .help-card-text span {
+  font-weight: bold;
+}
+.help .help-card-body {
+  position: relative;
+}
+.help .btn-help {
+  position: absolute;
+  top: 110%;
+  right: 7%;
+  background: #fff;
+  color: black;
+  padding: 10px 30px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.help .btn-help:hover {
+  background: rgb(255, 111, 0);
+  scale: 1.05;
+  font-size: 1.2rem;
+}
+.help h2 {
+  margin-top: 3rem;
+}
+.help .help-card-body-bottom {
+  padding-top: 2rem;
+  margin-top: 4rem;
+}
+
+.contact {
+  position: relative;
+  background-image: url("../img/Footer-1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  box-shadow: 0px -3px 20px 5px rgb(85, 85, 85);
+}
+.contact h2 {
+  color: #fff;
+}
+.contact .contact-shadow {
+  position: absolute;
+  background-color: rgba(0, 9, 27, 0.8);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+.contact .contact-us {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.contact .contact-us .shorts a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.contact .contact-us .shorts a:hover {
+  cursor: pointer;
+  color: rgb(255, 111, 0);
+}
+.contact .contact-us .contact-items {
+  margin: 30px 0;
+}
+.contact .contact-us .contact-items h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact .contact-us .contact-items .social-media a {
+  padding: 15px;
+  color: #fff;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+  text-shadow: 0px 0px 4px rgba(255, 111, 0, 0.8);
+}
+.contact .contact-us .contact-items .social-media a:hover {
+  color: rgb(255, 111, 0);
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
+}
+
+footer p {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+footer span {
+  color: rgb(255, 111, 0);
+  font-weight: bold;
 }
 
 @media (min-width: 300px) {
@@ -489,280 +639,6 @@ header .fa-chevron-down {
     background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/Aboutus-bg.jpg");
   }
 }
-.info-hw-img {
-  position: relative;
-  height: 100vh;
-  width: auto;
-  background-image: url("../img/Aboutus2_1900.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
-}
-.info-hw-img .info-text {
-  padding: 10px 20px;
-}
-.info-hw-img .btn1 {
-  width: 220px;
-  padding: 10px 20px;
-  margin-left: -40px;
-  font-size: 1.6rem;
-  background-color: #FF6F00;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-  text-transform: uppercase;
-  border: 2px solid #fff;
-  border-radius: 5px;
-}
-.info-hw-img .btn1:hover {
-  background-color: #6B7F82;
-  scale: 1.1;
-  font-weight: bold;
-  color: #fff;
-  border: 2px solid #fff;
-}
-.info-hw-img .info-hw-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: -10;
-}
-.info-hw-img .info-hw-text {
-  position: relative;
-  z-index: 5;
-  overflow-wrap: break-word;
-  color: #fff;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.info-hw-img i {
-  margin-left: -0.5%;
-}
-
-.fa-chevron-down {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  font-size: 30px;
-  color: #fff;
-}
-
-.features i {
-  margin-top: 20px;
-  font-size: 30px;
-}
-.features .features-card-title {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.features .features-card-text {
-  font-size: 14px;
-}
-.features .features-hover {
-  transition: all 0.3s;
-}
-.features .features-hover:hover {
-  color: rgb(255, 111, 0);
-  scale: 1.05;
-  cursor: default;
-}
-
-.features-hero {
-  position: relative;
-  background-image: url("../img/about-hero-small.jpg");
-  background-position: center;
-  background-size: cover;
-  color: #ddd;
-  z-index: 0;
-}
-.features-hero .features-shadow {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: -5;
-}
-.features-hero .features-hero-item {
-  margin: 10px 0;
-}
-.features-hero .features-hero-item i {
-  font-size: 36px;
-}
-.features-hero .features-hero-item .features-hero-title {
-  font-size: 24px;
-}
-
-.portfolio {
-  background: rgb(120, 120, 120);
-  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-}
-.portfolio h2 {
-  color: #fff;
-  font-size: 4rem;
-}
-.portfolio .carousel-item {
-  position: relative;
-  height: 600px;
-}
-.portfolio .carousel-item h5 {
-  font-size: 2rem;
-}
-.portfolio .carousel-item p {
-  font-size: 1.4rem;
-}
-.portfolio .carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 40px 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-}
-.portfolio .carousel-indicators {
-  padding-bottom: 20px;
-}
-.portfolio .slider-image {
-  width: 100%;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-.motors {
-  background-image: url("../img/fishing-boat_1920.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-.motors h2 {
-  color: #fff;
-  text-shadow: 1px 1px 2px black;
-}
-.motors .price-box {
-  margin: 20px 10px;
-  padding: 30px;
-  background-color: #fff;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s;
-}
-.motors .price-box .btn {
-  padding: 12px 30px;
-  font-size: 1.2rem;
-}
-.motors .price-box .btn:hover {
-  background-color: rgba(255, 111, 0, 0.8);
-}
-.motors .price-box h3 {
-  color: rgb(255, 111, 0);
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px black;
-}
-.motors .price-box span {
-  font-weight: bold;
-}
-.motors .price-box i {
-  padding: 0 5px;
-  font-size: 24px;
-}
-.motors .price-box button {
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-.motors .price-box .price-tag {
-  font-size: 20px;
-  font-weight: bold;
-}
-.motors .price-box:hover {
-  transform: scale(1.05);
-}
-.motors .price-info {
-  margin-top: 30px;
-}
-.motors .price-info a {
-  text-decoration: none;
-}
-
-.help {
-  height: 50dvh;
-}
-.help h2 {
-  margin-top: 30px;
-}
-
-.contact {
-  position: relative;
-  background-image: url("../img/Footer-1920.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 0;
-  box-shadow: 0px -3px 20px 5px rgb(85, 85, 85);
-}
-.contact h2 {
-  color: #fff;
-}
-.contact .contact-shadow {
-  position: absolute;
-  background-color: rgba(0, 9, 27, 0.8);
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
-}
-.contact .contact-us {
-  color: #fff;
-  display: flex;
-  align-items: center;
-}
-.contact .contact-us .shorts a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
-}
-.contact .contact-us .shorts a:hover {
-  cursor: pointer;
-  color: rgb(255, 111, 0);
-}
-.contact .contact-us .contact-items {
-  margin: 30px 0;
-}
-.contact .contact-us .contact-items h3 {
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.contact .contact-us .contact-items .social-media a {
-  padding: 15px;
-  color: #fff;
-  font-size: 1.6rem;
-  transition: color 0.3s;
-  text-shadow: 0px 0px 4px rgba(255, 111, 0, 0.8);
-}
-.contact .contact-us .contact-items .social-media a:hover {
-  color: rgb(255, 111, 0);
-  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
-}
-
-footer p {
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-footer span {
-  color: rgb(255, 111, 0);
-  font-weight: bold;
-}
-
 @media (min-width: 386px) {
   .info-text {
     margin: 0 5px;
@@ -774,7 +650,7 @@ footer span {
 }
 @media (min-width: 576px) {
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   p {
     font-size: 1.4rem;
@@ -796,25 +672,15 @@ footer span {
 }
 @media (min-width: 768px) {
   header h1 {
-    font-size: 2.8rem;
+    font-size: 4rem;
+    font-weight: bold;
   }
 }
 @media (min-width: 992px) {
   h1 {
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
   nav {
     height: 82px;
   }
-}
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  display: block;
-  background-color: #0e4166;
-  background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }/*# sourceMappingURL=main.css.map */
