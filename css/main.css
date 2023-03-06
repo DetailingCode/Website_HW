@@ -103,13 +103,13 @@ html {
   max-width: 1200px;
 }
 
-.btn-special-animation {
+.btn-animation {
   position: relative;
   transition: background-color 0.3s;
   overflow: hidden;
   z-index: 0;
 }
-.btn-special-animation::before {
+.btn-animation::before {
   content: "";
   position: absolute;
   display: block;
@@ -119,12 +119,16 @@ html {
   height: 100%;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
   z-index: -1;
 }
-.btn-special-animation:hover::before {
+.btn-animation:hover::before {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.section-padding {
+  padding: 6em 2em;
 }
 
 body {
@@ -280,7 +284,7 @@ header .btn {
   margin-top: 2em;
   padding: 10px 20px;
   font-size: 1.6rem;
-  background-color: #ff6f00;
+  background-color: rgba(255, 111, 0, 0.8823529412);
   color: black;
   font-weight: bold;
   cursor: pointer;
@@ -450,55 +454,51 @@ header .fa-chevron-down {
 }
 
 .help {
-  height: 70dvh;
+  position: relative;
+  overflow: hidden;
 }
-.help .help-cards {
-  box-shadow: 2px 2px 10px black;
-  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 94, 255, 0.75)), url();
-  border-radius: 1rem;
+.help__box {
+  margin: 1em 0;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.2);
+  overflow: hidden;
 }
-.help .help-card-title {
-  letter-spacing: 1px;
-  color: #fff;
-  text-shadow: 2px 1px 2px black;
+.help__box-img {
+  width: 50%;
+  transition: transform 0.3s;
 }
-.help .help-img {
-  padding: 0 2rem;
+.help__box-img:hover {
+  transform: scale(1.05);
 }
-.help .help-card-text {
-  padding: 10px 10px;
+.help__box-info {
+  padding: 2em;
+  background-color: #fff;
+  z-index: 12;
+}
+.help__box-heading {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px rgb(129, 129, 129);
+}
+.help__box-text {
+  margin-bottom: 0.5em;
   font-size: 1.5rem;
 }
-.help .help-card-text span {
-  font-weight: bold;
-}
-.help .help-card-body {
-  position: relative;
-}
-.help .btn-help {
-  position: absolute;
-  top: 110%;
-  right: 7%;
-  background: #fff;
-  color: black;
-  padding: 10px 30px;
-  border: 1px solid black;
+.help__box-btn {
+  background-color: rgb(255, 111, 0);
   text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: all 0.3s;
+  margin-top: 1em;
+  padding: 1em;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  left: 25%;
 }
-.help .btn-help:hover {
-  background: rgb(255, 111, 0);
-  scale: 1.05;
-  font-size: 1.2rem;
-}
-.help h2 {
-  margin-top: 3rem;
-}
-.help .help-card-body-bottom {
-  padding-top: 2rem;
-  margin-top: 4rem;
+.help__box-btn:before {
+  background-color: #6b7f82;
 }
 
 .contact {
