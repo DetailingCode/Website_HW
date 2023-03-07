@@ -131,6 +131,10 @@ html {
   padding: 6em 2em;
 }
 
+.btn-info {
+  background-color: #0084ff;
+}
+
 body {
   position: relative;
   font-family: "Ubuntu", sans-serif;
@@ -497,7 +501,7 @@ header .fa-chevron-down {
   box-shadow: 2px 2px 5px black;
 }
 .help__box-btn:before {
-  background-color: #6b7f82;
+  background-color: #0084ff;
 }
 
 .accessory {
@@ -508,8 +512,8 @@ header .fa-chevron-down {
   z-index: 0;
 }
 .accessory h2 {
-  text-shadow: 1px 1px 2px #fff;
-  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
 }
 .accessory .accessory-bg {
   background-color: rgba(0, 0, 0, 0.8);
@@ -554,6 +558,7 @@ header .fa-chevron-down {
   transform: scale(1.05);
 }
 .accessory .accessory-btn {
+  left: 25%;
   background-color: rgb(255, 111, 0);
   text-transform: uppercase;
   margin-bottom: 1em;
@@ -567,7 +572,7 @@ header .fa-chevron-down {
   box-shadow: 2px 2px 5px black;
 }
 .accessory .accessory-btn:before {
-  background-color: #6b7f82;
+  background-color: #0084ff;
 }
 
 .contact {
