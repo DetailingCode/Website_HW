@@ -390,48 +390,131 @@ header {
 		background-color: $pure-white;
 		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.2);
 		overflow: hidden;
+		z-index: 15;
 
 		&-img {
-			width: 50%;
+			width: 100%;
 			transition: transform 0.3s;
 			&:hover {
 				transform: scale(1.05);
 			}
 		}
 
-		&-info {
-			padding: 2em;
-			background-color: $pure-white;
-			z-index: 12;
+		&-heading {
+			font-size: 3rem;
 		}
 
-		&-heading {
-			margin-bottom: 0.5em;
+		&-info {
+			padding: 2em;
+			z-index: 12;
 			text-align: center;
-			font-size: 3rem;
-			 
-			text-shadow: 1px 1px 1px $text-shadow-color;
 		}
-		&-text{
-			margin-bottom: 0.5em;
+
+		&-text {
+			margin-bottom: 0.8em;
 			font-size: 1.5rem;
 		}
 
-		&-btn{
+		&-btn {
 			background-color: $main-color;
 			text-transform: uppercase;
-			margin-top: 1em;
+			margin-bottom: 1em;
 			padding: 1em;
 			width: 50%;
 			border: none;
 			border-radius: 10px;
 			cursor: pointer;
 			font-size: 1.4rem;
-			left: 25%;
+			font-weight: bold;
+			box-shadow: 2px 2px 5px $black;
 
-			&:before{
+			&:before {
 				background-color: $btn-color-hover;
 			}
+		}
+	}
+}
+
+// ------------------ SECTION ACCESSORY ----------------
+
+.accessory {
+	position: relative;
+	background-image: url("/img/fishing-boat2_1920.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	h2 {
+		text-shadow: 1px 1px 2px $white;
+		font-weight: bold;
+	}
+
+	.accessory-bg {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.accessory-box {
+		margin: 20px 10px;
+		padding: 30px;
+		background-color: $white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: transform 0.3s;
+		.btn {
+			padding: 12px 30px;
+			font-size: 1.2rem;
+		}
+		.btn:hover {
+			background-color: rgba(255, 111, 0, 0.8);
+		}
+
+		
+		h3 {
+			color: $black;
+			text-transform: uppercase;
+			font-size: 2.5rem;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px rgb(133, 133, 133);
+		}
+
+		span {
+			font-weight: bold;
+		}
+
+		i {
+			padding: 0 5px;
+			font-size: 24px;
+		}
+
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+
+		.accessory-tag {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+
+	.accessory-box:hover {
+		transform: scale(1.05);
+	}
+
+	.accessory-btn{
+		background-color: $main-color;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+		padding: 1em;
+		width: 50%;
+		border: none;
+		border-radius: 10px;
+		cursor: pointer;
+		font-size: 1.4rem;
+		font-weight: bold;
+		box-shadow: 2px 2px 5px $black;
+
+		&:before{
+			background-color: $btn-color-hover;
 		}
 	}
 }
@@ -557,56 +640,6 @@ footer {
 	}
 }
 
-@media (min-width: 576px) {
-	.offers {
-		&__option {
-			display: flex;
-			margin: 2em 0;
-			width: 100%;
-
-			&-img {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 50%;
-				height: 50%;
-			}
-			&-info {
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-			}
-
-			&-heading {
-				margin-bottom: 0.5em;
-				font-size: 3.6rem;
-			}
-			&-btn {
-				padding: 1em;
-			}
-		}
-	}
-}
-
-@media (min-width: 768px) {
-	.section-heading {
-		font-size: 3.6rem;
-	}
-	.section-padding {
-		padding: 8em 2em;
-	}
-}
-
-@media (min-width: 992px) {
-	.offers {
-		background-image: $blue-gradient, url("../img/Aboutus-bg.jpg");
-	}
-}
-
-// =====================
-// END MEDIA QUERIES
-// =====================
-
 @media (min-width: 386px) {
 	.info-text {
 		margin: 0 5px;
@@ -644,6 +677,73 @@ footer {
 			margin-left: 10px;
 		}
 	}
+
+	.help {
+		&__box {
+			display: flex;
+			margin: 2em 0;
+			width: 100%;
+			z-index: 15;
+
+			&-img {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 50%;
+				height: 50%;
+			}
+			&-info {
+				display: flex;
+				flex-direction: column;
+				font-size: 1rem;
+			}
+
+			&-heading {
+				font-size: 3rem;
+				margin-top: 1em;
+			}
+			&-btn {
+				padding: 1em;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+	.section-padding {
+		padding: 8em 2em;
+	}
+
+	.help {
+		&__box-heading {
+			padding-left: 1em;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.help {
+		&__box-heading {
+			padding-left: 3em;
+		}
+	}
+	h1 {
+		font-size: 4rem;
+	}
+	nav {
+		height: 82px;
+	}
+}
+
+// =====================
+// END MEDIA QUERIES
+// =====================
+
+@media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
@@ -656,10 +756,4 @@ footer {
 }
 
 @media (min-width: 992px) {
-	h1 {
-		font-size: 4rem;
-	}
-	nav {
-		height: 82px;
-	}
 }

@@ -462,42 +462,111 @@ header .fa-chevron-down {
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.2);
   overflow: hidden;
+  z-index: 15;
 }
 .help__box-img {
-  width: 50%;
+  width: 100%;
   transition: transform 0.3s;
 }
 .help__box-img:hover {
   transform: scale(1.05);
 }
+.help__box-heading {
+  font-size: 3rem;
+}
 .help__box-info {
   padding: 2em;
-  background-color: #fff;
   z-index: 12;
-}
-.help__box-heading {
-  margin-bottom: 0.5em;
   text-align: center;
-  font-size: 3rem;
-  text-shadow: 1px 1px 1px rgb(129, 129, 129);
 }
 .help__box-text {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
   font-size: 1.5rem;
 }
 .help__box-btn {
   background-color: rgb(255, 111, 0);
   text-transform: uppercase;
-  margin-top: 1em;
+  margin-bottom: 1em;
   padding: 1em;
   width: 50%;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   font-size: 1.4rem;
-  left: 25%;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px black;
 }
 .help__box-btn:before {
+  background-color: #6b7f82;
+}
+
+.accessory {
+  position: relative;
+  background-image: url("/img/fishing-boat2_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.accessory h2 {
+  text-shadow: 1px 1px 2px #fff;
+  font-weight: bold;
+}
+.accessory .accessory-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.accessory .accessory-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.accessory .accessory-box .btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+}
+.accessory .accessory-box .btn:hover {
+  background-color: rgba(255, 111, 0, 0.8);
+}
+.accessory .accessory-box h3 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgb(133, 133, 133);
+}
+.accessory .accessory-box span {
+  font-weight: bold;
+}
+.accessory .accessory-box i {
+  padding: 0 5px;
+  font-size: 24px;
+}
+.accessory .accessory-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.accessory .accessory-box .accessory-tag {
+  font-size: 20px;
+  font-weight: bold;
+}
+.accessory .accessory-box:hover {
+  transform: scale(1.05);
+}
+.accessory .accessory-btn {
+  background-color: rgb(255, 111, 0);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px black;
+}
+.accessory .accessory-btn:before {
   background-color: #6b7f82;
 }
 
@@ -600,45 +669,6 @@ footer span {
     margin-top: 3rem;
   }
 }
-@media (min-width: 576px) {
-  .offers__option {
-    display: flex;
-    margin: 2em 0;
-    width: 100%;
-  }
-  .offers__option-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 50%;
-  }
-  .offers__option-info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .offers__option-heading {
-    margin-bottom: 0.5em;
-    font-size: 3.6rem;
-  }
-  .offers__option-btn {
-    padding: 1em;
-  }
-}
-@media (min-width: 768px) {
-  .section-heading {
-    font-size: 3.6rem;
-  }
-  .section-padding {
-    padding: 8em 2em;
-  }
-}
-@media (min-width: 992px) {
-  .offers {
-    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/Aboutus-bg.jpg");
-  }
-}
 @media (min-width: 386px) {
   .info-text {
     margin: 0 5px;
@@ -669,18 +699,58 @@ footer span {
   header .logo-hw {
     margin-left: 10px;
   }
+  .help__box {
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+    z-index: 15;
+  }
+  .help__box-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+  }
+  .help__box-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .help__box-heading {
+    font-size: 3rem;
+    margin-top: 1em;
+  }
+  .help__box-btn {
+    padding: 1em;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
-  header h1 {
-    font-size: 4rem;
-    font-weight: bold;
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .section-padding {
+    padding: 8em 2em;
+  }
+  .help__box-heading {
+    padding-left: 1em;
   }
 }
 @media (min-width: 992px) {
+  .help__box-heading {
+    padding-left: 3em;
+  }
   h1 {
     font-size: 4rem;
   }
   nav {
     height: 82px;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 4rem;
+    font-weight: bold;
   }
 }/*# sourceMappingURL=main.css.map */
