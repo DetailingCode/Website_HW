@@ -447,7 +447,6 @@ header {
 	h2 {
 		color: $white;
 		text-shadow: 1px 1px 2px $black;
-	
 	}
 
 	.accessory-bg {
@@ -468,7 +467,6 @@ header {
 			background-color: rgba(255, 111, 0, 0.8);
 		}
 
-		
 		h3 {
 			color: $black;
 			text-transform: uppercase;
@@ -501,14 +499,14 @@ header {
 		transform: scale(1.05);
 	}
 
-	.accessory-btn{
+	.accessory-btn {
 		left: 25%;
 		background-color: $main-color;
 		text-transform: uppercase;
 		margin-bottom: 1em;
 		padding: 1em;
 		width: 50%;
-		 
+
 		border: none;
 		border-radius: 10px;
 		cursor: pointer;
@@ -516,7 +514,7 @@ header {
 		font-weight: bold;
 		box-shadow: 2px 2px 5px $black;
 
-		&:before{
+		&:before {
 			background-color: $btn-color-hover;
 		}
 	}
@@ -714,6 +712,11 @@ footer {
 }
 
 @media (min-width: 768px) {
+	header {
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
 	.section-heading {
 		font-size: 3.6rem;
 	}
@@ -745,18 +748,3 @@ footer {
 // =====================
 // END MEDIA QUERIES
 // =====================
-
-@media (min-width: 576px) {
-}
-
-@media (min-width: 768px) {
-	header {
-		h1 {
-			font-size: 4rem;
-			font-weight: bold;
-		}
-	}
-}
-
-@media (min-width: 992px) {
-}
