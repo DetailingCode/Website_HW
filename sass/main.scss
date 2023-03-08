@@ -31,9 +31,11 @@ h2 {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link.active, .dropdown-toggle.show {
 	color: $main-color;
 }
+
+
 
 // .carousel-inner .carousel-item {
 // 	transition: -webkit-transform 2s 5s ease-in-out;
@@ -45,6 +47,22 @@ nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
 	z-index: 1000;
+
+	.dropdown-menu {
+		background-color: rgba(0, 0, 0, 0.9);
+		width: 100%;
+		text-align: center;
+		z-index: 1234;
+	}
+
+	.dropdown-item {
+		font-size: 1.3rem;
+		font-weight: bold;
+		color: $pure-white;
+		&:hover {
+			background-color: $main-color;
+		}
+	}
 
 	.nav-link {
 		position: relative;
@@ -111,9 +129,12 @@ nav {
 		font-weight: bold;
 	}
 
-	.nav-link.active {
+	.nav-link.active
+	 {
 		color: $main-color;
 	}
+
+	
 }
 
 .link,
@@ -156,7 +177,7 @@ header {
 	}
 
 	.logo-hw {
-		margin-left: 40px;
+		margin-left: 1em;
 	}
 
 	.hero-img {
@@ -526,12 +547,17 @@ header {
 // ------------------- WHERE TO BUY SECTION --------------
 
 .buy {
-	
+	position: relative;
 	height: 100vh;
-	background: rgb(120,120,120);
-	background: linear-gradient(0deg, rgba(120,120,120,1) 0%, rgba(255,255,255,1) 100%);
+	background: rgb(120, 120, 120);
+	background: linear-gradient(
+		0deg,
+		rgba(120, 120, 120, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
 
 	.card-buy {
+		margin-top: 3em;
 		position: relative;
 		background-color: white;
 	}
@@ -566,12 +592,12 @@ header {
 		font-weight: bold;
 		box-shadow: 2px 2px 5px $black;
 
-		&:before{
+		&:before {
 			background-color: $btn-bg;
 		}
 	}
 
-	.fa-cart-arrow-down{
+	.fa-cart-arrow-down {
 		font-size: 2.5rem;
 		color: $pure-white;
 		text-shadow: 1px 1px 2px $black;

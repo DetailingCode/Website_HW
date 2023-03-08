@@ -162,7 +162,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link.active, .dropdown-toggle.show {
   color: rgb(255, 111, 0);
 }
 
@@ -170,6 +170,20 @@ nav {
   text-transform: uppercase;
   transition: background-color 0.6s;
   z-index: 1000;
+}
+nav .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  text-align: center;
+  z-index: 1234;
+}
+nav .dropdown-item {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+nav .dropdown-item:hover {
+  background-color: rgb(255, 111, 0);
 }
 nav .nav-link {
   position: relative;
@@ -266,7 +280,7 @@ header p {
   font-size: 14px;
 }
 header .logo-hw {
-  margin-left: 40px;
+  margin-left: 1em;
 }
 header .hero-img {
   position: relative;
@@ -579,11 +593,13 @@ header .fa-chevron-down {
 }
 
 .buy {
+  position: relative;
   height: 100vh;
   background: rgb(120, 120, 120);
   background: linear-gradient(0deg, rgb(120, 120, 120) 0%, rgb(255, 255, 255) 100%);
 }
 .buy .card-buy {
+  margin-top: 3em;
   position: relative;
   background-color: white;
 }
