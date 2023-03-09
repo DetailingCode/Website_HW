@@ -31,11 +31,10 @@ h2 {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.navbar-nav .nav-link.active, .dropdown-toggle.show {
+.navbar-nav .nav-link.active,
+.dropdown-toggle.show {
 	color: $main-color;
 }
-
-
 
 // .carousel-inner .carousel-item {
 // 	transition: -webkit-transform 2s 5s ease-in-out;
@@ -129,12 +128,9 @@ nav {
 		font-weight: bold;
 	}
 
-	.nav-link.active
-	 {
+	.nav-link.active {
 		color: $main-color;
 	}
-
-	
 }
 
 .link,
@@ -548,7 +544,7 @@ header {
 
 .buy {
 	position: relative;
-	height: 100vh;
+	height: 100dvh;
 	background: rgb(120, 120, 120);
 	background: linear-gradient(
 		0deg,
@@ -557,17 +553,22 @@ header {
 	);
 
 	.card-buy {
-		margin-top: 3em;
+		margin-top: 2em;
 		position: relative;
-		background-color: white;
 	}
 
-	.card-bg {
+	.card-inside {
+		background-image: url("../img/buy-1920.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 		position: relative;
+		border-radius: 20px;
 	}
+
 	.card-title {
-		font-size: 2.1rem;
+		font-size: 2.5rem;
 		text-align: center;
 		margin: 2em 1em;
 	}
