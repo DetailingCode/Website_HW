@@ -132,7 +132,7 @@ html {
 }
 
 .btn-info {
-  background-color: #0084ff;
+  background-color: #00d4ff;
 }
 
 body {
@@ -303,13 +303,15 @@ header .btn {
   margin-top: 2em;
   padding: 10px 20px;
   font-size: 1.6rem;
-  background-color: rgba(255, 111, 0, 0.8823529412);
+  background-color: rgb(255, 111, 0);
   color: black;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
   text-transform: uppercase;
+  border: none;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px 3px #fff;
 }
 header .btn:hover {
   scale: 1.1;
@@ -478,6 +480,7 @@ header .fa-chevron-down {
   overflow: hidden;
 }
 .help__box {
+  position: relative;
   margin: 1em 0;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.2);
@@ -492,8 +495,11 @@ header .fa-chevron-down {
   transform: scale(1.05);
 }
 .help__box-heading {
-  font-size: 3rem;
+  position: relative;
+  top: 33%;
+  left: 18%;
   text-align: center;
+  font-size: 3rem;
 }
 .help__box-info {
   padding: 2em;
@@ -505,11 +511,12 @@ header .fa-chevron-down {
   font-size: 1.5rem;
 }
 .help__box-btn {
-  background-color: rgb(255, 111, 0);
+  background-color: #00d4ff;
   text-transform: uppercase;
   margin-bottom: 1em;
+  width: 35%;
+  height: auto;
   padding: 1em;
-  width: 50%;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -518,7 +525,7 @@ header .fa-chevron-down {
   box-shadow: 2px 2px 5px black;
 }
 .help__box-btn:before {
-  background-color: #0084ff;
+  background-color: rgb(255, 111, 0);
 }
 
 .accessory {
@@ -590,7 +597,7 @@ header .fa-chevron-down {
   box-shadow: 2px 2px 5px black;
 }
 .accessory .accessory-btn:before {
-  background-color: #0084ff;
+  background-color: #ff6f00;
 }
 
 .buy {
@@ -604,7 +611,7 @@ header .fa-chevron-down {
   position: relative;
 }
 .buy .card-inside {
-  background-image: linear-gradient(90deg, rgb(0, 212, 255) 0%, rgb(0, 0, 0) 50%, rgb(0, 212, 255) 100%);
+  background-image: linear-gradient(90deg, rgb(0, 212, 255) 0%, rgb(0, 0, 0) 50%, #00d4ff 100%);
   box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.4);
   position: relative;
   border-radius: 20px;
@@ -790,13 +797,19 @@ footer span {
     flex-direction: column;
     font-size: 1rem;
   }
+  .help__box-text {
+    padding-top: 5em;
+  }
   .help__box-heading {
     font-size: 3rem;
     margin-top: 1em;
   }
   .help__box-btn {
+    position: relative;
+    left: 35%;
+    margin-top: 2em;
     padding: 1em;
-    width: 100%;
+    width: 30%;
   }
 }
 @media (min-width: 768px) {
@@ -809,13 +822,42 @@ footer span {
   .section-padding {
     padding: 8em 2em;
   }
+  .help__box {
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+    z-index: 15;
+  }
+  .help__box-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+  }
+  .help__box-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .help__box-text {
+    padding-top: 5em;
+  }
   .help__box-heading {
-    padding-left: 1em;
+    font-size: 3rem;
+    margin-top: 1em;
+  }
+  .help__box-btn {
+    position: relative;
+    left: 35%;
+    margin-top: 2em;
+    padding: 1em;
+    width: 30%;
   }
 }
 @media (min-width: 992px) {
   .help__box-heading {
-    padding-left: 3em;
+    padding-left: 1em;
   }
   h1 {
     font-size: 4rem;
