@@ -118,13 +118,13 @@ html {
   width: 100%;
   height: 100%;
   transform: scaleX(0);
-  transform-origin: right;
+  transform-origin: center;
   transition: transform 0.5s;
   z-index: -1;
 }
 .btn-animation:hover::before {
   transform: scaleX(1);
-  transform-origin: left;
+  transform-origin: center;
 }
 
 .section-padding {
@@ -604,11 +604,8 @@ header .fa-chevron-down {
   position: relative;
 }
 .buy .card-inside {
-  background-image: url("../img/buy-1920.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(90deg, rgb(0, 212, 255) 0%, rgb(0, 0, 0) 50%, rgb(0, 212, 255) 100%);
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.4);
   position: relative;
   border-radius: 20px;
 }
@@ -616,29 +613,29 @@ header .fa-chevron-down {
   font-size: 2.5rem;
   text-align: center;
   margin: 2em 1em;
+  color: #fff;
 }
 .buy .card-text {
   text-align: center;
   margin: 2em 1em 0em 1em;
   font-size: 1.5em;
+  color: #fff;
 }
 .buy .btn-buy {
   position: relative;
-  left: 35%;
+  left: 37%;
   width: 20%;
   background-color: rgb(255, 111, 0);
   text-transform: uppercase;
   margin: 2.5em 1em;
   padding: 0.8em;
-  border: none;
   border-radius: 10px;
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: bold;
-  box-shadow: 2px 2px 5px black;
 }
 .buy .btn-buy:before {
-  background-color: #0084ff;
+  background-color: #fff;
 }
 .buy .fa-cart-arrow-down {
   font-size: 2.5rem;

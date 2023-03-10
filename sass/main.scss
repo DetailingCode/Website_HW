@@ -558,11 +558,12 @@ header {
 	}
 
 	.card-inside {
-		background-image: url("../img/buy-1920.jpg");
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
-		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		// background-image: url("../img/buy-1920.jpg");
+		// background-size: cover;
+		// background-position: center;
+		// background-attachment: fixed;
+		background-image: $section-gradient;
+		box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.4);
 		position: relative;
 		border-radius: 20px;
 	}
@@ -571,30 +572,32 @@ header {
 		font-size: 2.5rem;
 		text-align: center;
 		margin: 2em 1em;
+		color: $white;
 	}
 
 	.card-text {
 		text-align: center;
 		margin: 2em 1em 0em 1em;
 		font-size: 1.5em;
+		color: $white;
 	}
 	.btn-buy {
 		position: relative;
-		left: 35%;
+		left: 37%;
 		width: 20%;
 		background-color: $main-color;
 		text-transform: uppercase;
 		margin: 2.5em 1em;
 		padding: 0.8em;
-		border: none;
 		border-radius: 10px;
 		cursor: pointer;
 		font-size: 1.4rem;
 		font-weight: bold;
-		box-shadow: 2px 2px 5px $black;
+		 
 
 		&:before {
-			background-color: $btn-bg;
+			background-color: $pure-white;
+			
 		}
 	}
 
