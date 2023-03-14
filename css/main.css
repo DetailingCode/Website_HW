@@ -140,7 +140,7 @@ body {
 h2 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .underline {
@@ -593,7 +593,7 @@ header .fa-chevron-down {
 
 .buy {
   position: relative;
-  height: 110vh;
+  height: 100%;
   background: rgb(120, 120, 120);
   background: linear-gradient(0deg, rgb(120, 120, 120) 0%, rgb(255, 255, 255) 100%);
 }
@@ -620,6 +620,7 @@ header .fa-chevron-down {
 }
 .buy .card-title {
   font-size: 2.5rem;
+  text-shadow: 1px 1px 2px black;
   text-align: center;
   margin: 2em 1em;
 }
@@ -648,16 +649,13 @@ header .fa-chevron-down {
 }
 .buy .img-buy {
   position: relative;
-  display: flex;
   background-image: url("/img/Cayman_buy1.jpg");
   background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
-  margin-top: 10em;
+  background-position: right;
+  background-attachment: scroll;
+  margin-top: 8em;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px 2px #fff;
+  box-shadow: 0px 0px 15px 2px #fff;
   height: 400px;
   transition: 0.3s;
 }
@@ -666,9 +664,10 @@ header .fa-chevron-down {
 }
 .buy .img-buy .inside-buy-img {
   position: absolute;
-  right: 3%;
-  top: 5%;
-  max-width: 600px;
+  right: 1%;
+  top: 1%;
+  max-width: 350px;
+  height: auto;
 }
 
 .contact {
