@@ -128,7 +128,7 @@ html {
 }
 
 .btn-info {
-  background-color: #00d4ff;
+  background-color: rgb(0, 159, 190);
 }
 
 body {
@@ -502,7 +502,7 @@ header .fa-chevron-down {
   font-size: 1.5rem;
 }
 .help__box-btn {
-  background-color: #00d4ff;
+  background-color: #009fbe;
   text-transform: uppercase;
   margin-bottom: 1em;
   width: 35%;
@@ -593,7 +593,7 @@ header .fa-chevron-down {
 
 .buy {
   position: relative;
-  height: 100dvh;
+  height: 110vh;
   background: rgb(120, 120, 120);
   background: linear-gradient(0deg, rgb(120, 120, 120) 0%, rgb(255, 255, 255) 100%);
 }
@@ -601,15 +601,22 @@ header .fa-chevron-down {
   margin-top: 2em;
   position: relative;
 }
+.buy .card-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(80, 80, 80, 0.8);
+  border-radius: 20px;
+}
 .buy .card-inside {
   background-image: url("../img/buy-1920.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.4);
+  background-attachment: scroll;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.4);
   position: relative;
   border-radius: 20px;
-  color: black;
+  color: #fff;
 }
 .buy .card-title {
   font-size: 2.5rem;
@@ -621,21 +628,23 @@ header .fa-chevron-down {
   margin: 2em 1em 0em 1em;
   font-size: 1.5em;
 }
-.buy .btn-buy {
+.buy .buy-btn {
   position: relative;
-  left: 37%;
-  width: 20%;
-  background-color: rgb(255, 111, 0);
+  left: 28%;
+  width: 40%;
+  background-color: rgb(255, 94, 0);
   text-transform: uppercase;
   margin: 2.5em 1em;
-  padding: 0.8em;
+  padding: 1em;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: bold;
+  box-shadow: 1px 1px 10px 2px #fff;
 }
-.buy .btn-buy:before {
-  background-color: rgb(255, 94, 0);
+.buy .buy-btn:before {
+  background-color: #fff;
 }
 .buy .fa-cart-arrow-down {
   font-size: 2.5rem;

@@ -547,7 +547,8 @@ header {
 
 .buy {
 	position: relative;
-	height: 100dvh;
+	height: 110vh;
+
 	background: rgb(120, 120, 120);
 	background: linear-gradient(
 		0deg,
@@ -560,15 +561,23 @@ header {
 		position: relative;
 	}
 
+	.card-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(80, 80, 80, 0.8);
+		border-radius: 20px;
+	}
+
 	.card-inside {
 		background-image: url("../img/buy-1920.jpg");
 		background-size: cover;
 		background-position: center;
-		background-attachment: fixed;
-		box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.4);
+		background-attachment: scroll;
+		box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.4);
 		position: relative;
 		border-radius: 20px;
-		color: $black;
+		color: $white;
 	}
 
 	.card-title {
@@ -582,21 +591,23 @@ header {
 		margin: 2em 1em 0em 1em;
 		font-size: 1.5em;
 	}
-	.btn-buy {
+	.buy-btn {
 		position: relative;
-		left: 37%;
-		width: 20%;
-		background-color: $main-color;
+		left: 28%;
+		width: 40%;
+		background-color: $main-color-darker;
 		text-transform: uppercase;
 		margin: 2.5em 1em;
-		padding: 0.8em;
+		padding: 1em;
+		border: none;
 		border-radius: 10px;
 		cursor: pointer;
 		font-size: 1.4rem;
 		font-weight: bold;
+		box-shadow: 1px 1px 10px 2px $white;
 
 		&:before {
-			background-color: $main-color-darker;
+			background-color: $white;
 		}
 	}
 
@@ -758,15 +769,14 @@ footer {
 		}
 	}
 	@media (min-width: 768px) {
-		.accessory{
-			.accessory-box{
-				.box-heading{
+		.accessory {
+			.accessory-box {
+				.box-heading {
 					font-size: 2rem;
 				}
 			}
 		}
-		
-		
+
 		header {
 			h1 {
 				font-size: 3.5rem;
