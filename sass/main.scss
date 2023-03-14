@@ -404,7 +404,6 @@ header {
 
 .help {
 	position: relative;
-
 	overflow: hidden;
 
 	&__box {
@@ -611,10 +610,31 @@ header {
 		}
 	}
 
-	.fa-cart-arrow-down {
-		font-size: 2.5rem;
-		color: $pure-white;
-		text-shadow: 1px 1px 2px $black;
+	.img-buy {
+		position: relative;
+		display: flex;
+		background-image: url("/img/Cayman_buy1.jpg");
+		background-size: cover;
+		background-position: center;
+		justify-content: center;
+		align-items: center;
+		padding: 2em;
+		margin-top: 10em;
+		border-radius: 5px;
+		box-shadow: 1px 1px 10px 2px $white;
+		height: 400px;
+		transition: 0.3s;
+
+		&:hover {
+			scale: 0.95;
+		}
+
+		.inside-buy-img {
+			position: absolute;
+			right: 3%;
+			top: 5%;
+			max-width: 600px;
+		}
 	}
 }
 

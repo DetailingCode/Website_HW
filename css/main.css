@@ -646,10 +646,29 @@ header .fa-chevron-down {
 .buy .buy-btn:before {
   background-color: #fff;
 }
-.buy .fa-cart-arrow-down {
-  font-size: 2.5rem;
-  color: #fff;
-  text-shadow: 1px 1px 2px black;
+.buy .img-buy {
+  position: relative;
+  display: flex;
+  background-image: url("/img/Cayman_buy1.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  margin-top: 10em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 2px #fff;
+  height: 400px;
+  transition: 0.3s;
+}
+.buy .img-buy:hover {
+  scale: 0.95;
+}
+.buy .img-buy .inside-buy-img {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  max-width: 600px;
 }
 
 .contact {
