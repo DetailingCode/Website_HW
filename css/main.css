@@ -178,6 +178,11 @@ nav .dropdown-item {
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
+  line-height: 2.5rem;
+}
+nav .dropdown-item:hover {
+  background-color: rgba(255, 111, 0, 0.7);
+  color: #fff;
 }
 nav .nav-link {
   position: relative;
