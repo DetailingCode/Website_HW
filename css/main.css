@@ -276,12 +276,14 @@ header h1 {
   font-size: 3rem;
   text-transform: uppercase;
   color: rgb(255, 111, 0);
+  font-weight: bold;
 }
 header p {
   font-size: 14px;
 }
 header .logo-hw {
   margin-left: 1em;
+  width: 50%;
 }
 header .hero-img {
   position: relative;
@@ -301,20 +303,21 @@ header .hero-shadow {
 }
 header .btn {
   margin-top: 2em;
-  padding: 10px 20px;
+  margin-left: 1.9em;
+  padding: 1em 1.5em;
   font-size: 1.6rem;
   background-color: rgb(255, 111, 0);
   color: black;
   font-weight: bold;
-  cursor: pointer;
   transition: 0.3s;
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 3px #fff;
+  cursor: pointer;
 }
 header .btn:hover {
-  scale: 1.1;
+  scale: 1.05;
   font-weight: bold;
 }
 header .hero-text {
