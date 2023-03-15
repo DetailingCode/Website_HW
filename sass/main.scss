@@ -36,10 +36,6 @@ h2 {
 	color: $main-color;
 }
 
-.dropdown-menu.show:hover{
-	display: block;
-}
-
 // .carousel-inner .carousel-item {
 // 	transition: -webkit-transform 2s 5s ease-in-out;
 // 	transition: transform 2s 5s ease-in-out;
@@ -52,19 +48,16 @@ nav {
 	z-index: 1000;
 
 	.dropdown-menu {
-		background-color: rgba(0, 0, 0, 0.9);
-		width: 100%;
-		text-align: center;
-		z-index: 1234;
+		display: none;
+		width: 160px;
+		background-color: rgba(0, 0, 0, 0.7);
 	}
 
 	.dropdown-item {
-		font-size: 1.3rem;
-		font-weight: bold;
-		color: $pure-white;
-		&:hover {
-			background-color: $main-color;
-		}
+		color: $white;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		text-align: center;
 	}
 
 	.nav-link {
@@ -243,7 +236,6 @@ header {
 		color: $white;
 	}
 }
-
 // PORTFOLIO SECTION
 
 .portfolio {
@@ -621,7 +613,7 @@ header {
 		position: relative;
 		background-image: url("/img/Cayman_buy1.jpg");
 		background-size: cover;
-		background-position:right;
+		background-position: right;
 		background-attachment: scroll;
 		margin-top: 8em;
 		margin-bottom: 5em;
@@ -629,7 +621,6 @@ header {
 		box-shadow: 0px 0px 15px 2px $white;
 		height: 400px;
 		transition: 0.3s;
-		 
 
 		&:hover {
 			scale: 0.95;
