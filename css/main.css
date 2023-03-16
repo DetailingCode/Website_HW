@@ -733,10 +733,6 @@ footer p {
   text-transform: uppercase;
   font-size: 1.2rem;
 }
-footer span {
-  color: rgb(255, 111, 0);
-  font-weight: bold;
-}
 
 @media (min-width: 368px) {
   .info-text {
