@@ -165,7 +165,7 @@ header {
 	color: $white;
 
 	h1 {
-		font-size: 2rem;
+		font-size: 3rem;
 		text-transform: uppercase;
 		color: $main-color;
 		font-weight: bold;
@@ -408,18 +408,13 @@ header {
 //  --------------------------- SECTION HELP -------------------
 
 .help {
-	position: relative;
-	overflow: hidden;
-
 	&__box {
-		 
 		margin: 1em 0;
 		background-color: $pure-white;
 		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.2);
 		overflow: hidden;
 
 		&-img {
-			 
 			width: 100%;
 			transition: transform 0.3s;
 			&:hover {
@@ -434,7 +429,7 @@ header {
 
 		&-heading {
 			text-align: center;
-			font-size: 3rem;
+			font-size: 2rem;
 		}
 
 		&-text {
@@ -734,69 +729,71 @@ footer {
 			left: 50%;
 		}
 	}
-}
 
-h1 {
-	font-size: 2rem;
-}
-p {
-	font-size: 1.4rem;
-}
-
-.card-body {
-	height: 150px;
-}
-
-.card {
-	img {
-		height: 300px;
-		object-fit: cover;
-	}
-}
-
-header {
 	h1 {
-		font-size: 2.4rem;
+		font-size: 3rem;
 	}
-	.logo-hw {
-		margin-left: 10px;
+	p {
+		font-size: 1.4rem;
 	}
-}
 
-.help {
-	&__box {
-		display: flex;
-		margin: 2em 0;
-		width: 100%;
+	.card-body {
+		height: 150px;
+	}
 
-		&-img {
-			width: 50%;
-			height: auto;
+	.card {
+		img {
+			height: 300px;
+			object-fit: cover;
+		}
+	}
 
-			&--right {
-				order: 1;
+	header {
+		h1 {
+			font-size: 2.4rem;
+		}
+		.logo-hw {
+			margin-left: 10px;
+		}
+	}
+
+	.help {
+		&__box {
+			display: flex;
+			margin: 2em 0;
+			width: 100%;
+
+			&-img {
+				width: 50%;
+				height: auto;
+
+				&--right {
+					order: 1;
+				}
+			}
+			&-info {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				text-align: center;
+			}
+
+			&-heading {
+				padding: 3em 3em;
+				text-align: center;
+				font-size: 3rem;
+				margin: 0 auto;
+			}
+
+			&-btn {
+				padding: 1em;
+				left: 30%;
+				font-size: 1.5rem;
 			}
 		}
-		&-info {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			text-align: center;
-		}
-
-		&-heading {
-			margin-top: 0.8em;
-			margin-bottom: 0.5em;
-			font-size: 3.6rem;
-		}
-
-		&-btn {
-			padding: 1em;
-			left: 30%;
-			font-size: 1.5rem;
-		}
 	}
 }
+
 @media (min-width: 768px) {
 	.accessory {
 		.accessory-box {
@@ -820,12 +817,8 @@ header {
 }
 
 .help {
-	&__box {
-		display: flex;
-		
-		&-heading {
-			margin-top: 1.5em;
-		}
+	&-heading {
+		margin-top: 1.5em;
 	}
 }
 
@@ -842,26 +835,7 @@ header {
 			left: 49%;
 		}
 	}
-
-	.help {
-		&__box {
-		 
-
-			&-heading {
-				padding: 1.2em;
-			}
-			&-text {
-				margin-top: 2em;
-				font-size: 1.7rem;
-				text-align: center;
-			}
-			&-btn {
-				font-size: 1.5rem;
-			}
-		}
-	}
 }
-
 
 @media (min-width: 1200px) {
 	header {
@@ -874,6 +848,22 @@ header {
 		}
 		.fa-chevron-down {
 			left: 50%;
+		}
+	}
+
+	.help {
+		&__box {
+			&-heading {
+				padding: 4em;
+			}
+			&-text {
+				margin-top: 4em;
+				font-size: 1.7rem;
+				text-align: center;
+			}
+			&-btn {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
