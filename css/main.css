@@ -838,7 +838,8 @@ footer p {
     left: 50%;
   }
   .help__box-heading {
-    padding: 4em;
+    padding: 2em;
+    font-size: 5rem;
   }
   .help__box-text {
     margin-top: 4em;
