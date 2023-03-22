@@ -476,6 +476,9 @@ header .fa-chevron-down {
   transform: scale(1.05);
 }
 
+.help .help-heading {
+  color: black;
+}
 .help__box {
   margin: 1em 0;
   background-color: #fff;
@@ -496,7 +499,7 @@ header .fa-chevron-down {
 }
 .help__box-heading {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .help__box-text {
   margin-bottom: 1em;
@@ -528,7 +531,8 @@ header .fa-chevron-down {
   z-index: 0;
 }
 .accessory h2 {
-  color: black;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
 }
 .accessory .accessory-bg {
   background-color: rgba(0, 0, 0, 0.8);
