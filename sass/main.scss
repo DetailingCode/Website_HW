@@ -51,6 +51,9 @@ nav {
 		display: none;
 		width: 160px;
 		background-color: rgba(0, 0, 0, 0.7);
+		&:hover > li {
+			display: initial;
+		}
 	}
 
 	.dropdown-item {
@@ -78,6 +81,7 @@ nav {
 		left: 10px;
 		width: 110px;
 		height: 55px;
+		filter: drop-shadow(0 0 5px rgb(255, 255, 255));
 	}
 
 	.link,
@@ -178,6 +182,7 @@ header {
 	.logo-hw {
 		margin-left: 1em;
 		width: 70%;
+		
 	}
 
 	.hero-img {
@@ -408,11 +413,10 @@ header {
 //  --------------------------- SECTION HELP -------------------
 
 .help {
-	
-	.help-heading{
+	.help-heading {
 		color: $black;
 	}
-	
+
 	&__box {
 		margin: 1em 0;
 		background-color: $pure-white;
