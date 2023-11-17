@@ -1,7 +1,7 @@
-$(". ").slick({
+$(".acc-carousel").slick({
 	mobileFirst: true,
 	autoplay: true,
-	autoplaySpeed: 6000,
+	autoplaySpeed: 3000,
 	arrows: false,
 	infinite: true,
 	slidesToShow: 1,
@@ -19,6 +19,61 @@ $(". ").slick({
 		{
 			breakpoint: 992,
 			settings: { slidesToShow: 3 },
+		},
+	],
+});
+$(".photo-carousel").slick({
+	
+	autoplay: true,
+	adaptiveHeight: false,
+	autoplaySpeed: 5000,
+	arrows: false,
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: { slidesToShow: 1 },
+			adaptiveHeight: true,
+		},
+		{
+			breakpoint: 768,
+			settings: { slidesToShow: 1 },
+			adaptiveHeight: true,
+		},
+
+		{
+			breakpoint: 992,
+			settings: { slidesToShow: 1 },
+			adaptiveHeight: true,
+		},
+	],
+});
+$(".photo-carousel-down").slick({
+	mobileFirst: true,
+	autoplay: true,
+	autoplaySpeed: 4000,
+	fade: true,
+	cssEase: 'linear',
+	arrows: false,
+	infinite: true,
+	speed: 1000,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: { slidesToShow: 1 },
+		},
+		{
+			breakpoint: 768,
+			settings: { slidesToShow: 1 },
+		},
+
+		{
+			breakpoint: 992,
+			settings: { slidesToShow: 1 },
 		},
 	],
 });

@@ -81,7 +81,6 @@ nav {
 		left: 10px;
 		width: 110px;
 		height: 55px;
-		filter: drop-shadow(0 0 3px rgb(255, 255, 255));
 	}
 
 	.link,
@@ -187,7 +186,7 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url("../img/Aboutus2_1900.jpg");
+		background-image: url("../image/Aboutus2_1900.jpg");
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -306,7 +305,7 @@ header {
 	}
 
 	.features-card-text {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.features-hover {
@@ -322,7 +321,7 @@ header {
 
 .features-hero {
 	position: relative;
-	background-image: url("../img/about-hero-small.jpg");
+	background-image: url("../image/about-hero-small.jpg");
 	background-position: center;
 	background-size: cover;
 	color: $light-gray;
@@ -353,7 +352,7 @@ header {
 // ======================MOTORS CARD SECTION================
 
 .motors {
-	background-image: url("../img/fishing-boat_1920.jpg");
+	background-image: url("../image/fishing-boat_1920.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -468,94 +467,142 @@ header {
 
 // ------------------ SECTION ACCESSORY ----------------
 
-.accessory {
+// .accessory {
+// 	position: relative;
+// 	background-image: url("/image/fishing-boat2_1920.jpg");
+// 	background-size: cover;
+// 	background-attachment: fixed;
+// 	z-index: 0;
+
+// 	h2 {
+// 		color: $white;
+// 		text-shadow: 1px 1px 2px $black;
+// 		// text-shadow: 1px 1px 2px $black;
+// 	}
+
+// 	.accessory-bg {
+// 		background-color: rgba(0, 0, 0, 0.8);
+// 	}
+
+// 	.accessory-box {
+// 		margin: 20px 10px;
+// 		padding: 30px;
+// 		background-color: $white;
+// 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+// 		transition: transform 0.5s;
+// 		.btn {
+// 			padding: 12px 30px;
+// 			font-size: 1.3rem;
+// 			font-weight: bold;
+// 		}
+// 		.btn:hover {
+// 			background-color: rgba(255, 111, 0, 0.8);
+// 		}
+
+// 		.box-heading {
+// 			color: $black;
+// 			text-transform: uppercase;
+// 			font-size: 2.5rem;
+// 			font-weight: bold;
+// 			text-shadow: 1px 1px 1px rgb(133, 133, 133);
+// 		}
+
+// 		span {
+// 			font-weight: bold;
+// 		}
+
+// 		i {
+// 			padding: 0 5px;
+// 			font-size: 24px;
+// 		}
+
+// 		button {
+// 			padding: 10px 20px;
+// 			text-transform: uppercase;
+// 		}
+
+// 		.accessory-tag {
+// 			font-size: 20px;
+// 			font-weight: bold;
+// 		}
+// 	}
+
+// 	.accessory-box:hover {
+// 		transform: scale(1.05);
+// 	}
+// }
+
+// AKCESORIA SEKCJA
+
+.akcesoria {
 	position: relative;
-	background-image: url("/img/fishing-boat2_1920.jpg");
+	background-image: url("/image/fishing-boat2_1920.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
+	height: 70vh;
 
-	h2 {
-		color: $white;
-		text-shadow: 1px 1px 2px $black;
-		// text-shadow: 1px 1px 2px $black;
-	}
-
-	.accessory-bg {
-		background-color: rgba(0, 0, 0, 0.8);
-	}
-
-	.accessory-box {
-		margin: 20px 10px;
-		padding: 30px;
-		background-color: $white;
-		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-		transition: transform 0.3s;
-		.btn {
-			padding: 12px 30px;
-			font-size: 1.3rem;
-			font-weight: bold;
-		}
-		.btn:hover {
-			background-color: rgba(255, 111, 0, 0.8);
-		}
-
-		.box-heading {
-			color: $black;
-			text-transform: uppercase;
-			font-size: 2.5rem;
-			font-weight: bold;
-			text-shadow: 1px 1px 1px rgb(133, 133, 133);
-		}
-
-		span {
-			font-weight: bold;
-		}
-
-		i {
-			padding: 0 5px;
-			font-size: 24px;
-		}
-
-		button {
-			padding: 10px 20px;
-			text-transform: uppercase;
-		}
-
-		.accessory-tag {
-			font-size: 20px;
-			font-weight: bold;
-		}
-	}
-
-	.accessory-box:hover {
-		transform: scale(1.05);
-	}
-
-	.accessory-btn {
-		left: 25%;
-		background-color: $main-color;
+	.btn-info {
+		background-color: $btn-color;
 		text-transform: uppercase;
-		margin-bottom: 1em;
-		padding: 1em;
+		margin: 1em 0 1em 0;
 		width: 50%;
-
+		height: auto;
+		padding: 1em;
 		border: none;
 		border-radius: 10px;
 		cursor: pointer;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		font-weight: bold;
 		box-shadow: 2px 2px 5px $black;
 
-		&:before {
-			background-color: $btn-color-hover;
+		&:hover {
+			background-color: $main-color;
 		}
+	}
+
+	h2 {
+		color: $light-gray;
+	}
+	p {
+		text-align: center;
+	}
+
+	.akcesoria-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -5;
+	}
+
+	.card {
+		transition: transform 0.3s;
+		img {
+			height: 250px;
+			object-fit: scale-down;
+		}
+	}
+
+	.card:hover {
+		transform: scale(0.96);
+	}
+
+	.card-title {
+		margin-top: 2em;
+		font-size: 2.5em;
+		text-align: center;
+		font-weight: 500;
+		text-shadow: 1px 1px 1px $black;
+		text-transform: uppercase;
 	}
 }
 
 // ------------------- WHERE TO BUY SECTION --------------
 
 .buy {
+	
 	position: relative;
 	height: 100%;
 	background: rgb(120, 120, 120);
@@ -579,7 +626,7 @@ header {
 	}
 
 	.card-inside {
-		background-image: url("../img/buy-1920.jpg");
+		background-image: url("../image/buy-1920.jpg");
 		background-size: cover;
 		background-position: center;
 		background-attachment: scroll;
@@ -605,7 +652,7 @@ header {
 		position: relative;
 		left: 28%;
 		width: 40%;
-		background-color: $main-color-darker;
+		background-color: rgb(0, 159, 190);
 		text-transform: uppercase;
 		margin: 2.5em 1em;
 		padding: 1em;
@@ -617,48 +664,60 @@ header {
 		box-shadow: 1px 1px 10px 2px $white;
 
 		&:before {
-			background-color: $white;
+			background-color: $main-color;
 		}
 	}
 
-	.img-buy {
-		position: relative;
-		background-image: url("/img/Cayman_buy1.jpg");
-		background-size: cover;
-		background-position: right;
-		background-attachment: scroll;
-		margin-top: 8em;
-		margin-bottom: 5em;
-		border-radius: 5px;
-		box-shadow: 0px 0px 15px 2px $white;
-		height: 400px;
-		transition: 0.3s;
+	// .img-buy {
+	// 	position: relative;
+	// 	background-image: url("../image/Cayman_buy1.jpg");
+	// 	background-size: cover;
+	// 	margin-top: 8em;
+	// 	margin-bottom: 5em;
+	// 	border-radius: 5px;
+	// 	box-shadow: 0px 0px 15px 2px $white;
+	// 	height: 400px;
+	// 	transition: 0.3s;
 
-		&:hover {
-			scale: 0.95;
-		}
+	// 	&:hover {
+	// 		scale: 0.95;
+	// 	}
+	// }
+}
 
-		.inside-buy-img {
-			position: absolute;
-			right: 1%;
-			top: 1%;
-			max-width: 350px;
-			height: auto;
-		}
+// SECTION PHOTO START
+
+.photo {
+	position: relative;
+	height: 50vh;
+
+	.card img {
+		height: 50vh;
+	
 	}
 }
 
+
 .contact {
 	position: relative;
-	background-image: url("../img/Footer-1920.jpg");
+	background-image: url("../image/Footer-1920.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	z-index: 0;
 	box-shadow: 0px -3px 20px 5px rgb(85, 85, 85);
 
+	.fa-phone,
+	.fa-at {
+		font-size: 1.5rem;
+	}
+
 	h2 {
 		color: $white;
+	}
+
+	p{
+		font-size: 1.4rem;
 	}
 
 	.contact-shadow {
@@ -694,7 +753,9 @@ header {
 				letter-spacing: 2px;
 			}
 			.social-media {
-				
+				.social-icon {
+					transition: color 0.5s;
+				}
 				.fa-youtube:hover {
 					color: $secondary-color;
 				}
@@ -739,6 +800,10 @@ footer {
 }
 
 @media (min-width: 576px) {
+	.fa-phone,
+	.fa-at {
+		font-size: 1.6rem;
+	}
 	header {
 		.fa-chevron-down {
 			left: 50%;
@@ -747,6 +812,9 @@ footer {
 
 	h1 {
 		font-size: 3rem;
+	}
+	.h2heading {
+		font-size: 3.5rem;
 	}
 	p {
 		font-size: 1.4rem;
@@ -834,6 +902,11 @@ footer {
 .help {
 	&-heading {
 		margin-top: 1.5em;
+	}
+}
+.contact{
+	p{
+		font-size: 1.6rem;
 	}
 }
 
