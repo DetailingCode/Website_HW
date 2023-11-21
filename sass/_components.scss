@@ -4,6 +4,25 @@
 	max-width: 1200px;
 }
 
+.btn-info {
+	background-color: $btn-color;
+	text-transform: uppercase;
+	margin: 1em 0 1em 0;
+	width: 60%;
+	height: auto;
+	padding: 1em;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-weight: bold;
+	box-shadow: 2px 2px 5px $black;
+
+	&:hover {
+		background-color: $main-color;
+	}
+}
+
 .btn-animation {
 	position: relative;
 	transition: background-color 0.3s;

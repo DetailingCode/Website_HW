@@ -48,7 +48,7 @@ nav {
 	z-index: 1000;
 
 	.dropdown-menu {
-		display: none;
+		// display: none;
 		width: 185px;
 		background-color: rgba(0, 0, 0, 0.7);
 		&:hover > li {
@@ -169,9 +169,18 @@ header {
 
 	h1 {
 		font-size: 3rem;
+		font-family: "Play", sans-serif;
 		text-transform: uppercase;
 		color: $main-color;
 		font-weight: bold;
+	}
+
+	h2 {
+		color: $dark;
+		font-family: "Play", sans-serif;
+		font-weight: bold;
+		font-size: 2.6rem;
+		text-shadow: 1px 1px 5px white;
 	}
 
 	p {
@@ -346,6 +355,101 @@ header {
 		.features-hero-title {
 			font-size: 24px;
 		}
+	}
+}
+
+// =============== MOTOR CARDS ANIMATED SECTION===================
+
+.cardbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10em;
+	margin-top: 10em;
+}
+
+.card {
+	position: relative;
+	width: 500px;
+	height: 350px;
+	justify-content: flex-start;
+	align-items: left;
+	border-radius: 20px;
+	box-shadow: 1px 1px 4px black;
+	background-color: rgba(89, 131, 252, 1);
+	background-image: radial-gradient(
+		circle,
+		rgba(89, 131, 252, 1) 0%,
+		rgba(41, 53, 86, 1) 100%
+	);
+	transition: all 0.5s;
+	&:hover {
+		box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+	}
+	.card-heading {
+		color: orangered;
+		text-transform: uppercase;
+		font-family: "Kanit", sans-serif;
+		font-size: 3rem;
+		text-shadow: 1px 1px 4px rgb(0, 0, 0);
+	}
+
+	p {
+		line-height: 2em;
+		font-size: 1.6rem;
+	}
+}
+
+.card .motor-card-img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 340px;
+	transition: 0.5s;
+}
+
+.card:hover .motor-card-img {
+	left: 80%;
+	height: 450px;
+}
+
+.card .content {
+	text-align: left;
+	position: relative;
+	width: 60%;
+	left: 20%;
+	color: white;
+	padding: 20px 20px 20px 40px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+
+.card:hover .content {
+	left: 0%;
+	opacity: 1;
+	visibility: visible;
+}
+.button-motor {
+	position: relative;
+
+	font-size: 1.4rem;
+
+	color: #111;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: rgb(255, 255, 255);
+	text-decoration: none;
+	box-shadow: 1px 1px 4px black;
+	transition: 0.5s;
+	&:hover {
+		background-color: orangered;
+		color: white;
+		box-shadow: 1px 1px 4px black;
 	}
 }
 
@@ -542,25 +646,6 @@ header {
 	z-index: 0;
 	height: 70vh;
 
-	.btn-info {
-		background-color: $btn-color;
-		text-transform: uppercase;
-		margin: 1em 0 1em 0;
-		width: 50%;
-		height: auto;
-		padding: 1em;
-		border: none;
-		border-radius: 10px;
-		cursor: pointer;
-		font-size: 1.2rem;
-		font-weight: bold;
-		box-shadow: 2px 2px 5px $black;
-
-		&:hover {
-			background-color: $main-color;
-		}
-	}
-
 	h2 {
 		color: $light-gray;
 	}
@@ -602,7 +687,6 @@ header {
 // ------------------- WHERE TO BUY SECTION --------------
 
 .buy {
-	
 	position: relative;
 	height: 100%;
 	background: rgb(120, 120, 120);
@@ -693,10 +777,8 @@ header {
 
 	.card img {
 		height: 50vh;
-	
 	}
 }
-
 
 .contact {
 	position: relative;
@@ -716,7 +798,7 @@ header {
 		color: $white;
 	}
 
-	p{
+	p {
 		font-size: 1.4rem;
 	}
 
@@ -877,6 +959,33 @@ footer {
 	}
 }
 
+@media (max-width: 667px) {
+	.card {
+		position: relative;
+		width: auto;
+		max-width: 600px;
+		transition: 0.5s;
+		align-items: flex-start;
+		&:hover {
+			height: 600px;
+		}
+	}
+	.card:hover .motor-card-img {
+		left: 50%;
+		height: 300px;
+	}
+	.card .content {
+		position: relative;
+		width: 100%;
+		left: 0;
+	}
+
+	.h2 {
+		text-align: start;
+		margin-bottom: 0;
+	}
+}
+
 @media (min-width: 768px) {
 	.accessory {
 		.accessory-box {
@@ -904,8 +1013,8 @@ footer {
 		margin-top: 1.5em;
 	}
 }
-.contact{
-	p{
+.contact {
+	p {
 		font-size: 1.6rem;
 	}
 }

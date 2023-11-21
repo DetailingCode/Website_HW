@@ -99,6 +99,24 @@ html {
   max-width: 1200px;
 }
 
+.btn-info {
+  background-color: #009fbe;
+  text-transform: uppercase;
+  margin: 1em 0 1em 0;
+  width: 60%;
+  height: auto;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px black;
+}
+.btn-info:hover {
+  background-color: rgb(255, 111, 0);
+}
+
 .btn-animation {
   position: relative;
   transition: background-color 0.3s;
@@ -169,7 +187,6 @@ nav {
   z-index: 1000;
 }
 nav .dropdown-menu {
-  display: none;
   width: 185px;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -275,9 +292,17 @@ header {
 }
 header h1 {
   font-size: 3rem;
+  font-family: "Play", sans-serif;
   text-transform: uppercase;
   color: rgb(255, 111, 0);
   font-weight: bold;
+}
+header h2 {
+  color: #2e2e2e;
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-shadow: 1px 1px 5px white;
 }
 header p {
   font-size: 14px;
@@ -428,6 +453,93 @@ header .fa-chevron-down {
   font-size: 24px;
 }
 
+.cardbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10em;
+  margin-top: 10em;
+}
+
+.card {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  justify-content: flex-start;
+  align-items: left;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px black;
+  background-color: rgb(89, 131, 252);
+  background-image: radial-gradient(circle, rgb(89, 131, 252) 0%, rgb(41, 53, 86) 100%);
+  transition: all 0.5s;
+}
+.card:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+}
+.card .card-heading {
+  color: orangered;
+  text-transform: uppercase;
+  font-family: "Kanit", sans-serif;
+  font-size: 3rem;
+  text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+.card p {
+  line-height: 2em;
+  font-size: 1.6rem;
+}
+
+.card .motor-card-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 340px;
+  transition: 0.5s;
+}
+
+.card:hover .motor-card-img {
+  left: 80%;
+  height: 450px;
+}
+
+.card .content {
+  text-align: left;
+  position: relative;
+  width: 60%;
+  left: 20%;
+  color: white;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  left: 0%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.button-motor {
+  position: relative;
+  font-size: 1.4rem;
+  color: #111;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  text-decoration: none;
+  box-shadow: 1px 1px 4px black;
+  transition: 0.5s;
+}
+.button-motor:hover {
+  background-color: orangered;
+  color: white;
+  box-shadow: 1px 1px 4px black;
+}
+
 .motors {
   background-image: url("../image/fishing-boat_1920.jpg");
   background-repeat: no-repeat;
@@ -533,23 +645,6 @@ header .fa-chevron-down {
   background-attachment: fixed;
   z-index: 0;
   height: 70vh;
-}
-.akcesoria .btn-info {
-  background-color: #009fbe;
-  text-transform: uppercase;
-  margin: 1em 0 1em 0;
-  width: 50%;
-  height: auto;
-  padding: 1em;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: bold;
-  box-shadow: 2px 2px 5px black;
-}
-.akcesoria .btn-info:hover {
-  background-color: rgb(255, 111, 0);
 }
 .akcesoria h2 {
   color: #ddd;
@@ -793,6 +888,31 @@ footer p {
     padding: 1em;
     left: 30%;
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 667px) {
+  .card {
+    position: relative;
+    width: auto;
+    max-width: 600px;
+    transition: 0.5s;
+    align-items: flex-start;
+  }
+  .card:hover {
+    height: 600px;
+  }
+  .card:hover .motor-card-img {
+    left: 50%;
+    height: 300px;
+  }
+  .card .content {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .h2 {
+    text-align: start;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
