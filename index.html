@@ -11,39 +11,18 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Haswing Poland</title>
-		<link
-			rel="preconnect"
-			href="https://fonts.googleapis.com"
-		/>
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Kanit&family=Lato:wght@400;700&family=Russo+One&family=Ubuntu:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-		/>
-
-		<script
-			src="https://kit.fontawesome.com/2b9c2092e5.js"
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script
+			src="https://kit.fontawesome.com/ead7ab028a.js"
 			crossorigin="anonymous"
 		></script>
-
-		<link
-			rel="stylesheet"
-			href="./css/main.css"
-		/>
+        <link rel="stylesheet" href="css/main.css">
 	</head>
 	<html>
 		<body
@@ -53,6 +32,110 @@
 		>
 			<!-- NAV SECTION -->
 
+			<header class="header">
+				<nav class="nav container">
+				   <div class="nav__data">
+					  <a href="#" class="nav__logo">
+						 <i class="ri-planet-line"></i> Company
+					  </a>
+					  
+					  <div class="nav__toggle" id="nav-toggle">
+						 <i class="ri-menu-line nav__burger"></i>
+						 <i class="ri-close-line nav__close"></i>
+					  </div>
+				   </div>
+	   
+				   <!--=============== NAV MENU ===============-->
+				   <div class="nav__menu" id="nav-menu">
+					  <ul class="nav__list">
+						 <li><a href="#" class="nav__link">Home</a></li>
+	   
+						 <li><a href="#" class="nav__link">Company</a></li>
+	   
+						 <!--=============== DROPDOWN 1 ===============-->
+						 <li class="dropdown__item">
+							<div class="nav__link">
+							   Analytics <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+							</div>
+	   
+							<ul class="dropdown__menu">
+							   <li>
+								  <a href="#" class="dropdown__link">
+									 <i class="ri-pie-chart-line"></i> Overview
+								  </a>                          
+							   </li>
+	   
+							   <li>
+								  <a href="#" class="dropdown__link">
+									 <i class="ri-arrow-up-down-line"></i> Transactions
+								  </a>
+							   </li>
+	   
+							   <!--=============== DROPDOWN SUBMENU ===============-->
+							   <li class="dropdown__subitem">
+								  <div class="dropdown__link">
+									 <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+								  </div>
+	   
+								  <ul class="dropdown__submenu">
+									 <li>
+										<a href="#" class="dropdown__sublink">
+										   <i class="ri-file-list-line"></i> Documents
+										</a>
+									 </li>
+			 
+									 <li>
+										<a href="#" class="dropdown__sublink">
+										   <i class="ri-cash-line"></i> Payments
+										</a>
+									 </li>
+			 
+									 <li>
+										<a href="#" class="dropdown__sublink">
+										   <i class="ri-refund-2-line"></i> Refunds
+										</a>
+									 </li>
+								  </ul>
+							   </li>
+							</ul>
+						 </li>
+						 
+						 <li><a href="#" class="nav__link">Products</a></li>
+	   
+						 <!--=============== DROPDOWN 2 ===============-->
+						 <li class="dropdown__item">
+							<div class="nav__link">
+							   Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+							</div>
+	   
+							<ul class="dropdown__menu">
+							   <li>
+								  <a href="#" class="dropdown__link">
+									 <i class="ri-user-line"></i> Profiles
+								  </a>                          
+							   </li>
+	   
+							   <li>
+								  <a href="#" class="dropdown__link">
+									 <i class="ri-lock-line"></i> Accounts
+								  </a>
+							   </li>
+	   
+							   <li>
+								  <a href="#" class="dropdown__link">
+									 <i class="ri-message-3-line"></i> Messages
+								  </a>
+							   </li>
+							</ul>
+						 </li>
+	   
+						 <li><a href="#" class="nav__link">Contact</a></li>
+					  </ul>
+				   </div>
+				</nav>
+			 </header>
+
+<!-- 
 			<nav
 				id="navbar"
 				class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3"
@@ -97,6 +180,7 @@
 								href="#portfolio"
 								>Silniki elektryczne</a
 							>
+
 							<a
 								class="nav-link one"
 								href="#prices"
@@ -120,7 +204,7 @@
 						</div>
 					</div>
 				</div>
-			</nav>
+			</nav> -->
 
 			<!-- !-- ++++++++++++++++++++ HOME START ++++++++++++++++ -->
 
@@ -161,15 +245,34 @@
 									<div class="islands__card-info">
 										<p class="islands__card-text">
 											HasWing to marka silników elektrycznych zaburtowych, które
-											od prawie 15 lat są dostępne w Polsce. Nowoczesny i
-											ekologiczny napęd. Kilkunastoletnie doświadczenie w
-											produkcji silników spowodowało, iż obecnie produkty spod
-											marki Haswing dostępne są na wszystkich kontynentach. W
-											ofercie znajduje się ponad 20 modeli oraz duża gama
-											akcesoriów, które pozwalają na dopasowanie odpowiedniego
-											silnika do różnych modeli i wielkości łodzi, pontonów
-											wędkarskich czy dużych jachtów. Silniki HasWing wyróżniają
-											się wysoką jakością i precyzją wykonania.
+											od prawie 15 lat są dostępne w Polsce. Wśród
+											najważniejszych cech wyróżniających silniki Haswing
+											znajdują się: łatwość w obsłudze, cicha praca, wysoka
+											wydajność oraz niskie koszty eksploatacji. Firma stawia
+											również na innowacyjne rozwiązania technologiczne, takie
+											jak zintegrowany system GPS, który umożliwia łatwe
+											sterowanie silnikiem oraz śledzenie jego pozycji.
+											<br />
+											Silnik elektryczny zaburtowy to urządzenie, które jest
+											stosowane w łodziach, pontonach, kajakach, motorówkach i
+											innych jednostkach pływających. Jest to napęd elektryczny,
+											który umożliwia bezemisyjne i ciche przemieszczanie się po
+											wodzie.
+											<br />
+											Silniki Haswing są łatwe w obsłudze i nie wymagają dużych
+											nakładów pracy. Ich praca jest cicha, co pozwala na
+											bezproblemowe poruszanie się po wodzie i nie zakłóca
+											spokoju innych użytkowników. Ponadto, w porównaniu z
+											silnikami spalinowymi, silnik elektryczny zaburtowy jest
+											bardziej przyjazny dla środowiska, ponieważ nie emituje
+											spalin i hałasu.
+											<br />
+											Silniki mogą być stosowany zarówno do pływania
+											rekreacyjnego, jak i do połowów ryb czy innych zastosowań
+											profesjonalnych. Jego zalety, takie jak łatwość obsługi,
+											cicha praca i przyjazność dla środowiska, czynią go
+											popularnym wyborem dla wielu użytkowników jednostek
+											pływających.
 										</p>
 									</div>
 								</div>
@@ -280,6 +383,278 @@
 							</button>
 						</div>
 					</div>
+				</section>
+
+				<!-- ========== SECTION ISLANDS - 3 CARDS ANIMATION========== -->
+
+				<section
+					class="islands section-padding section white-section"
+					id="islands"
+				>
+					<div class="wrapper">
+						<h2 class="section-heading">Polecane Wyspy</h2>
+
+						<div class="islands__cards">
+							<!-- ++++++++++ FRONT CARD ++++++++++ -->
+
+							<div
+								class="islands__card"
+								onclick="void(0)"
+							>
+								<div class="islands__card-img islands__card-img--third">
+									<h3 class="islands__card-img-title">Wyspa Nobu</h3>
+									<p class="islands__card-img-info">
+										<i class="fas fa-angle-double-right"></i> Więcej informacji
+									</p>
+								</div>
+
+								<!-- ++++++++++ BACK CARD ++++++++++ -->
+
+								<div class="islands__card-info">
+									<h3 class="islands__card-info-title">Wyspa Nobu</h3>
+									<ul class="islands__card-info-list">
+										<li class="islands__card-info-list-item">Piękna okolica</li>
+										<li class="islands__card-info-list-item">Ciepła woda</li>
+										<li class="islands__card-info-list-item">Czyste plaże</li>
+										<li class="islands__card-info-list-item">
+											Ekskluzywny bar
+										</li>
+										<li class="islands__card-info-list-item">Wysokie palmy</li>
+									</ul>
+									<button class="islands__card-info-btn btn-special-animation">
+										Wybierz
+									</button>
+								</div>
+							</div>
+							<!-- ++++++++++ FRONT CARD ++++++++++ -->
+
+							<div
+								class="islands__card"
+								onclick="void(0)"
+							>
+								<div class="islands__card-img islands__card-img--first">
+									<h3 class="islands__card-img-title">Wyspa Tiki Taki</h3>
+									<p class="islands__card-img-info">
+										<i class="fas fa-angle-double-right"></i> Więcej informacji
+									</p>
+								</div>
+
+								<!-- ++++++++++ BACK CARD ++++++++++ -->
+
+								<div class="islands__card-info">
+									<h3 class="islands__card-info-title">Wyspa Tiki Taki</h3>
+									<ul class="islands__card-info-list">
+										<li class="islands__card-info-list-item">Piękna okolica</li>
+										<li class="islands__card-info-list-item">Ciepła woda</li>
+										<li class="islands__card-info-list-item">Czyste plaże</li>
+										<li class="islands__card-info-list-item">
+											Ekskluzywny bar
+										</li>
+										<li class="islands__card-info-list-item">Wysokie palmy</li>
+									</ul>
+									<button class="islands__card-info-btn btn-special-animation">
+										Wybierz
+									</button>
+								</div>
+							</div>
+
+							<!-- ++++++++++ FRONT CARD ++++++++++ -->
+
+							<div
+								class="islands__card"
+								onclick="void(0)"
+							>
+								<div class="islands__card-img islands__card-img--second">
+									<h3 class="islands__card-img-title">Wyspa Toca Toca</h3>
+									<p class="islands__card-img-info">
+										<i class="fas fa-angle-double-right"></i> Więcej informacji
+									</p>
+								</div>
+
+								<!-- ++++++++++ BACK CARD ++++++++++ -->
+
+								<div class="islands__card-info">
+									<h3 class="islands__card-info-title">Wyspa Toca Toca</h3>
+									<ul class="islands__card-info-list">
+										<li class="islands__card-info-list-item">Piękna okolica</li>
+										<li class="islands__card-info-list-item">Ciepła woda</li>
+										<li class="islands__card-info-list-item">Czyste plaże</li>
+										<li class="islands__card-info-list-item">
+											Ekskluzywny bar
+										</li>
+										<li class="islands__card-info-list-item">Wysokie palmy</li>
+									</ul>
+									<button class="islands__card-info-btn btn-special-animation">
+										Wybierz
+									</button>
+								</div>
+							</div>
+
+							<!-- ++++++++++ FRONT CARD ++++++++++ -->
+
+							<div
+								class="islands__card"
+								onclick="void(0)"
+							>
+								<div class="islands__card-img islands__card-img--third">
+									<h3 class="islands__card-img-title">Wyspa Nobu</h3>
+
+									<p class="islands__card-img-info">
+										<i class="fas fa-angle-double-right"></i> Więcej informacji
+									</p>
+								</div>
+
+								<!-- ++++++++++ BACK CARD ++++++++++ -->
+
+								<div class="islands__card-info">
+									<h3 class="islands__card-info-title">Wyspa Nobu</h3>
+									<ul class="islands__card-info-list">
+										<li class="islands__card-info-list-item">Piękna okolica</li>
+										<li class="islands__card-info-list-item">Ciepła woda</li>
+										<li class="islands__card-info-list-item">Czyste plaże</li>
+										<li class="islands__card-info-list-item">
+											Ekskluzywny bar
+										</li>
+										<li class="islands__card-info-list-item">Wysokie palmy</li>
+									</ul>
+									<button class="islands__card-info-btn btn-special-animation">
+										Wybierz
+									</button>
+								</div>
+							</div>
+							<!-- ======== END ISLANDS CARDS \/ DOWN DIV -->
+						</div>
+						<!-- ======== END WRAPPER \/ DOWN DIV -->
+					</div>
+				</section>
+
+				<section
+					id="team"
+					class="team py-5"
+				>
+					<h2>team</h2>
+					<div class="underline"></div>
+
+					<div class="container">
+						<div class="card-group team-carousel">
+							<!-- KARTA -->
+
+							<div class="card mx-3">
+								<img
+									src="./img/sruba_protruar1_2.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Śruby napędowe</h5>
+							
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											class="btn btn-primary acc-button"
+										>
+											Wybierz
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- KONIEC KARTA -->
+							<!-- KARTA -->
+
+							<div class="card mx-3">
+								<img
+									src="./img/woman-1320810_1920.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									
+
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											class="btn btn-primary acc-button"
+										>
+											Wybierz
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- KONIEC KARTA -->
+							<!-- KARTA -->
+
+							<div class="card mx-3">
+								<img
+									src="./img/building-2762241_1920.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									
+
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											class="btn btn-primary acc-button"
+										>
+											Wybierz
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- KONIEC KARTA -->
+							<!-- KARTA -->
+
+							<div class="card mx-3">
+								<img
+									src="./img/team/entrepreneur-2326419_1920.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									
+
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											class="btn btn-primary acc-button"
+										>
+											Wybierz
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- KONIEC KARTA -->
+							<!-- KARTA -->
+
+							<div class="card mx-3">
+								<img
+									src="./img/team/women-1209678_1920.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									
+
+									<div class="card-footer d-flex justify-content-center">
+										<button
+											type="button"
+											class="btn btn-primary acc-button"
+										>
+											Wybierz
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- KONIEC KARTA -->
+						</div>
+					</div>
+
+					<div class="team-shadow"></div>
 				</section>
 
 				<!-- FEATURES SECTION -->
@@ -458,32 +833,23 @@
 			</footer>
 
 			<script
-				src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-				integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-				crossorigin="anonymous"
-			></script>
-			<script
-				type="text/javascript"
-				src="//code.jquery.com/jquery-1.11.0.min.js"
-			></script>
-			<script
-				type="text/javascript"
-				src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-			></script>
-			<script
-				type="text/javascript"
-				src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-			></script>
-			<script src="./js/slicksettings.js"></script>
-			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-			<script>
-				AOS.init({
-					startEvent: "DOMContentLoaded",
-					offset: 200,
-					once: true,
-				});
-			</script>
-			<script src="./js/script.js"></script>
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/slicksettings.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                startEvent: 'DOMContentLoaded',
+                offset: 200,
+                once: true
+            });
+          </script>
+		<script src="./js/script.js"></script>
 		</body>
 	</html>
 </html>

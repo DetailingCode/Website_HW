@@ -89,6 +89,27 @@ html {
   transform-origin: left;
 }
 
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --black-color: hsl(220, 24%, 12%);
+  --black-color-light: hsl(220, 24%, 15%);
+  --black-color-lighten: hsl(220, 20%, 18%);
+  --white-color: #fff;
+  --body-color: hsl(220, 100%, 97%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --normal-font-size: .938rem;
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
 body {
   position: relative;
   font-family: "Ubuntu", sans-serif;
@@ -124,93 +145,288 @@ h2 {
   transition: transform 2s 5s ease-in-out;
 }
 
-nav {
-  text-transform: uppercase;
-  transition: background-color 0.6s;
-  z-index: 1000;
+ul {
+  list-style: none;
+  /* Color highlighting when pressed on mobile devices */
+  /*-webkit-tap-highlight-color: transparent;*/
 }
-nav .nav-link {
-  position: relative;
-  font-size: 1.5rem;
-  color: #fff;
+
+a {
   text-decoration: none;
 }
-nav .logo-nav {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 110px;
-  height: 55px;
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
 }
-nav .link,
-nav .link::after,
-nav .link::before {
-  transition: 0.3s;
-}
-nav .nav-line::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  bottom: 0;
+
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
   left: 0;
-  background-color: #fff;
-  transition: transform 0.3s;
-  transform: scaleX(0);
-  transform-origin: right;
+  width: 100%;
+  background-color: var(--black-color);
+  box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
+  z-index: var(--z-fixed);
 }
-nav .nav-line:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+
+/*=============== NAV ===============*/
+.nav {
+  height: var(--header-height);
 }
-nav .nav-link,
-nav i {
-  color: #fff;
+
+.nav__logo,
+.nav__burger,
+.nav__close {
+  color: var(--white-color);
 }
-nav .nav-link {
-  margin-top: 5px;
+
+.nav__data {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+  font-weight: var(--font-semi-bold);
+  /* Color highlighting when pressed on mobile devices */
+  /*-webkit-tap-highlight-color: transparent;*/
+}
+
+.nav__logo i {
+  font-weight: initial;
+  font-size: 1.25rem;
+}
+
+.nav__toggle {
   position: relative;
-  font-size: 1.5rem;
-  color: #fff;
-  text-decoration: none;
-}
-nav .nav-link:hover {
-  color: rgb(255, 111, 0);
-}
-nav .fa-bars {
-  padding: 10px;
-}
-nav .navbar-brand {
-  font-weight: bold;
-}
-nav .nav-link.active {
-  color: rgb(255, 111, 0);
+  width: 32px;
+  height: 32px;
 }
 
-.link,
-.link::after,
-.link::before {
-  transition: 0.3s;
-}
-
-.one::after {
-  content: "";
+.nav__burger,
+.nav__close {
   position: absolute;
-  height: 2px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transition: transform 0.3s;
-  transform: scaleX(0);
-  transform-origin: right;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity 0.1s, transform 0.4s;
 }
 
-.one:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+.nav__close {
+  opacity: 0;
 }
 
+/* Navigation for mobile devices */
+@media screen and (max-width: 1118px) {
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+  }
+  .nav__menu::-webkit-scrollbar {
+    width: 0;
+  }
+  .nav__list {
+    background-color: var(--black-color);
+    padding-top: 1rem;
+  }
+}
+.nav__link {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.nav__link:hover {
+  background-color: var(--black-color-light);
+}
+
+/* Show menu */
+.show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+
+/* Show icon */
+.show-icon .nav__burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.show-icon .nav__close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+/*=============== DROPDOWN ===============*/
+.dropdown__item {
+  cursor: pointer;
+}
+
+.dropdown__arrow {
+  font-size: 1.25rem;
+  font-weight: initial;
+  transition: transform 0.4s;
+}
+
+.dropdown__link,
+.dropdown__sublink {
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  color: var(--white-color);
+  background-color: var(--black-color-light);
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  font-weight: var(--font-semi-bold);
+  transition: background-color 0.3s;
+}
+
+.dropdown__link i,
+.dropdown__sublink i {
+  font-size: 1.25rem;
+  font-weight: initial;
+}
+
+.dropdown__link:hover,
+.dropdown__sublink:hover {
+  background-color: var(--black-color);
+}
+
+.dropdown__menu,
+.dropdown__submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+/* Show dropdown menu & submenu */
+.dropdown__item:hover .dropdown__menu,
+.dropdown__subitem:hover > .dropdown__submenu {
+  max-height: 1000px;
+  transition: max-height 0.4s ease-in;
+}
+
+/* Rotate dropdown icon */
+.dropdown__item:hover .dropdown__arrow {
+  transform: rotate(180deg);
+}
+
+/*=============== DROPDOWN SUBMENU ===============*/
+.dropdown__add {
+  margin-left: auto;
+}
+
+.dropdown__sublink {
+  background-color: var(--black-color-lighten);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .nav__link {
+    padding-inline: 1rem;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 1118px) {
+  .container {
+    margin-inline: auto;
+  }
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__list {
+    height: 100%;
+    display: flex;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  .nav__link {
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    -moz-column-gap: 0.25rem;
+         column-gap: 0.25rem;
+  }
+  .nav__link:hover {
+    background-color: transparent;
+  }
+  .dropdown__item,
+  .dropdown__subitem {
+    position: relative;
+  }
+  .dropdown__menu,
+  .dropdown__submenu {
+    max-height: initial;
+    overflow: initial;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, top 0.3s;
+  }
+  .dropdown__link,
+  .dropdown__sublink {
+    padding-inline: 1rem 3.5rem;
+  }
+  .dropdown__subitem .dropdown__link {
+    padding-inline: 1rem;
+  }
+  .dropdown__submenu {
+    position: absolute;
+    left: 100%;
+    top: 0.5rem;
+  }
+  /* Show dropdown menu */
+  .dropdown__item:hover .dropdown__menu {
+    opacity: 1;
+    top: 5.5rem;
+    pointer-events: initial;
+    transition: top 0.3s;
+  }
+  /* Show dropdown submenu */
+  .dropdown__subitem:hover > .dropdown__submenu {
+    opacity: 1;
+    top: 0;
+    pointer-events: initial;
+    transition: top 0.3s;
+  }
+}
 .offers {
   height: 110dvh;
   position: relative;
@@ -355,6 +571,108 @@ nav .nav-link.active {
   background: #0fe29c;
 }
 
+.islands__card {
+  position: relative;
+  margin: 1em 0;
+  height: 450px;
+  color: #fff;
+  text-align: center;
+  perspective: 800px;
+}
+.islands__card:hover .islands__card-img {
+  transform: rotateY(-180deg);
+  opacity: 0;
+}
+.islands__card:hover .islands__card-info {
+  transform: rotateY(0);
+  opacity: 1;
+}
+.islands__card-img {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-size: cover;
+  transition: transform 1s, opacity 1s;
+}
+.islands__card-img-photo {
+  width: auto;
+  height: 320px;
+}
+.islands__card-img--first {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("../Haswing_motors/Comax_N_55_Transparent.png");
+}
+.islands__card-img--second {
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/card-island2_640.jpg");
+}
+.islands__card-img--third {
+  background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75)), url("../img/card-island3_640.jpg");
+}
+.islands__card-img-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+}
+.islands__card-img-info {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+}
+.islands__card-img-info i {
+  margin-right: 0.3em;
+}
+.islands__card-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(180deg, rgb(255, 111, 0), rgb(0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: transform 1s, opacity 1s;
+}
+.islands__card-info-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.2em;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+}
+.islands__card-info-list {
+  margin: 0 auto;
+  list-style: none;
+  width: 70%;
+}
+.islands__card-info-list-item {
+  padding: 1em;
+  border-bottom: 1px solid #fff;
+}
+.islands__card-info-list-item:last-child {
+  border-bottom: none;
+}
+.islands__card-info-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2em;
+  padding: 1em;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background: #00ffaa;
+  color: #2e2e2e;
+  cursor: pointer;
+}
+.islands__card-info-btn:before {
+  background: #0fe29c;
+}
+
 @media (min-width: 300px) {
   .offers__option-text {
     text-align: center;
@@ -384,12 +702,81 @@ nav .nav-link.active {
     padding: 1em;
   }
 }
+.team {
+  position: relative;
+  background-image: url("../img/team-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.team h2 {
+  color: #ddd;
+}
+.team p {
+  text-align: center;
+}
+.team .acc-button {
+  width: 150px;
+  height: 40px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+  transition: all 0.5s;
+}
+.team .acc-button:hover {
+  background-color: chocolate;
+}
+.team .card-title {
+  font-size: 2rem;
+  margin: 20px 0 20px 0;
+  font-weight: bold;
+}
+.team .team-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+.team .card {
+  transition: transform 0.3s;
+}
+.team .card img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card i {
+  padding: 10px;
+}
+.team .card:hover {
+  transform: scale(0.96);
+}
+.team .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.team .card-body {
+  height: 160px;
+}
+
 @media (min-width: 768px) {
   .section-heading {
     font-size: 3.6rem;
   }
   .section-padding {
     padding: 8em 2em;
+  }
+  .islands__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .islands__card {
+    margin: 1em;
+    width: 45%;
   }
 }
 @media (min-width: 992px) {
@@ -642,5 +1029,10 @@ footer span {
   }
   nav {
     height: 82px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
