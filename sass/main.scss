@@ -370,30 +370,20 @@ header {
 	margin-top: 10em;
 }
 
-.card {
+.cards {
 	position: relative;
 	width: 500px;
 	height: 350px;
 	justify-content: flex-start;
 	align-items: left;
 	border-radius: 20px;
-	box-shadow: 1px 1px 4px black;
-	background-color: rgba(89, 131, 252, 1);
-	background-image: radial-gradient(
-		circle,
-		rgba(89, 131, 252, 1) 0%,
-		rgba(41, 53, 86, 1) 100%
-	);
-	transition: all 0.5s;
+	border: 2px solid black;
+	box-shadow: 2px 2px 7px black;
+	// background-color: rgba(0, 159, 190, 1);
+	transition: all 0.6s;
 	&:hover {
 		box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
-	}
-	.card-heading {
-		color: orangered;
-		text-transform: uppercase;
-		font-family: "Kanit", sans-serif;
-		font-size: 3rem;
-		text-shadow: 1px 1px 4px rgb(0, 0, 0);
+		border: none;
 	}
 
 	p {
@@ -402,55 +392,73 @@ header {
 	}
 }
 
-.card .motor-card-img {
+.cards .motor-card-img {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 340px;
+	height: 300px;
 	transition: 0.5s;
 }
 
-.card:hover .motor-card-img {
+.cards:hover .motor-card-img {
 	left: 80%;
 	height: 450px;
 }
 
-.card .content {
+.cards .content {
 	text-align: left;
 	position: relative;
 	width: 60%;
 	left: 20%;
-	color: white;
+	color: rgb(0, 0, 0);
 	padding: 20px 20px 20px 40px;
 	opacity: 0;
 	visibility: hidden;
-	transition: 0.5s;
+	transition: all 0.5s;
 }
 
-.card:hover .content {
+.cards:hover .content {
 	left: 0%;
 	opacity: 1;
 	visibility: visible;
 }
+
 .button-motor {
 	position: relative;
-
 	font-size: 1.4rem;
-
-	color: #111;
+	color: rgb(255, 255, 255);
+	top: 15px;
 	font-weight: bold;
 	padding: 10px 20px;
 	border-radius: 10px;
-	background: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
 	text-decoration: none;
 	box-shadow: 1px 1px 4px black;
-	transition: 0.5s;
+	transition: all 0.5s;
 	&:hover {
-		background-color: orangered;
-		color: white;
-		box-shadow: 1px 1px 4px black;
+		background-color: $white;
+		color: rgb(0, 0, 0);
+		// box-shadow: 1px 1px 4px black;
+		border: 1px solid $black;
 	}
+}
+
+.card-heading {
+	position: relative;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	font-family: "Kanit", sans-serif;
+	font-size: 3.2rem;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgb(109, 109, 109);
+	top: 10px;
+	text-align: center;
+	transform: translateX(0%);
+	transition: all 0.6s;
+}
+.cards:hover .card-heading {
+	transform: translateX(-10%);
 }
 
 // ======================MOTORS CARD SECTION================
@@ -960,7 +968,7 @@ footer {
 }
 
 @media (max-width: 667px) {
-	.card {
+	.cards {
 		position: relative;
 		width: auto;
 		max-width: 600px;
@@ -970,19 +978,32 @@ footer {
 			height: 600px;
 		}
 	}
-	.card:hover .motor-card-img {
-		left: 50%;
-		height: 300px;
-	}
-	.card .content {
-		position: relative;
-		width: 100%;
-		left: 0;
+
+	.cards .motor-card-img {
+		transition: 0.6s;
 	}
 
-	.h2 {
-		text-align: start;
-		margin-bottom: 0;
+	.cards:hover .motor-card-img {
+		bottom: 10%;
+		left: 50%;
+		height: 280px;
+	}
+	.cards .content {
+		position: relative;
+		width: 100%;
+		left:0;
+	}
+
+	.button-motor {
+		right:4%;
+	}
+
+	.cards:hover .button-motor {
+		top: 280px;
+	}
+
+	.cards:hover .card-heading {
+		transform: translateX(0%);
 	}
 }
 
