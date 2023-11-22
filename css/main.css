@@ -459,28 +459,33 @@ header .fa-chevron-down {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10em;
+  gap: 8em 5em;
   margin-top: 10em;
 }
 
 .cards {
   position: relative;
-  width: 500px;
-  height: 350px;
+  width: 450px;
+  height: 400px;
   justify-content: flex-start;
   align-items: left;
-  border-radius: 20px;
-  border: 2px solid black;
+  line-height: normal;
+  border-radius: 10px;
   box-shadow: 2px 2px 7px black;
   transition: all 0.6s;
 }
 .cards:hover {
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
-  border: none;
+  box-shadow: 1px 1px 20px rgba(255, 69, 0, 0.9);
 }
 .cards p {
-  line-height: 2em;
+  line-height: 1.5em;
   font-size: 1.6rem;
+}
+.cards .card-heading-underline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
 }
 
 .cards .motor-card-img {
@@ -488,13 +493,13 @@ header .fa-chevron-down {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 300px;
+  height: 340px;
   transition: 0.5s;
 }
 
 .cards:hover .motor-card-img {
-  left: 80%;
-  height: 450px;
+  left: 83%;
+  height: 430px;
 }
 
 .cards .content {
@@ -513,6 +518,7 @@ header .fa-chevron-down {
   left: 0%;
   opacity: 1;
   visibility: visible;
+  padding-left: 20px;
 }
 
 .button-motor {
@@ -531,7 +537,6 @@ header .fa-chevron-down {
 .button-motor:hover {
   background-color: #fff;
   color: rgb(0, 0, 0);
-  border: 1px solid black;
 }
 
 .card-heading {
@@ -541,15 +546,16 @@ header .fa-chevron-down {
   font-family: "Kanit", sans-serif;
   font-size: 3.2rem;
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgb(109, 109, 109);
   top: 10px;
+  text-shadow: 1px 1px 2px rgb(109, 109, 109);
   text-align: center;
   transform: translateX(0%);
   transition: all 0.6s;
 }
 
 .cards:hover .card-heading {
-  transform: translateX(-10%);
+  transform: translateX(-15%);
+  text-shadow: 1px 1px 2px rgb(255, 69, 0);
 }
 
 .motors {

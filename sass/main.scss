@@ -366,29 +366,37 @@ header {
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
-	gap: 10em;
+	gap: 8em 5em;
 	margin-top: 10em;
 }
 
 .cards {
 	position: relative;
-	width: 500px;
-	height: 350px;
+	width: 450px;
+	height: 400px;
 	justify-content: flex-start;
 	align-items: left;
-	border-radius: 20px;
-	border: 2px solid black;
+	line-height: normal;
+	border-radius: 10px;
+	// border: 1px solid black;
 	box-shadow: 2px 2px 7px black;
-	// background-color: rgba(0, 159, 190, 1);
+	// background-color: rgba(255, 69, 0, 0.7);
 	transition: all 0.6s;
 	&:hover {
-		box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
-		border: none;
+		box-shadow: 1px 1px 20px rgba(255, 69, 0, 0.9);
+		// border: none;
 	}
 
 	p {
-		line-height: 2em;
+		line-height: 1.5em;
 		font-size: 1.6rem;
+	}
+
+	.card-heading-underline {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 80%;
 	}
 }
 
@@ -397,13 +405,13 @@ header {
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 300px;
+	height: 340px;
 	transition: 0.5s;
 }
 
 .cards:hover .motor-card-img {
-	left: 80%;
-	height: 450px;
+	left: 83%;
+	height: 430px;
 }
 
 .cards .content {
@@ -422,6 +430,7 @@ header {
 	left: 0%;
 	opacity: 1;
 	visibility: visible;
+	padding-left: 20px;
 }
 
 .button-motor {
@@ -440,7 +449,7 @@ header {
 		background-color: $white;
 		color: rgb(0, 0, 0);
 		// box-shadow: 1px 1px 4px black;
-		border: 1px solid $black;
+		// border: 1px solid $black;
 	}
 }
 
@@ -451,14 +460,15 @@ header {
 	font-family: "Kanit", sans-serif;
 	font-size: 3.2rem;
 	font-weight: bold;
-	text-shadow: 1px 1px 2px rgb(109, 109, 109);
 	top: 10px;
+	text-shadow: 1px 1px 2px rgb(109, 109, 109);
 	text-align: center;
 	transform: translateX(0%);
 	transition: all 0.6s;
 }
 .cards:hover .card-heading {
-	transform: translateX(-10%);
+	transform: translateX(-15%);
+	text-shadow: 1px 1px 2px rgb(255, 69, 0);
 }
 
 // ======================MOTORS CARD SECTION================
@@ -991,11 +1001,11 @@ footer {
 	.cards .content {
 		position: relative;
 		width: 100%;
-		left:0;
+		left: 0;
 	}
 
 	.button-motor {
-		right:4%;
+		right: 4%;
 	}
 
 	.cards:hover .button-motor {
