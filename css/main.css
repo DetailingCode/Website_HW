@@ -13,8 +13,7 @@ html {
 
 .bounce-top {
   display: block;
-  -webkit-animation: bounce-top 2.5s infinite both;
-          animation: bounce-top 2.5s infinite both;
+  animation: bounce-top 2.5s infinite both;
   color: white;
 }
 
@@ -29,42 +28,9 @@ html {
  * animation bounce-top
  * ----------------------------------------
  */
-@-webkit-keyframes bounce-top {
-  0% {
-    transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  65% {
-    transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  25%, 55%, 75%, 87% {
-    transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
 @keyframes bounce-top {
   0% {
     transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 1;
   }
@@ -73,22 +39,18 @@ html {
   }
   40% {
     transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   65% {
     transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   25%, 55%, 75%, 87% {
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   100% {
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     opacity: 1;
   }
@@ -849,7 +811,7 @@ footer p {
 }
 @media (min-width: 576px) {
   .fa-phone,
-.fa-at {
+  .fa-at {
     font-size: 1.6rem;
   }
   header .fa-chevron-down {
