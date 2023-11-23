@@ -453,6 +453,15 @@ header .fa-chevron-down {
   font-size: 24px;
 }
 
+.motor-cards {
+  background-image: url("../image/fishing-boat_1920.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
 .cardbox {
   display: flex;
   justify-content: center;
@@ -472,6 +481,7 @@ header .fa-chevron-down {
   line-height: normal;
   border-radius: 10px;
   box-shadow: 2px 2px 7px black;
+  background-color: rgba(255, 255, 255, 0.9);
   transition: all 0.6s;
 }
 .cards:hover {
@@ -481,11 +491,29 @@ header .fa-chevron-down {
   line-height: 1.5em;
   font-size: 1.6rem;
 }
-.cards .card-heading-underline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
+.cards .card-news, .cards .card-news2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgb(255, 69, 0);
+  padding: 10px 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Play", sans-serif;
+  transition: 1s;
+  opacity: 1;
+  visibility: visible;
+}
+.cards .card-news2 {
+  background: black;
+  color: #fff;
+}
+
+.cards:hover .card-news, .card-news2 {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .cards .motor-card-img {
@@ -556,57 +584,6 @@ header .fa-chevron-down {
 .cards:hover .card-heading {
   transform: translateX(-15%);
   text-shadow: 1px 1px 2px rgb(255, 69, 0);
-}
-
-.motors {
-  background-image: url("../image/fishing-boat_1920.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-.motors h2 {
-  color: black;
-}
-.motors .motors-box {
-  margin: 20px 10px;
-  padding: 30px;
-  background-color: #fff;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s;
-}
-.motors .motors-box .btn {
-  padding: 12px 30px;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-.motors .motors-box .btn:hover {
-  background-color: rgba(255, 111, 0, 0.8);
-}
-.motors .motors-box h3 {
-  color: rgb(255, 111, 0);
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px black;
-}
-.motors .motors-box span {
-  font-weight: bold;
-}
-.motors .motors-box i {
-  padding: 0 5px;
-  font-size: 24px;
-}
-.motors .motors-box button {
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-.motors .motors-box .motors-tag {
-  font-size: 20px;
-  font-weight: bold;
-}
-.motors .motors-box:hover {
-  transform: scale(1.05);
 }
 
 .help .help-heading {
@@ -918,6 +895,10 @@ footer p {
   }
   .cards:hover {
     height: 600px;
+  }
+  .card-news {
+    position: absolute;
+    transform: translateY(500%);
   }
   .cards .motor-card-img {
     transition: 0.6s;
