@@ -755,8 +755,9 @@ html {
 }
 
 .hw-remote-hero {
-  background-image: url(../background/cayman_bg1.jpg);
-  background-position: 0 80%;
+  background-image: url(../background/Cayman-bg.jpg);
+  background-position: 0 70%;
+  background-size: cover;
 }
 
 .hw-remote-box-img {
@@ -816,27 +817,28 @@ html {
 }
 
 .hw-parts-hero {
-  background-image: url(../image-accessory-640/Optional/optional-bg.jpg);
+  background-image: url(../background/parts-card-bg.jpg);
   background-position: 0 40%;
 }
 
 .parts-shadow {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .parts-help {
   padding: 6em 0em 6em 0em;
-  width: 100%;
+  width: 70%;
 }
 .parts-help .parts-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../background/parts-bg.jpg);
-  background-position: 0 50%;
+  background-image: url(../background/Brushless.jpg);
+  background-position: 0 40%;
   background-size: cover;
   height: 400px;
   border-radius: 10px;
+  border: none;
   z-index: 0;
   box-shadow: 2px 2px 10px #2e2e2e;
   overflow: hidden;
