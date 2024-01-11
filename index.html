@@ -29,9 +29,9 @@
 			src="https://kit.fontawesome.com/ead7ab028a.js"
 			crossorigin="anonymous"
 		></script>
-        <link rel="stylesheet" href="css/main.css">
-		
 		<link rel="shortcut icon" type="image/png" href="/image/favicon.png"/>
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="./css/glider.min.css">
 	</head>
 	<html>
 		<body
@@ -40,189 +40,215 @@
 			data-bs-offset="82"
 		>
 
-			<!-- NAV SECTION -->
 
-			<nav
-				id="navbar"
-				class="navbar navbar-expand-lg position-fixed top-1 w-100 shadow-bg"
-			>
-				<div class="container">
+		<section class="nav-menu">
+			<div class="menuToggle">
+				<nav class="navigation-dropdown">
 					<a
-						class="navbar-brand"
-						href="#"
+						href="index.html"
+						class="logo-navigation"
 						><img
-							class="logo-nav"
 							src="./image/Haswing-logo-bt.png"
-							alt="Logo nawigacji Haswing"
+							alt="Haswing logo"
+							class="navlogo"
 					/></a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNavAltMarkup"
-						aria-controls="navbarNavAltMarkup"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
+					<label
+						for="btn"
+						class="icon"
 					>
-						<i class="fas fa-bars"></i>
-					</button>
-					<div
-						class="collapse navbar-collapse"
-						id="navbarNavAltMarkup"
-					>
-						<div class="navbar-nav ms-auto mt-5 mb-5">
+						<span class="fa fa-bars"></span>
+					</label>
+					<input
+						type="checkbox"
+						id="btn"
+					/>
+					<ul class="navigation-dropdown-ul1">
+						<li class="navigation-dropdown-li1"><a href="#"  class="link one">O firmie</a></li>
+						<li>
+							<label
+								for="btn-1"
+								class="show"
+								>Silniki elektryczne <i class="fa-solid fa-caret-down"></i
+							></label>
+							<a href="#"
+								>Silniki elektryczne <i class="fa-solid fa-caret-down"></i
+							></a>
+							<input
+								type="checkbox"
+								id="btn-1"
+							/>
+							<ul>
+								<li>
+									<label
+										for="btn-3"
+										class="show nav-label-more"
+										>Osapian <i class="fa-solid fa-caret-down"></i
+											></label
+									>
+									<a href="" target="_blank">Osapian <span><i class="fa-solid fa-angles-right osapian-more-arrow"></i></span></a>
+									<input
+										type="checkbox"
+										id="btn-3"
+									/>
+									<ul>
+										<li><a href="Osapian30.html" target="_blank">Osapian 30</a></li>
+										<li><a href="#">Osapian 40</a></li>
+										<li><a href="#">Osapian 45</a></li>
+										<li><a href="#">Osapian 55</a></li>
+									</ul>
+								</li>
+								<li>
+									<label
+										for="btn-4"
+										class="show nav-label-more"
+										>Osapian Max <i class="fa-solid fa-caret-down"></i
+											></label
+									>
+									<a href="#">Osapian MAX <span><i class="fa-solid fa-angles-right osapian-max-more-arrow"></i></span></a>
+									<input
+										type="checkbox"
+										id="btn-4"
+									/>
+									<ul>
+										<li><a href="#">Osapian 40MAX</a></li>
+										<li><a href="#">Osapian 45MAX</a></li>
+										<li><a href="#">Osapian 45/50MAX</a></li>
+										<li><a href="#">Osapian 55MAX</a></li>
+										<li><a href="#">Osapian 55/60MAX</a></li>
+									</ul>
+								</li>
+								<li>
+									<label
+										for="btn-5"
+										class="show nav-label-more"
+										>Protruar <i class="fa-solid fa-caret-down"></i
+											></label
+									>
+									<a href="#">Protruar <span><i class="fa-solid fa-angles-right protruar-more-arrow"></i></span></a>
+									<input
+										type="checkbox"
+										id="btn-5"
+									/>
+									<ul>
+										<li><a href="#">Protruar 1.0</a></li>
+										<li><a href="#">Protruar 2.0R</a></li>
+										<li><a href="#">Protruar 2.0S</a></li>
+										<li><a href="#">Protruar 3.0S</a></li>
+										<li><a href="#">Protruar 3.0G</a></li>
+										<li><a href="#">Protruar 4.0G</a></li>
+										<li><a href="#">Protruar 5.0S</a></li>
+								 
+									</ul>
+								</li>
+								<li>
+									<label
+										for="btn-6"
+										class="show nav-label-more"
+										>Cayman <i class="fa-solid fa-caret-down"></i
+											></label
+									>
+									<a href="#">Cayman <span><i class="fa-solid fa-angles-right cayman-more-arrow"></i></i></span></a>
+									<input
+										type="checkbox"
+										id="btn-6"
+									/>
+									<ul>
+										<li><a href="#">Cayman 55T</a></li>
+										<li><a href="#">Cayman 55B</a></li>
+										<li><a href="#">Cayman 80B</a></li>
+									</ul>
+								</li>
+								<li>
+									<label
+										for="btn-7"
+										class="show nav-label-more"
+										>Cayman GPS <i class="fa-solid fa-caret-down"></i
+											></label
+									>
+									<a href="#">Cayman GPS <span><i class="fa-solid fa-angles-right caymangps-more-arrow"></i></i></span></a>
+									<input
+										type="checkbox"
+										id="btn-7"
+									/>
+									<ul>
+										<li><a href="#">Cayman 55B GPS</a></li>
+										<li><a href="#">Cayman 80BY GPS</a></li>
+									</ul>
+								</li>
+								<li>
+									<label
+										for="btn-8"
+										class="show nav-label-more"
+										>Armada <i class="fa-solid fa-caret-down"></i
+											></label
+									>
+									<a href="#">Armada <span><i class="fa-solid fa-angles-right armada-more-arrow"></i></i></span></a>
+									<input
+										type="checkbox"
+										id="btn-8"
+									/>
+									<ul>
+										<li><a href="#">Armada F8</a></li>
+										<li><a href="#">Armada F10</a></li>
+										<li><a href="#">Armada T8</a></li>
+										<li><a href="#">Armada T10</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Ventura </a></li>
+								<li><a href="#">Ultima </a></li>
+								<li><a href="#">Comax N </a></li>
+								<li><a href="#">W-20 </a></li>
+							</ul>
+						</li>
+						<li>
+							<label
+								for="btn-2"
+								class="show"
+								>Akcesoria <i class="fa-solid fa-caret-down"></i
+							></label>
 							<a
-								class="nav-link one active"
-								href="#features"
-								>O nas</a
-							>
- 			
-
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									data-bs-toggle="dropdown"
-									href="#motors"
-									role="button"
-									aria-expanded="true"
-									>Silnik elektryczne</a
-								>
-								<ul class="dropdown-menu">
-									<li>
-										<a
-											class="dropdown-item"
-											href="#osapian"
-											>Osapian</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#osapian-max"
-											>Osapian MAX</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#protruar"
-											>Protruar</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#cayman"
-											>Cayman</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#ventura"
-											>Ventura</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#armada"
-											>Armada</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#ultima"
-											>Ultima</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#comax"
-											>Comax N</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#w20"
-											>W-20</a
-										>
-									</li>
-								</ul>
-							</li>
-
+								href="#"
+								 
+								>Akcesoria <i class="fa-solid fa-caret-down"></i
+							></a>
+							<input
+								type="checkbox"
+								id="btn-2"
+							/>
+							<ul>
+								<li><a href="Propellers.html">Śruby napędowe</a></li>
+								<li><a href="remote.html">Piloty/manetki</a></li>
+								<!-- <li><a href="#">Pokrowce</a></li> -->
+								<li><a href="optional.html">Akcesoria opcjonalne</a></li>
+								<li><a href="parts.html">Części serwisowe</a></li>
 							
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									data-bs-toggle="dropdown"
-									href="#akcesoria"
-									role="button"
-									aria-expanded="true"
-									>Akcesoria</a
-								>
-								<ul class="dropdown-menu">
-									<li>
-										<a
-											class="dropdown-item"
-											href="#propeller"
-											>Śruby napędowe</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#remote"
-											>Piloty/manetki</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#pokrowce"
-											>Torby/pokrowce</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#protruar"
-											>Akcesoria opcjonalne</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#cayman"
-											>Części serwisowe</a
-										>
-									</li>
-									
-								</ul>
-							</li>
+							</ul>
+						</li>
+						<li>
 							<a
-								class="nav-link one"
-								href="#help"
+								href="#"
+								class="link one"
 								>Poradnik</a
 							>
-					 
+						</li>
+						<li>
 							<a
-								class="nav-link one"
-								href="#buy"
-								>gdzie kupić</a
+								href="#"
+								class="link one"
+								>Gdzie kupić</a
 							>
+						</li>
+						<li>
 							<a
-								class="nav-link one"
-								href="#contact"
-								>kontakt</a
+								href="#"
+								class="link one"
+								>Kontakt</a
 							>
-						</div>
-					</div>
-				</div>
-			</nav>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
 
 
 			<!-- !-- ++++++++++++++++++++ HEADER START ++++++++++++++++ -->
@@ -251,7 +277,7 @@
 
 			<!-- ============ END SECTION HEADER HOME ============ -->
 
-
+			
 
 		<!-- SECTION FOTO SLIDER START -->
 
@@ -261,51 +287,52 @@
 				id="photo-slider"
 				class="photo-slider">
 
-				<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+				<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
-					  
-						<div class="carousel-item active" data-bs-interval="7000">
-						<img src="./image/Banners/Armada.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-item active" data-bs-interval="5000">
+						<img src="./image/Banners/Armada.jpg" class="d-block w-100" alt="Haswing Armada banner informacyjny">
 					  </div>
 					  
-					  <div class="carousel-item" data-bs-interval="7000">
-						<img src="./image/Banners/CaymanGPS.jpg" class="d-block w-100" alt="...">
+					  <div class="carousel-item" data-bs-interval="8000">
+						<img src="./image/Banners/CaymanGPS.jpg" class="d-block w-100" alt="Haswing Cayman GPS banner informacyjny">
+					  </div>
+
+					  <div class="carousel-item" data-bs-interval="8000">
+						<img src="./image/Banners/Comax_N.jpg" class="d-block w-100" alt="Haswing Armada Comax informacyjny">
 					  </div>
 
 					  <div class="carousel-item" data-bs-interval="7000">
-						<img src="./image/Banners/Comax_N.jpg" class="d-block w-100" alt="...">
+						<img src="./image/Banners/Ultima.jpg" class="d-block w-100" alt="Haswing Armada Ultima informacyjny">
 					  </div>
 
-					  <div class="carousel-item" data-bs-interval="7000">
-						<img src="./image/Banners/Ultima.jpg" class="d-block w-100" alt="...">
+					  <div class="carousel-item" data-bs-interval="5000">
+						<img src="./image/Banners/VenturaF5.jpg" class="d-block w-100" alt="Haswing Ventura banner informacyjny">
 					  </div>
-
-					  <div class="carousel-item" data-bs-interval="7000">
-						<img src="./image/Banners/VenturaF5.jpg" class="d-block w-100" alt="...">
+					  <div class="carousel-item" data-bs-interval="5000">
+						<img src="./image/Banners/Protruar-Genius.jpg" class="d-block w-100" alt="Haswing Protruar Genius 55 banner informacyjny">
 					  </div>
 					  
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Next</span>
-					</button>
+					 
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				  </button>
 				  </div>
 
 				</section>
 
 <!-- SECTION FOTO SLIDER  END-->
-
-			
-
-
+	 
 		<!-- FEATURES SECTION -->
 
 		<section
 		id="features"
-		class="features bg-light py-5"
+		class="features bg-light"
 	>
 		<div class="container">
 			<h2 class="h2heading">Dlaczego Haswing</h2>
@@ -392,48 +419,151 @@
 	</section>
 
 
-<!-- SECTION ANIMATED MOTOR CARDS -- START-- -->
+<!-- SECTION ANIMATED MOTOR CARDS OSAPIAN-- START-- -->
 
 
 <section id="osapian" class="motor-cards motor-osapian py-5">
-	<div class="hero-shadow"></div>
-
-	<h2>Dostępne modele </h2>
-	<div class="underline"></div>	
 	
-		<div class="cardbox">
+	<div class="motor-shadow"></div>
+	<h2 class="osapian-series">Seria Osapian </h2>
+		<div class="underline"></div>	
+		<h3 class="underline-text">Silniki szczotkowe</h3>
+		<div class="cardbox wrapper">
 			
 			<!-- CARD START -->
 			<div class="cards">
-				<h2 class="card-heading">Osapian</h2>
+				<h2 class="card-heading">Osapian 30</h2>
+				<!-- <div class="card-bestseller">bestseller</div> -->
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">30lbs</div>
+
 				<div class="content">
 
-					<p><b>Uciąg:</b> Od 30 do 55lbs</p>
-					<p><b>Moc:</b> 360-600W</p>
+					<p><b>Uciąg:</b> 30lbs</p>
+					<p><b>Moc:</b> 360W</p>
 					<p><b>Zasilanie:</b> 12V</p>
 					<p><b>Biegi:</b> 5 przód/3 tył</p>
-					<p><b>Długość kolumny: </b>90cm</p>
+					<p><b>Długość kolumny: </b>80cm</p>
 					<p><b>Typ silnika: </b>Szczotkowy</p>
-					<p><b>Śruba: </b>2/3-łopatkowa</p>
+					<p><b>Śruba: </b>2-łopatkowa</p>
 
 					<a
-						href="#"
-						class="button-motor"
+						href="Osapian30.html"
+						class="button-motor" target="_blank"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
 					></a>
 				</div>
+				
 				<img
-				src="./image/Osapian_BT.png"
-					alt=""
+				src="./image-motors-640/osapian/HO30-50701_BT.png"
+					alt="Silnik elektryczny Osapian 30"
 					class="motor-card-img"
 				/>
 			</div>
-
 			<!-- CARD END -->
+
 			<!-- CARD START -->
 			<div class="cards">
-				<h2 class="card-heading">Osapian slim</h2>
+				<h2 class="card-heading">Osapian 40</h2>
+				<div class="card-bestseller">bestseller</div>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">40lbs</div>
+				<div class="content">
+
+					<p><b>Uciąg:</b> 40lbs</p>
+					<p><b>Moc:</b> 500W</p>
+					<p><b>Zasilanie:</b> 12V</p>
+					<p><b>Biegi:</b> 5 przód/3 tył</p>
+					<p><b>Długość kolumny: </b>80cm</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>2-łopatkowa</p>
+
+					<a
+						href="Osapian40.html"
+						class="button-motor" target="_blank"
+						>Więcej informacji &nbsp
+						<i class="fa-solid fa-hand-pointer fa-beat"></i
+					></a>
+				</div>
+
+				<img
+				src="./image-motors-640/osapian/HO30-50701_BT.png"
+					alt="Silnik elektryczny Osapian 40"
+					class="motor-card-img"
+				/>
+			</div>
+			<!-- CARD END -->
+
+			<!-- CARD START -->
+			<div class="cards">
+				<h2 class="card-heading">Osapian 45</h2>
+				<!-- <div class="card-bestseller">bestseller</div> -->
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">45lbs</div>
+				<div class="content">
+
+					<p><b>Uciąg:</b> 45lbs</p>
+					<p><b>Moc:</b> 540W</p>
+					<p><b>Zasilanie:</b> 12V</p>
+					<p><b>Biegi:</b> 5 przód/3 tył</p>
+					<p><b>Długość kolumny: </b>90cm</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>2-łopatkowa</p>
+
+					<a
+						href="Osapian45.html"
+						class="button-motor" target="_blank"
+						>Więcej informacji &nbsp
+						<i class="fa-solid fa-hand-pointer fa-beat"></i
+					></a>
+				</div>
+
+				<img
+				src="./image-motors-640/osapian/HO45-BT.png"
+					alt="Silnik elektryczny Osapian 45"
+					class="motor-card-img"
+				/>
+			</div>
+			<!-- CARD END -->
+
+			<!-- CARD START -->
+			<div class="cards">
+				<h2 class="card-heading">Osapian 55</h2>
+				<div class="card-bestseller">bestseller</div>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">55lbs</div>
+				<div class="content">
+
+					<p><b>Uciąg:</b> 55lbs</p>
+					<p><b>Moc:</b> 600W</p>
+					<p><b>Zasilanie:</b> 12V</p>
+					<p><b>Biegi:</b> 5 przód/3 tył</p>
+					<p><b>Długość kolumny: </b>90cm</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>3-łopatkowa</p>
+
+					<a
+						href="Osapian55.html"
+						class="button-motor" target="_blank"
+						>Więcej informacji &nbsp
+						<i class="fa-solid fa-hand-pointer fa-beat"></i
+					></a>
+				</div>
+
+				<img
+				src="./image-motors-640/osapian/Osapian_1_640_BT.png"
+					alt="Silnik elektryczny Osapian 55"
+					class="motor-card-img"
+				/>
+			</div>
+			<!-- CARD END -->
+
+			<!-- CARD START -->
+			<div class="cards">
+				<h2 class="card-heading">Osapian slim 66</h2>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">55lbs</div>
 				<div class="content">
 
 					<p><b>Uciąg:</b> 55lbs</p>
@@ -442,17 +572,91 @@
 					<p><b>Biegi:</b> 5 przód/3 tył</p>
 					<p><b>Długość kolumny: </b>66cm</p>
 					<p><b>Typ silnika: </b>Szczotkowy</p>
-					<p><b>Śruba: </b>2/3-łopatkowa</p>
+					<p><b>Śruba: </b>3-łopatkowa</p>
 
 					<a
-						href="#"
+						href="osapian-slim66.html"
 						class="button-motor"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
 					></a>
 				</div>
 				<img
-				src="./Haswing_motors/Osapian_Slim-BT.png"
+				src="./image-motors-640/osapian/Osapian_66_BTpg.png"
+					alt="Silnik elektryczny Osapian 55 slim 66cm"
+					class="motor-card-img"
+				/>
+			</div>
+
+			<!-- CARD END -->
+			<!-- CARD START -->
+			<div class="cards">
+				<h2 class="card-heading">Osapian slim 76</h2>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">55lbs</div>
+				<div class="content">
+
+					<p><b>Uciąg:</b> 55lbs</p>
+					<p><b>Moc:</b> 600W</p>
+					<p><b>Zasilanie:</b> 12V</p>
+					<p><b>Biegi:</b> 5 przód/3 tył</p>
+					<p><b>Długość kolumny: </b>76cm</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>3-łopatkowa</p>
+
+					<a
+						href="osapian-slim76.html"
+						class="button-motor"
+						>Więcej informacji &nbsp
+						<i class="fa-solid fa-hand-pointer fa-beat"></i
+					></a>
+				</div>
+				<img
+				src="./image-motors-640/osapian/Osapian_76_BT.png"
+					alt="Silnik elektryczny Osapian 55 slim 66cm"
+					class="motor-card-img"
+				/>
+			</div>
+
+			<!-- CARD END -->
+
+
+			<!-- ================== OSAPIAN MAX SECTION START ================ -->
+
+
+			<section id="osapian-max" class="motor-cards motor-osapian py-5">
+
+				<div class="motor-shadow"></div>
+				<h2 class="osapian-series">Osapian MAX </h2>
+					<div class="underline"></div>	
+					<h3 class="underline-text">Silniki z maximizerem</h3>
+					<div class="cardbox wrapper">
+
+			<!-- CARD START -->
+
+			<div class="cards">
+				<h2 class="card-heading">Osapian 40 MAX</h2>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">40lbs</div>
+				<div class="content">
+
+					<p><b>Uciąg:</b> 40lbs</p>
+					<p><b>Moc:</b> 600W</p>
+					<p><b>Zasilanie:</b> 12V</p>
+					<p><b>Biegi:</b> Płynna regulacja</p>
+					<p><b>Długość kolumny: </b>80cm</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>2-łopatkowa</p>
+
+					<a
+						href="osapian40max.html"
+						class="button-motor"
+						>Więcej informacji &nbsp
+						<i class="fa-solid fa-hand-pointer fa-beat"></i
+					></a>
+				</div>
+				<img
+					src="./Haswing_motors/Osapian_max-BT.png"
 					alt=""
 					class="motor-card-img"
 				/>
@@ -463,19 +667,53 @@
 			<!-- CARD START -->
 
 			<div class="cards">
-				<h2 class="card-heading">Osapian MAX</h2>
+				<h2 class="card-heading">Osapian 45 MAX</h2>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">45lbs</div>
 				<div class="content">
 
-					<p><b>Uciąg:</b> 40-60lbs</p>
-					<p><b>Moc:</b> 500-680W</p>
+					<p><b>Uciąg:</b> 45lbs</p>
+					<p><b>Moc:</b> 540W</p>
 					<p><b>Zasilanie:</b> 12V</p>
-					<p><b>Biegi:</b> Maximizer</p>
+					<p><b>Biegi:</b> Płynna regulacja</p>
 					<p><b>Długość kolumny: </b>90cm</p>
 					<p><b>Typ silnika: </b>Szczotkowy</p>
-					<p><b>Śruba: </b>2/3-łopatkowa</p>
+					<p><b>Śruba: </b>2-łopatkowa</p>
 
 					<a
-						href="#"
+						href="osapian45max.html"
+						class="button-motor"
+						>Więcej informacji &nbsp
+						<i class="fa-solid fa-hand-pointer fa-beat"></i
+					></a>
+				</div>
+				<img
+					src="./Haswing_motors/Osapian_max-BT.png"
+					alt=""
+					class="motor-card-img"
+				/>
+			</div>
+
+			<!-- CARD END -->
+
+			<!-- CARD START -->
+
+			<div class="cards">
+				<h2 class="card-heading">Osapian 45/50 MAX</h2>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">50lbs</div>
+				<div class="content">
+
+					<p><b>Uciąg:</b> 50lbs</p>
+					<p><b>Moc:</b> 600W</p>
+					<p><b>Zasilanie:</b> 12V</p>
+					<p><b>Biegi:</b> Płynna regulacja</p>
+					<p><b>Długość kolumny: </b>90cm</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>2-łopatkowa</p>
+
+					<a
+						href="osapian50max.html"
 						class="button-motor"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
@@ -492,24 +730,29 @@
 			<!-- CARD START -->
 
 			<div class="cards">
-				<h2 class="card-heading">protruar 1.0</h2>
+				<h2 class="card-heading">Osapian 55 MAX</h2>
+				<div class="card-bestseller3">bestseller</div>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">55lbs</div>
 				<div class="content">
-					<p><b>Uciąg:</b>65lbs</p>
-					<p><b>Moc:</b>600W</p>
+
+					<p><b>Uciąg:</b> 55lbs</p>
+					<p><b>Moc:</b> 660W</p>
 					<p><b>Zasilanie:</b> 12V</p>
-					<p><b>Biegi:</b>Maximizer</p>
+					<p><b>Biegi:</b> Płynna regulacja</p>
 					<p><b>Długość kolumny: </b>90cm</p>
-					<p><b>Typ silnika:</b>Bezszczotkowy</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>3-łopatkowa</p>
 
 					<a
-						href="#"
+						href="osapian55max.html"
 						class="button-motor"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
 					></a>
 				</div>
 				<img
-				src="./Haswing_motors/Protruar1_BT.png"
+					src="./Haswing_motors/Osapian_max-BT.png"
 					alt=""
 					class="motor-card-img"
 				/>
@@ -519,25 +762,28 @@
 			<!-- CARD START -->
 
 			<div class="cards">
-				<h2 class="card-heading">protruar 55</h2>
-				<div class="card-news">Nowość</div>
+				<h2 class="card-heading osapian-slim-heading">Osapian 55 MAX slim</h2>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">55lbs</div>
 				<div class="content">
-					<p><b>Uciąg:</b> 30/40/55lbs</p>
-					<p><b>Moc:</b> 360/500/660W</p>
+
+					<p><b>Uciąg:</b> 55lbs</p>
+					<p><b>Moc:</b> 660W</p>
 					<p><b>Zasilanie:</b> 12V</p>
-					<p><b>Biegi:</b> Maximizer</p>
-					<p><b>Długość kolumny: </b>80cm</p>
-					<p><b>Typ silnika:</b> Bezszczotkowy</p>
+					<p><b>Biegi:</b> Płynna regulacja</p>
+					<p><b>Długość kolumny: </b>66/76cm</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>3-łopatkowa</p>
 
 					<a
-						href="#"
+						href="osapian55maxs.html"
 						class="button-motor"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
 					></a>
 				</div>
 				<img
-				src="./Haswing_motors/Protruar_Genius-BT.png"
+					src="./Haswing_motors/Osapian_max-BT.png"
 					alt=""
 					class="motor-card-img"
 				/>
@@ -547,110 +793,28 @@
 			<!-- CARD START -->
 
 			<div class="cards">
-				<h2 class="card-heading">protruar 2.0R</h2>
+				<h2 class="card-heading">Osapian 55/60 MAX</h2>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">60lbs</div>
 				<div class="content">
 
-					<p><b>Uciąg:</b>85lbs</p>
-					<p><b>Moc:</b>960W</p>
-					<p><b>Zasilanie:</b>24V</p>
-					<p><b>Biegi:</b>Maximizer</p>
-					<p><b>Długość kolumny: </b>90cm</p>
-					<p><b>Typ silnika:</b>Bezszczotkowy</p>
-
-					<a
-						href="#"
-						class="button-motor"
-						>Więcej informacji &nbsp
-						<i class="fa-solid fa-hand-pointer fa-beat"></i
-					></a>
-				</div>
-				<img
-				src="./Haswing_motors/Protruar2-24V.png"
-					alt=""
-					class="motor-card-img"
-				/>
-			</div>
-
-			<!-- CARD END -->
-			<!-- CARD START -->
-
-			<div class="cards">
-				<h2 class="card-heading">protruar 2.0S</h2>
-				<div class="content">
-
-					<p><b>Uciąg:</b>85lbs</p>
-					<p><b>Moc: 720W</b></p>
-					<p><b>Zasilanie:</b>12V</p>
-					<p><b>Biegi:</b>Maximizer</p>
-					<p><b>Długość kolumny: </b>90cm</p>
-					<p><b>Typ silnika:</b>Bezszczotkowy</p>
-
-					<a
-						href="#"
-						class="button-motor"
-						>Więcej informacji &nbsp
-						<i class="fa-solid fa-hand-pointer fa-beat"></i
-					></a>
-				</div>
-				<img
-				src="./Haswing_motors/Protruar_2S_BT.png"
-					alt=""
-					class="motor-card-img"
-				/>
-			</div>
-
-			<!-- CARD END -->
-			<!-- CARD START -->
-
-			<div class="cards">
-				<h2 class="card-heading">protruar 3.0S</h2>
-
-				<div class="content">
-
-					<p><b>Uciąg:</b> 110lbs</p>
-					<p><b>Moc:</b> 900W</p>
+					<p><b>Uciąg:</b> 60lbs</p>
+					<p><b>Moc:</b> 680W</p>
 					<p><b>Zasilanie:</b> 12V</p>
-					<p><b>Biegi:</b> Maximizer</p>
-					<p><b>Długość kolumny: </b>100cm</p>
-					<p><b>Typ silnika:</b> Bezszczotkowy</p>
-
-					<a
-						href="#"
-						class="button-motor"
-						>Więcej informacji &nbsp
-						<i class="fa-solid fa-hand-pointer fa-beat"></i
-					></a>
-				</div>
-				<img
-				src="./Haswing_motors/Protruar_3S_BT.png"
-					alt=""
-					class="motor-card-img"
-				/>
-			</div>
-
-			<!-- CARD END -->
-			<!-- CARD START -->
-
-			<div class="cards">
-				<h2 class="card-heading">protruar 3.0G</h2>
-				<div class="content">
-
-					<p><b>Uciąg:</b> 110lbs</p>
-					<p><b>Moc:</b> 1200W</p>
-					<p><b>Zasilanie:</b> 24V</p>
-					<p><b>Biegi:</b> Maximizer</p>
+					<p><b>Biegi:</b> Płynna regulacja</p>
 					<p><b>Długość kolumny: </b>90cm</p>
-					<p><b>Typ silnika:</b> Bezszczotkowy</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>3-łopatkowa</p>
 
 					<a
-						href="#"
+						href="osapian60max.html"
 						class="button-motor"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
 					></a>
 				</div>
 				<img
-				src="./Haswing_motors/Protruar_3G_BT.png"
+					src="./Haswing_motors/Osapian_max-BT.png"
 					alt=""
 					class="motor-card-img"
 				/>
@@ -660,65 +824,349 @@
 			<!-- CARD START -->
 
 			<div class="cards">
-				<h2 class="card-heading">protruar 4.0G</h2>
+				<h2 class="card-heading osapian-slim-heading">Osapian 55/60 MAX slim</h2>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">60lbs</div>
 				<div class="content">
 
-					<p><b>Uciąg:</b> 130lbs</p>
-					<p><b>Moc:</b> 1800W</p>
-					<p><b>Zasilanie:</b> 24V</p>
-					<p><b>Biegi:</b> Maximizer</p>
-					<p><b>Długość kolumny: </b>100cm</p>
-					<p><b>Typ silnika:</b> Bezszczotkowy</p>
-
+					<p><b>Uciąg:</b> 60lbs</p>
+					<p><b>Moc:</b> 680W</p>
+					<p><b>Zasilanie:</b> 12V</p>
+					<p><b>Biegi:</b> Płynna regulacja</p>
+					<p><b>Długość kolumny: </b>66/76cm</p>
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>3-łopatkowa</p>
 
 					<a
-						href="#"
+						href="osapian60maxs.html"
 						class="button-motor"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
 					></a>
 				</div>
 				<img
-				src="./Haswing_motors/Protruar_4G_BT.png"
+					src="./Haswing_motors/Osapian_max-BT.png"
 					alt=""
 					class="motor-card-img"
 				/>
 			</div>
 
 			<!-- CARD END -->
-			<!-- CARD START -->
+
+		</div>
+</section>
+ <!-- ================ SEKCJA OSAPIAN MAX KONIEC ============= -->
+
+
+
+
+<!-- SECTION ANIMATED MOTOR CARDS PROTRUAR  -- START-- -->
+
+
+<section id="protruar" class="motor-cards motor-osapian py-5">
+
+	<div class="motor-shadow"></div>
+	<h2 class="osapian-series">Seria Protruar </h2>
+		<div class="underline"></div>	
+		<h3 class="underline-text">Silniki bezszczotkowe z maximizerem</h3>
+		<div class="cardbox wrapper">
+
+<!-- CARD START -->
 
 			<div class="cards">
-				<h2 class="card-heading">protruar 5.0S</h2>
-				<div class="content">
+	<h2 class="card-heading">protruar 1.0</h2>
+	<div class="card-bestseller">bestseller</div>
+	<div class="card-voltage">12V</div>
+	<div class="card-lbs">65lbs</div>
+	<div class="content">
+		<p><b>Uciąg: </b>65lbs</p>
+		<p><b>Moc: </b>600W</p>
+		<p><b>Zasilanie: </b> 12V</p>
+		<p><b>Biegi: </b>Maximizer</p>
+		<p><b>Długość kolumny: </b>90cm</p>
+		<p><b>Typ silnika: </b>Bezszczotkowy</p>
+		<p><b>Śruba: </b>3-łopatkowa</p>
 
-					<p><b>Uciąg:</b> 160lbs</p>
-					<p><b>Moc:</b> 2520W</p>
-					<p><b>Zasilanie:</b> 24V</p>
-					<p><b>Biegi:</b> Maximizer</p>
-					<p><b>Długość kolumny: </b>100cm</p>
-					<p><b>Typ silnika:</b> Bezszczotkowy</p>
+		<a
+			href="protruar1.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./image-motors-640/protruar1/protruar_0BT.png"
+		alt=" Silnik elektryczny Haswing protruar 1"
+		class="motor-card-img"
+	/>
+</div>
 
-					<a
-						href="#"
-						class="button-motor"
-						>Więcej informacji &nbsp
-						<i class="fa-solid fa-hand-pointer fa-beat"></i
-					></a>
-				</div>
-				<img
-				src="./Haswing_motors/Protruar5S-BT.png"
-					alt=""
-					class="motor-card-img"
-				/>
-			</div>
+<!-- CARD END -->
+<!-- CARD START -->
 
-			<!-- CARD END -->
-			<!-- CARD START -->
+			<div class="cards">
+	<h2 class="card-heading">protruar 1.0 slim</h2>
+	<div class="card-voltage">12V</div>
+	<div class="card-lbs">65lbs</div>
+	<div class="content">
+		<p><b>Uciąg: </b>65lbs</p>
+		<p><b>Moc: </b>600W</p>
+		<p><b>Zasilanie: </b> 12V</p>
+		<p><b>Biegi: </b>Maximizer</p>
+		<p><b>Długość kolumny: </b>66cm</p>
+		<p><b>Typ silnika: </b>Bezszczotkowy</p>
+		<p><b>Śruba: </b>3-łopatkowa</p>
+
+		<a
+			href="protruar1slim.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./image-motors-640/protruar1/protruar-slim_0BT.png"
+		alt="Silnik elektryczny haswing protruar 1 slim"
+		class="motor-card-img"
+	/>
+</div>
+
+<!-- CARD END -->
+
+
+<!-- CARD START -->
+
+<div class="cards">
+	<h2 class="card-heading">protruar 55</h2>
+	<div class="card-news">Nowość</div>
+	<div class="card-voltage">12V</div>
+	<div class="card-lbs">55lbs</div>
+	<div class="content">
+		<p><b>Uciąg: </b> 30/40/55lbs</p>
+		<p><b>Moc: </b> 360/500/600W</p>
+		<p><b>Zasilanie: </b> 12V</p>
+		<p><b>Biegi:</b> Maximizer</p>
+		<p><b>Długość kolumny: </b>80cm</p>
+		<p><b>Typ silnika:</b> Bezszczotkowy</p>
+		<p><b>Śruba: </b>2-łopatkowa</p>
+
+		<a
+			href="protruar55.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./Haswing_motors/Protruar_Genius-BT.png"
+		alt="silnik elektryczny haswing protruar genius 55"
+		class="motor-card-img"
+	/>
+</div>
+
+<!-- CARD END -->
+<!-- CARD START -->
+
+<div class="cards">
+	<h2 class="card-heading">protruar 2.0R</h2>
+	<div class="card-voltage">24V</div>
+	<div class="card-lbs">85lbs</div>
+	<div class="content">
+
+		<p><b>Uciąg: </b>85lbs</p>
+		<p><b>Moc: </b>960W</p>
+		<p><b>Zasilanie: </b>24V</p>
+		<p><b>Biegi: </b>Maximizer</p>
+		<p><b>Długość kolumny: </b>90cm</p>
+		<p><b>Typ silnika: </b>Bezszczotkowy</p>
+		<p><b>Śruba: </b>3-łopatkowa</p>
+
+		<a
+			href="protruar2r.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./image-motors-640/protruar1/protruar_0BT.png"
+		alt="silnik elektryczny haswing protruar 2.0 24V"
+		class="motor-card-img"
+	/>
+</div>
+
+<!-- CARD END -->
+<!-- CARD START -->
+
+<div class="cards">
+	<h2 class="card-heading">protruar 2.0S</h2>
+	<div class="card-voltage">12V</div>
+	<div class="card-lbs">85lbs</div>
+	<div class="content">
+
+		<p><b>Uciąg: </b>85lbs</p>
+		<p><b>Moc:</b> 720W</p>
+		<p><b>Zasilanie: </b>12V</p>
+		<p><b>Biegi: </b>Maximizer</p>
+		<p><b>Długość kolumny: </b>90cm</p>
+		<p><b>Typ silnika: </b>Bezszczotkowy</p>
+		<p><b>Śruba: </b>3-łopatkowa</p>
+		<a
+			href="protruar2s.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./image-motors-640/protruar2s/Protruar_2-0_12V_BT.png"
+		alt="silnik elektryczny haswing protruar 2.0S"
+		class="motor-card-img"
+	/>
+</div>
+
+<!-- CARD END -->
+<!-- CARD START -->
+
+<div class="cards">
+	<h2 class="card-heading">protruar 3.0S</h2>
+	<div class="card-voltage">12V</div>
+	<div class="card-lbs">110lbs</div>
+	<div class="content">
+
+		<p><b>Uciąg:</b> 110lbs</p>
+		<p><b>Moc:</b> 900W</p>
+		<p><b>Zasilanie:</b> 12V</p>
+		<p><b>Biegi:</b> Maximizer</p>
+		<p><b>Długość kolumny: </b>100cm</p>
+		<p><b>Typ silnika:</b> Bezszczotkowy</p>
+		<p><b>Śruba: </b>3-łopatkowa</p>
+		<a
+			href="protruar3s.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./image-motors-640/protruar3s/Protruar_3-0_12V_BT.png"
+		alt="silnik elektryczny haswing protruar 3.0S"
+		class="motor-card-img"
+	/>
+</div>
+
+<!-- CARD END -->
+<!-- CARD START -->
+
+<div class="cards">
+	<h2 class="card-heading">protruar 3.0G</h2>
+	<div class="card-bestseller2">bestseller</div>
+	<div class="card-voltage">24V</div>
+	<div class="card-lbs">110lbs</div>
+	<div class="content">
+
+		<p><b>Uciąg:</b> 110lbs</p>
+		<p><b>Moc:</b> 1200W</p>
+		<p><b>Zasilanie:</b> 24V</p>
+		<p><b>Biegi:</b> Maximizer</p>
+		<p><b>Długość kolumny: </b>90cm</p>
+		<p><b>Typ silnika:</b> Bezszczotkowy</p>
+		<p><b>Śruba: </b>3-łopatkowa</p>
+		<a
+			href="protruar3g.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./image-motors-640/protruar3g/Protruar3G_0_BT.png"
+		alt="silnik elektryczny haswing protruar 3.0g"
+		class="motor-card-img"
+	/>
+</div>
+
+<!-- CARD END -->
+<!-- CARD START -->
+
+<div class="cards">
+	<h2 class="card-heading">protruar 4.0G</h2>
+	<div class="card-voltage">24V</div>
+	<div class="card-lbs">130lbs</div>
+	<div class="content">
+
+		<p><b>Uciąg:</b> 130lbs</p>
+		<p><b>Moc:</b> 1800W</p>
+		<p><b>Zasilanie:</b> 24V</p>
+		<p><b>Biegi:</b> Maximizer</p>
+		<p><b>Długość kolumny: </b>100cm</p>
+		<p><b>Typ silnika:</b> Bezszczotkowy</p>
+		<p><b>Śruba: </b>3-łopatkowa</p>
+
+		<a
+			href="protruar4g.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./image-motors-640/protruar4g/Protruar4G_0_BT.png"
+		alt=""
+		class="motor-card-img"
+	/>
+</div>
+
+<!-- CARD END -->
+<!-- CARD START -->
+
+<div class="cards">
+	<h2 class="card-heading">protruar 5.0S</h2>
+	<div class="card-voltage">24V</div>
+	<div class="card-lbs">160lbs</div>
+	<div class="content">
+
+		<p><b>Uciąg:</b> 160lbs</p>
+		<p><b>Moc:</b> 2520W</p>
+		<p><b>Zasilanie:</b> 24V</p>
+		<p><b>Biegi:</b> Maximizer</p>
+		<p><b>Długość kolumny: </b>100cm</p>
+		<p><b>Typ silnika:</b> Bezszczotkowy</p>
+		<p><b>Śruba: </b>3-łopatkowa</p>
+		
+		<a
+			href="protruar5s.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	<img
+	src="./image-motors-640/protruar3s/Protruar_3-0_12V_BT.png"
+		alt="silnik elektryczny haswing protruar 5.0S"
+		class="motor-card-img"
+	/>
+</div>
+</div>
+</section>
+
+<!-- SECTION MOTOR CARD PROTRUAR --- END --- -->
+
+<!-- SECTION  MOTOR CARDS CAYMAN -- START-- -->
+<section id="cayman" class="motor-cards motor-osapian py-5">
+
+	<div class="motor-shadow"></div>
+	<h2 class="osapian-series">Seria Cayman </h2>
+		<div class="underline"></div>	
+		<h3 class="underline-text">Silniki zdalnie sterowane</h3>
+		<div class="cardbox wrapper">
 
 			<div class="cards"> 
 				 
-				<h2 class="card-heading">cayman b 55</h2>
+				<h2 class="card-heading">cayman 55b</h2>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">55lbs</div>
 				<div class="content">
 
 					<p><b>Uciąg:</b> 55lbs</p>
@@ -727,9 +1175,9 @@
 					<p><b>Biegi:</b> Maximizer</p>
 					<p><b>Długość kolumny: </b>137cm</p>
 					<p><b>Typ silnika:</b> Szczotkowy</p>
-
+					<p><b>Śruba: </b>3-łopatkowa</p>
 					<a
-						href="#"
+						href="cayman55b.html"
 						class="button-motor"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
@@ -737,7 +1185,7 @@
 				</div>
 				<img
 				src="./Haswing_motors/Cayman55B-BT.png"
-					alt=""
+					alt="Silnik elektryczny haswing cayman 55b"
 					class="motor-card-img"
 				/>
 			</div>
@@ -747,26 +1195,28 @@
 
 			<div class="cards"> 
 				 
-				<h2 class="card-heading">cayman b 80</h2>
+				<h2 class="card-heading">cayman 80b</h2>
+				<div class="card-voltage">24V</div>
+				<div class="card-lbs">80lbs</div>
 				<div class="content">
 
-					<p><b>Uciąg:</b>80lbs</p>
+					<p><b>Uciąg: </b>80lbs</p>
 					<p><b>Moc:</b> 1080W</p>
 					<p><b>Zasilanie:</b> 24V</p>
 					<p><b>Biegi:</b> Maximizer</p>
 					<p><b>Długość kolumny: </b>149cm</p>
-					<p><b>Typ silnika:</b>Szczotkowy</p>
-
+					<p><b>Typ silnika: </b>Szczotkowy</p>
+					<p><b>Śruba: </b>2-łopatkowa</p>
 					<a
-						href="#"
+						href="cayman80b.html"
 						class="button-motor"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
 					></a>
 				</div>
 				<img
-				src="./Haswing_motors/Cayman-B80-BT.png"
-					alt=""
+				src="./image-motors-640/cayman_b80/Cayman-B_80D_BT.png"
+					alt="Silnik elektryczny haswing cayman 80b"
 					class="motor-card-img"
 				/>
 			</div>
@@ -777,25 +1227,29 @@
 			<div class="cards"> 
 				 
 				<h2 class="card-heading">cayman 55B GPS</h2>
+				<div class="card-bestseller3">bestseller</div>
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">55lbs</div>
 				<div class="content">
 
-					<p><b>Uciąg:</b>55lbs</p>
+					<p><b>Uciąg: </b>55lbs</p>
 					<p><b>Moc:</b> 600W</p>
 					<p><b>Zasilanie:</b> 12V</p>
 					<p><b>Biegi:</b> Maximizer</p>
 					<p><b>Długość kolumny: </b>137cm</p>
 					<p><b>Typ silnika:</b> Szczotkowy</p>
+					<p><b>Śruba: </b>3-łopatkowa</p>
 
 					<a
-						href="#"
+						href="cayman55gps.html"
 						class="button-motor"
 						>Więcej informacji &nbsp
 						<i class="fa-solid fa-hand-pointer fa-beat"></i
 					></a>
 				</div>
 				<img
-				src="./Haswing_motors/Cayman-B_55_GPS-BT.png"
-					alt=""
+				src="./image-motors-640/cayman_gps55/Cayman-B_55GPS_BT.png"
+					alt="Silnik elektryczny haswing cayman gps 55"
 					class="motor-card-img"
 				/>
 			</div>
@@ -807,6 +1261,8 @@
 				 
 				<h2 class="card-heading">cayman 80BY GPS</h2>
 				<div class="card-news">Nowość</div>
+				<div class="card-voltage">24V</div>
+				<div class="card-lbs">80lbs</div>
 				<div class="content">
 
 					<p><b>Uciąg:</b>80lbs</p>
@@ -815,7 +1271,7 @@
 					<p><b>Biegi:</b> Maximizer</p>
 					<p><b>Długość kolumny: </b>152cm</p>
 					<p><b>Typ silnika:</b> Szczotkowy</p>
-
+					<p><b>Śruba: </b>2-łopatkowa</p>
 					<a
 						href="#"
 						class="button-motor"
@@ -824,8 +1280,8 @@
 					></a>
 				</div>
 				<img
-				src="./Haswing_motors/Cayman_80_GPS_BY_BT.png"
-					alt=""
+				src="./image-motors-640/cayman_gps80/Cayman_80_GPS_BY_BT.png"
+					alt="Silnik elektryczny haswing cayman gps 80"
 					class="motor-card-img"
 				/>
 			</div>
@@ -836,7 +1292,8 @@
 			<div class="cards"> 
 				 
 				<h2 class="card-heading">cayman 55T</h2>
-				
+				<div class="card-voltage">12V</div>
+				<div class="card-lbs">55lbs</div>
 				<div class="content">
 
 					<p><b>Uciąg: </b>55lbs</p>
@@ -846,7 +1303,7 @@
 					<p><b>Długość kolumny: </b>100cm</p>
 					<p><b>Typ silnika: </b>Szczotkowy</p>
 					<p><b>Śruba: </b>3-łopatkowa</p>
-
+					<p><b>Śruba: </b>3-łopatkowa</p>
 					<a
 						href="#"
 						class="button-motor"
@@ -860,175 +1317,316 @@
 					class="motor-card-img"
 				/>
 			</div>
+</div>
+</section>
+			
+<!-- SECTION  MOTOR CARDS CAYMAN -- END-- -->
+ 
 
-			<!-- CARD END -->
-			<!-- CARD START -->
+<!-- +++++++++++++++++ SEKCTION ARMADA MOTORS CARD +++++++++++++++++++++++++++++ -->
 
-			<div class="cards"> 
-				 
-				<h2 class="card-heading">comax n 55</h2>
-				
-				<div class="content">
+<section id="armada" class="motor-cards motor-osapian py-5">
 
-					<p><b>Uciąg: </b>55lbs</p>
-					<p><b>Moc:</b> 600W</p>
-					<p><b>Zasilanie:</b> 12V</p>
-					<p><b>Biegi:</b> Maximizer</p>
-					<p><b>Długość kolumny: </b>61-89cm</p>
-					<p><b>Typ silnika: </b>Szczotkowy</p>
-					<p><b>Śruba: </b>3-łopatkowa</p>
+	<div class="motor-shadow"></div>
+	<h2 class="osapian-series">Seria Armada </h2>
+		<div class="underline"></div>	
+		<h3 class="underline-text">Silniki o dużej mocy</h3>
+		
+		<div class="cardbox wrapper">
+	<!-- CARD START -->
 
-					<a
-						href="#"
-						class="button-motor"
-						>Więcej informacji &nbsp
-						<i class="fa-solid fa-hand-pointer fa-beat"></i
-					></a>
-				</div>
-				<img
-				src="./Haswing_motors/ComaxN55-BT.png"
-					alt=""
-					class="motor-card-img"
-				/>
+	<div class="cards"> 
+			 
+		<h2 class="card-heading">Armada 8T</h2>
+		<div class="card-voltage">48V</div>
+		<div class="card-lbs">250lbs</div>
+		<div class="content">
+
+			<p><b>Uciąg: </b>250lbs</p>
+			<p><b>Moc:</b> 4800W</p>
+			<p><b>Zasilanie:</b> 48V</p>
+			<p><b>Biegi:</b> Maximizer</p>
+			<p><b>Długość kolumny: </b>67cm</p>
+			<p><b>Typ silnika: </b>Bezszczotkowy</p>
+			<p><b>Śruba: </b>3-łopatkowa</p>
+
+			<a
+				href="armada8t.html"
+				class="button-motor"
+				>Więcej informacji &nbsp
+				<i class="fa-solid fa-hand-pointer fa-beat"></i
+			></a>
+		</div>
+		<img
+		src="./image-motors-640/armada_T/Armada_8T_BT.png"
+			alt="silnik elektryczny haswing armada 8t rumpel"
+			class="motor-card-img"
+		/>
+	</div>
+
+	
+	<!-- CARD END -->
+	<!-- CARD START -->
+
+	<div class="cards"> 
+			 
+		<h2 class="card-heading">Armada 10T</h2>
+		<div class="card-voltage">48V</div>
+		<div class="card-lbs">250lbs</div>
+		<div class="content">
+
+			<p><b>Uciąg: </b>300lbs</p>
+			<p><b>Moc:</b> 6000W</p>
+			<p><b>Zasilanie:</b> 48V</p>
+			<p><b>Biegi:</b> Maximizer</p>
+			<p><b>Długość kolumny: </b>67cm</p>
+			<p><b>Typ silnika: </b>Bezszczotkowy</p>
+			<p><b>Śruba: </b>3-łopatkowa</p>
+
+			<a
+				href="armada10t.html"
+				class="button-motor"
+				>Więcej informacji &nbsp
+				<i class="fa-solid fa-hand-pointer fa-beat"></i
+			></a>
+		</div>
+		<img
+		src="./image-motors-640/armada_T/Armada_8T_BT.png"
+			alt="silnik elektryczny haswing armada 10t rumpel"
+			class="motor-card-img"
+		/>
+	</div>
+
+	
+	<!-- CARD END -->
+
+		<!-- CARD START -->
+
+		<div class="cards"> 
+			 
+			<h2 class="card-heading">Armada 8F</h2>
+			<div class="card-bestseller2">Pod sterociąg</div>
+			<div class="card-voltage">48V</div>
+			<div class="card-lbs">300lbs</div>
+			<div class="content">
+
+				<p><b>Uciąg: </b>250lbs</p>
+				<p><b>Moc:</b> 4800</p>
+				<p><b>Zasilanie:</b> 48V</p>
+				<p><b>Biegi:</b> Maximizer</p>
+				<p><b>Długość kolumny: </b>67cm</p>
+				<p><b>Typ silnika: </b>Bezszczotkowy</p>
+				<p><b>Śruba: </b>3-łopatkowa</p>
+
+				<a
+					href="armada8f.html"
+					class="button-motor"
+					>Więcej informacji &nbsp
+					<i class="fa-solid fa-hand-pointer fa-beat"></i
+				></a>
 			</div>
-
-			<!-- CARD END -->
-			<!-- CARD START -->
-
-			<div class="cards"> 
-				 
-				<h2 class="card-heading">W-20</h2>
-				
-				<div class="content">
-
-					<p><b>Uciąg: </b>20lbs</p>
-					<p><b>Moc:</b> 200W</p>
-					<p><b>Zasilanie:</b> 12V</p>
-					<p><b>Biegi:</b> 2 przód/2 tył</p>
-					<p><b>Długość kolumny: </b>60cm</p>
-					<p><b>Typ silnika: </b>Szczotkowy</p>
-					<p><b>Śruba: </b>2-łopatkowa</p>
-
-					<a
-						href="#"
-						class="button-motor"
-						>Więcej informacji &nbsp
-						<i class="fa-solid fa-hand-pointer fa-beat"></i
-					></a>
-				</div>
-				<img
-				src="./Haswing_motors/W-20_BT.png"
-					alt=""
-					class="motor-card-img"
-				/>
-			</div>
-
-			<!-- CARD END -->
-			<!-- CARD START -->
-
-			<div class="cards"> 
-				 
-				<h2 class="card-heading">Ventura F</h2>
-				<div class="card-news2">Pod sterociąg</div>
-				<div class="content">
-
-					<p><b>Uciąg: </b>160lbs</p>
-					<p><b>Moc:</b> 2520W</p>
-					<p><b>Zasilanie:</b> 24V</p>
-					<p><b>Biegi:</b> Maximizer</p>
-					<p><b>Długość kolumny: </b>80cm</p>
-					<p><b>Typ silnika: </b>Bezszczotkowy</p>
-					<p><b>Śruba: </b>3-łopatkowa</p>
-
-					<a
-						href="#"
-						class="button-motor"
-						>Więcej informacji &nbsp
-						<i class="fa-solid fa-hand-pointer fa-beat"></i
-					></a>
-				</div>
-				<img
-				src="./Haswing_motors/VenturaF5_BT.png"
-					alt=""
-					class="motor-card-img"
-				/>
-			</div>
-
-			<!-- CARD END -->
-			<!-- CARD START -->
-
-			<div class="cards"> 
-				 
-				<h2 class="card-heading">Armada F</h2>
-				<div class="card-news2">Pod sterociąg</div>
-				<div class="content">
-
-					<p><b>Uciąg: </b>250-300lbs</p>
-					<p><b>Moc:</b> 4.8kW-6kW</p>
-					<p><b>Zasilanie:</b> 48V</p>
-					<p><b>Biegi:</b> Maximizer</p>
-					<p><b>Długość kolumny: </b>67cm</p>
-					<p><b>Typ silnika: </b>Bezszczotkowy</p>
-					<p><b>Śruba: </b>3-łopatkowa</p>
-
-					<a
-						href="#"
-						class="button-motor"
-						>Więcej informacji &nbsp
-						<i class="fa-solid fa-hand-pointer fa-beat"></i
-					></a>
-				</div>
-				<img
-				src="./Haswing_motors/Armada_F-BT.png"
-					alt=""
-					class="motor-card-img"
-				/>
-			</div>
-
-			<!-- CARD END -->
-			<!-- CARD START -->
-
-			<div class="cards"> 
-				 
-				<h2 class="card-heading">Armada T</h2>
-				
-				<div class="content">
-
-					<p><b>Uciąg: </b>250-300lbs</p>
-					<p><b>Moc:</b> 4.8kW-6kW</p>
-					<p><b>Zasilanie:</b> 48V</p>
-					<p><b>Biegi:</b> Maximizer</p>
-					<p><b>Długość kolumny: </b>67cm</p>
-					<p><b>Typ silnika: </b>Bezszczotkowy</p>
-					<p><b>Śruba: </b>3-łopatkowa</p>
-
-					<a
-						href="#"
-						class="button-motor"
-						>Więcej informacji &nbsp
-						<i class="fa-solid fa-hand-pointer fa-beat"></i
-					></a>
-				</div>
-				<img
-				src="./Haswing_motors/Armada_T-BT.png"
-					alt=""
-					class="motor-card-img"
-				/>
-			</div>
-
-			<!-- CARD END -->
+			<img
+			src="./Haswing_motors/Armada_F-BT.png"
+				alt="silnik elektryczny haswing armada 8f pod sterociąg"
+				class="motor-card-img"
+			/>
 		</div>
 
+		<!-- CARD END -->
+		<!-- CARD START -->
+
+		<div class="cards"> 
+			 
+			<h2 class="card-heading">Armada 10F</h2>
+			<div class="card-bestseller2">Pod sterociąg</div>
+			<div class="card-voltage">48V</div>
+			<div class="card-lbs">300lbs</div>
+			<div class="content">
+
+				<p><b>Uciąg: </b>300lbs</p>
+				<p><b>Moc:</b> 6000</p>
+				<p><b>Zasilanie:</b> 48V</p>
+				<p><b>Biegi:</b> Maximizer</p>
+				<p><b>Długość kolumny: </b>67cm</p>
+				<p><b>Typ silnika: </b>Bezszczotkowy</p>
+				<p><b>Śruba: </b>3-łopatkowa</p>
+
+				<a
+					href="armada10f.html"
+					class="button-motor"
+					>Więcej informacji &nbsp
+					<i class="fa-solid fa-hand-pointer fa-beat"></i
+				></a>
+			</div>
+			<img
+			src="./Haswing_motors/Armada_F-BT.png"
+				alt="silnik elektryczny haswing armada 10f pod sterociąg"
+				class="motor-card-img"
+			/>
+		</div>
+
+		<!-- CARD END -->
+
+<!-- +++++++++++++++++ SEKCTION OTHER MOTORS CARD +++++++++++++++++++++++++++++ -->
+
+
+		<section id="other-motors" class="motor-cards motor-osapian py-5">
+
+			<div class="motor-shadow"></div>
+			<h2 class="osapian-series">Pozostałe modele </h2>
+				<div class="underline"></div>	
+				<h3 class="underline-text"> </h3>
+				
+				<div class="cardbox wrapper">
+	<!-- CARD START -->
+
+	<div class="cards"> 
+			 
+		<h2 class="card-heading">Ventura F5</h2>
+		<div class="card-bestseller3">Pod sterociąg</div>
+		<div class="card-voltage">24V</div>
+		<div class="card-lbs">160lbs</div>
+		<div class="content">
+
+			<p><b>Uciąg: </b>160lbs</p>
+			<p><b>Moc:</b> 2520W</p>
+			<p><b>Zasilanie:</b> 24V</p>
+			<p><b>Biegi:</b> Maximizer</p>
+			<p><b>Długość kolumny: </b>80cm</p>
+			<p><b>Typ silnika: </b>Bezszczotkowy</p>
+			<p><b>Śruba: </b>3-łopatkowa</p>
+
+			<a
+				href="venturaf5.html"
+				class="button-motor"
+				>Więcej informacji &nbsp
+				<i class="fa-solid fa-hand-pointer fa-beat"></i
+			></a>
+		</div>
+		<img
+		src="./Haswing_motors/VenturaF5_BT.png"
+			alt="silnik elektryczny haswing ventura f5 pod sterociąg"
+			class="motor-card-img"
+		/>
+	</div>
+
+	<!-- CARD END -->
+		<!-- CARD START -->
+
+		<div class="cards"> 
+			 
+			<h2 class="card-heading">ultima</h2>
+			<div class="card-voltage">24V</div>
+			<div class="card-lbs">110lbs</div>
+			<div class="content">
+
+				<p><b>Uciąg: </b>65/110lbs</p>
+				<p><b>Moc:</b> 450/1030W</p>
+				<p><b>Zasilanie:</b> 29.6V li-po</p>
+				<p><b>Biegi:</b> Maximizer</p>
+				<p><b>Długość kolumny: </b>54/63cm</p>
+				<p><b>Typ silnika: </b>Bezszczotkowy</p>
+				<p><b>Śruba: </b>3-łopatkowa</p>
+
+				<a
+					href="ultima3.html"
+					class="button-motor"
+					>Więcej informacji &nbsp
+					<i class="fa-solid fa-hand-pointer fa-beat"></i
+				></a>
+			</div>
+			<img
+			src="./image-motors-640/ultima/Ultima_3_BT.png"
+				alt="silnik elektryczny haswing ultima z akumulatorem i ładowarką"
+				class="motor-card-img"
+			/>
+		</div>
+
+		
+		<!-- CARD END -->
+
+<!-- CARD START -->
+
+<div class="cards"> 
+				 
+	<h2 class="card-heading">comax n 55</h2>
+	<div class="card-voltage">12V</div>
+	<div class="card-lbs">55lbs</div>
+	<div class="content">
+
+		<p><b>Uciąg: </b>55lbs</p>
+		<p><b>Moc:</b> 600W</p>
+		<p><b>Zasilanie:</b> 12V</p>
+		<p><b>Biegi:</b> Maximizer</p>
+		<p><b>Długość kolumny: </b>61-89cm</p>
+		<p><b>Typ silnika: </b>Szczotkowy</p>
+		<p><b>Śruba: </b>3-łopatkowa</p>
+
+		<a
+			href="comaxn55.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./image-motors-640/comax/comax_N_BT.png"
+		alt="silnik elektryczny haswing comax55"
+		class="motor-card-img"
+	/>
+</div>
+
+<!-- CARD END -->
+
+<!-- CARD START -->
+<div class="cards"> 
+	 
+	<h2 class="card-heading">W-20</h2>
+	<div class="card-voltage">12V</div>
+	<div class="card-lbs">20lbs</div>
+	<div class="content">
+
+		<p><b>Uciąg: </b>20lbs</p>
+		<p><b>Moc:</b> 200W</p>
+		<p><b>Zasilanie:</b> 12V</p>
+		<p><b>Biegi:</b> 2 przód/2 tył</p>
+		<p><b>Długość kolumny: </b>60cm</p>
+		<p><b>Typ silnika: </b>Szczotkowy</p>
+		<p><b>Śruba: </b>2-łopatkowa</p>
+
+		<a
+			href="w20.html"
+			class="button-motor"
+			>Więcej informacji &nbsp
+			<i class="fa-solid fa-hand-pointer fa-beat"></i
+		></a>
+	</div>
+	<img
+	src="./image-motors-640/w20/W20_BT.png"
+		alt="silnik elektryczny haswing w20 w-20"
+		class="motor-card-img"
+	/>
+</div>
+
+<!-- CARD END -->
+</div>
+
+		</div>
 </section>
+	</section>
+	
+<!-- SECTION  MOTOR CARDS OTHER -- END-- -->
 
-<!-- SECTION ANIMATED MOTOR CARDS -- END-- -->
+
+
+<!-- CARD END -->
 
 
 		<!-- MOTORS CARD -->
 
 		<!-- MOTORS CARD -->
-
-		<!-- <section
+<!-- 
+		<section
 		id="motors"
 		class="motors py-5 bg-light"
 	>
@@ -1434,7 +2032,7 @@ class="accessory py-5"
 
 		<!-- SECTION WHERE TO BUY -->
 
-		<section
+		<!-- <section
 					id="buy"
 					class="buy py-5 ms-auto"
 				>
@@ -1464,43 +2062,45 @@ class="accessory py-5"
 						</div>
 					 
 					</div>
-				</section>
+				</section> -->
 
 				<!-- SECTION SLIDER DOWN --START-- -->
 
 
-		<section
-		id="photo-slider"
-		class="photo-slider">
-
-		<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-inner">
-			  
-			  
-			  <div class="carousel-item active" data-bs-interval="5000">
-				<img src="./image/Slider_1_Protruar.JPG" class="d-block w-100" alt="...">
-			  </div>
-
-			  <div class="carousel-item" data-bs-interval="5000">
-				<img src="./image/Slider2_Osapian.JPG" class="d-block w-100" alt="...">
-			  </div>
-
-			  <div class="carousel-item" data-bs-interval="5000">
-				<img src="./image/Slider4_ultima.jpg" class="d-block w-100" alt="...">
-			  </div>
-
-			  <div class="carousel-item" data-bs-interval="5000">
-				<img src="./image/Slider3_Osapian.JPG" class="d-block w-100" alt="...">
-			  </div>
-
-			  <div class="carousel-item" data-bs-interval="5000">
-				<img src="./image/Slider5_protruar.JPG" class="d-block w-100" alt="...">
-			  </div>
+				<section
+				id="photo-slider"
+				class="photo-slider">
 		
-		  </div>
-
-		</section>
-
+				<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+					 
+					<div class="carousel-inner">
+					  <div class="carousel-item active" data-bs-interval="5000">
+						<img src="./image/Slider_1_Protruar.JPG" class="d-block w-100" alt="Silnik Haswing Protruar na łodzi">
+					  </div>
+					  <div class="carousel-item" data-bs-interval="5000">
+						<img src="./image/Slider2_Osapian.JPG" class="d-block w-100" alt="Silnik Haswing Osapian na łodzi">
+					  </div>
+					  <div class="carousel-item" data-bs-interval="5000">
+						<img src="./image/Slider4_ultima.jpg" class="d-block w-100" alt="Silnik Haswing ultima na łodzi">
+					  </div>
+					  <div class="carousel-item" data-bs-interval="5000">
+						<img src="./image/Slider3_Osapian.JPG" class="d-block w-100" alt="Silnik Haswing Osapian na łodzi">
+					  </div>
+					  <div class="carousel-item" data-bs-interval="5000">
+						<img src="./image/Slider5_protruar.JPG" class="d-block w-100" alt="Silnik Haswing Protruar na łodzi">
+					  </div>
+					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+				  </div>
+		
+				</section>
+				
 <!-- SECTION FOTO SLIDER DOWN  END-->
 
 
@@ -1601,12 +2201,13 @@ class="accessory py-5"
 						<div class="col-sm-6 col-lg-4 contact-items order-1 shorts">
 							<h3>na skróty</h3>
 							<a href="#warunki-strony"
-								><p>Ogólne warunki korzystania ze strony internetowej</p></a
+								><p>Ogólne warunki korzystania ze strony internetowej <Br>General terms and conditions of use of the website</p></a
 							>
-							<a href="#private"><p>Polityka prywatności</p></a>
-							<a href="#pricelist"><p>Cenniki</p></a>
-							<a href="#shipping"><p>Dostawa</p></a>
-							<a href="#download"><p>Do pobrania</p></a>
+							<a href="#private"><p>Polityka prywatności / Privacy Policy</p></a>
+							<a href="#pricelist"><p>Cenniki / Pricelist</p></a>
+							<a href="#shipping"><p>Dostawa / Shipping</p></a>
+							<a href="#warranty"><p>Warunki gwarancji / Warranty</p></a>
+							<a href="#download"><p>Do pobrania / Download</p></a>
 						</div>
 					</div>
 				</div>
@@ -1623,7 +2224,14 @@ class="accessory py-5"
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
         <script src="./js/slicksettings.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/description.js"></script>
+		<script src="./js/_description_tabs.js"></script>
+		<script src="./js/glider.min.js"></script>
+		<script src="./js/glider-settings.js"></script>
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({
@@ -1632,7 +2240,23 @@ class="accessory py-5"
                 once: true
             });
           </script>
-		<script src="./js/script.js"></script>
+		  	<!-- <script>
+				$(".icon").click(function () {
+					$("span").toggleClass("cancel");
+				});
+	
+				window.addEventListener("scroll", function () {
+					var header = document.querySelector("nav-menu");
+					header.classList.toggle("sticky", window.scrollY > 0);
+				});
+			</script> -->
+
+
+
+	
+
+			
+
 		</body>
 	</html>
 </html>

@@ -3,11 +3,15 @@
 @import "./animation";
 @import "./components";
 @import "./mixins";
+@import "./motor-description";
+@import "./propeller";
+@import "./remote";
+@import "./optional";
+@import "./parts";
 
 body {
 	position: relative;
 	font-family: "Ubuntu", sans-serif;
-	background-color: $bg-color;
 }
 
 h2 {
@@ -17,10 +21,10 @@ h2 {
 }
 
 .underline {
-	margin: 0 auto 40px;
+	margin: 0 auto 5px;
 	width: 200px;
 	height: 4px;
-	background-color: $main-color;
+	background-color: $orangered;
 }
 
 .blue-text {
@@ -31,111 +35,24 @@ h2 {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.navbar-nav .nav-link.active,
-.dropdown-toggle.show {
-	color: $main-color;
-}
-
 // .carousel-inner .carousel-item {
 // 	transition: -webkit-transform 2s 5s ease-in-out;
 // 	transition: transform 2s 5s ease-in-out;
 // 	transition: transform 2s 5s ease-in-out, -webkit-transform 2s 5s ease-in-out;
 // }
 
-nav {
-	text-transform: uppercase;
-	transition: background-color 0.6s;
-	z-index: 1000;
+// NAV DROPDOWN SECTION
 
-	.dropdown-menu {
-		// display: none;
-		width: 185px;
-		background-color: rgba(0, 0, 0, 0.7);
-		&:hover > li {
-			display: initial;
-		}
-	}
+.nav-menu {
+	z-index: 11111;
+	position: relative;
+	top: 0;
+}
 
-	.dropdown-item {
-		color: $white;
-		text-transform: uppercase;
-		font-size: 1.4rem;
-		text-align: center;
-		line-height: 2.5rem;
-		&:hover {
-			background-color: rgba(255, 111, 0, 0.7);
-			color: $white;
-		}
-	}
-
-	.nav-link {
-		position: relative;
-		font-size: 1.5rem;
-		color: $white;
-		text-decoration: none;
-	}
-
-	.logo-nav {
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		width: 110px;
-		height: 55px;
-	}
-
-	.link,
-	.link::after,
-	.link::before {
-		transition: 0.3s;
-	}
-
-	.nav-line::after {
-		content: "";
-		position: absolute;
-		height: 1px;
-		width: 100%;
-		bottom: 0;
-		left: 0;
-		background-color: #fff;
-		transition: transform 0.3s;
-		transform: scaleX(0);
-		transform-origin: right;
-	}
-
-	.nav-line:hover::after {
-		transform: scaleX(1);
-		transform-origin: left;
-	}
-
-	.nav-link,
-	i {
-		color: $white;
-	}
-
-	.nav-link {
-		margin-top: 5px;
-		position: relative;
-		font-size: 1.5rem;
-		color: $white;
-		text-decoration: none;
-	}
-
-	.nav-link:hover {
-		color: $main-color;
-	}
-
-	.fa-bars {
-		padding: 10px;
-		font-size: 3rem;
-	}
-
-	.navbar-brand {
-		font-weight: bold;
-	}
-
-	.nav-link.active {
-		color: $main-color;
-	}
+.navlogo {
+	margin-left: 1em;
+	height: 65px;
+	width: auto;
 }
 
 .link,
@@ -143,28 +60,275 @@ nav {
 .link::before {
 	transition: 0.3s;
 }
-
-.one::after {
-	content: "";
-	position: absolute;
-	height: 2px;
+.dropdown-menu {
+	position: fixed;
 	width: 100%;
-	bottom: 0;
-	left: 0;
-	background-color: #fff;
-	transition: transform 0.3s;
-	transform: scaleX(0);
-	transform-origin: right;
+	min-height: 60px;
+	transition: all 0.6s;
 }
 
-.one:hover::after {
-	transform: scaleX(1);
-	transform-origin: left;
+nav {
+	position: fixed;
+	width: 100%;
+	background: $black;
+	z-index: 123;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
 }
+nav:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+nav ul {
+	float: right;
+	margin-right: 40px;
+	list-style: none;
+	position: relative;
+	background: none;
+	z-index: 111111;
+}
+nav ul li {
+	display: inline-block;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	line-height: 70px;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 8px 15px;
+	transition: color 0.3s;
+}
+nav ul li a:hover {
+	color: $nav-link-color;
+	border-radius: 5px;
+}
+nav ul ul li a:hover {
+	box-shadow: none;
+}
+nav ul ul {
+	position: absolute;
+	top: 90px;
+	opacity: 0;
+	visibility: hidden;
+	transition: top 0.3s;
+}
+nav ul ul ul {
+	border-top: none;
+}
+nav ul li:hover > ul {
+	top: 70px;
+	opacity: 1;
+	visibility: visible;
+}
+nav ul ul li {
+	position: relative;
+	margin: 0px;
+	width: 210px;
+	float: none;
+	display: list-item;
+	background: rgba(0, 0, 0, 0.9);
+	border-bottom: 1px solid rgba(255, 69, 0, 0.9);
+	transition: all 0.2s ease-in-out;
+}
+nav ul ul li a {
+	line-height: 50px;
+	&:hover {
+		color: $nav-link-color;
+	}
+}
+nav ul ul ul li {
+	position: relative;
+	top: -70px;
+	left: 180px;
+}
+.show,
+.icon,
+input {
+	display: none;
+}
+.fa-plus {
+	font-size: 15px;
+	margin-left: 40px;
+}
+
+.arrow-font {
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-label-more {
+	margin-left: 4em;
+}
+.osapian-more-arrow {
+	margin-left: 5.5em;
+	font-size: 1.6rem;
+}
+.osapian-max-more-arrow {
+	margin-left: 3em;
+}
+.protruar-more-arrow {
+	margin-left: 5.5em;
+}
+.cayman-more-arrow {
+	margin-left: 5.5em;
+}
+.caymangps-more-arrow {
+	margin-left: 3.1em;
+}
+.armada-more-arrow {
+	margin-left: 5.6em;
+}
+
+.ventura-more-arrow {
+	margin-left: 6em;
+	color: $black;
+}
+.ultima-more-arrow {
+	margin-left: 6.6em;
+	color: $black;
+}
+.comax-more-arrow {
+	margin-left: 5.4em;
+	color: $black;
+}
+.w20-more-arrow {
+	margin-left: 7.3em;
+	color: $black;
+}
+
+.photo-slider {
+	position: relative;
+}
+
+.motor-slider-up {
+	padding-top: 70px;
+}
+
+// nav {
+// 	text-transform: uppercase;
+// 	transition: background-color 0.6s;
+// 	z-index: 1000;
+
+// 	.dropdown-menu {
+// 		// display: none;
+// 		width: 185px;
+// 		background-color: rgba(0, 0, 0, 0.7);
+// 		&:hover > li {
+// 			display: initial;
+// 		}
+// 	}
+
+// 	.dropdown-item {
+// 		color: $white;
+// 		text-transform: uppercase;
+// 		font-size: 1.4rem;
+// 		text-align: center;
+// 		line-height: 2.5rem;
+// 		&:hover {
+// 			background-color: rgba(255, 111, 0, 0.7);
+// 			color: $white;
+// 		}
+// 	}
+
+// 	.nav-link {
+// 		position: relative;
+// 		font-size: 1.5rem;
+// 		color: $white;
+// 		text-decoration: none;
+// 	}
+
+// 	.logo-nav {
+// 		position: absolute;
+// 		top: 10px;
+// 		left: 10px;
+// 		width: 110px;
+// 		height: 55px;
+// 	}
+
+// 	.link,
+// 	.link::after,
+// 	.link::before {
+// 		transition: 0.3s;
+// 	}
+
+// 	.nav-line::after {
+// 		content: "";
+// 		position: absolute;
+// 		height: 1px;
+// 		width: 100%;
+// 		bottom: 0;
+// 		left: 0;
+// 		background-color: #fff;
+// 		transition: transform 0.3s;
+// 		transform: scaleX(0);
+// 		transform-origin: right;
+// 	}
+
+// 	.nav-line:hover::after {
+// 		transform: scaleX(1);
+// 		transform-origin: left;
+// 	}
+
+// 	.nav-link,
+// 	i {
+// 		color: $white;
+// 	}
+
+// 	.nav-link {
+// 		margin-top: 5px;
+// 		position: relative;
+// 		font-size: 1.5rem;
+// 		color: $white;
+// 		text-decoration: none;
+// 	}
+
+// 	.nav-link:hover {
+// 		color: $main-color;
+// 	}
+
+// 	.fa-bars {
+// 		padding: 10px;
+// 		font-size: 3rem;
+// 	}
+
+// 	.navbar-brand {
+// 		font-weight: bold;
+// 	}
+
+// 	.nav-link.active {
+// 		color: $main-color;
+// 	}
+// }
+
+// .link,
+// .link::after,
+// .link::before {
+// 	transition: 0.3s;
+// }
+
+// .one::after {
+// 	content: "";
+// 	position: absolute;
+// 	height: 2px;
+// 	width: 100%;
+// 	bottom: 0;
+// 	left: 0;
+// 	background-color: #fff;
+// 	transition: transform 0.3s;
+// 	transform: scaleX(0);
+// 	transform-origin: right;
+// }
+
+// .one:hover::after {
+// 	transform: scaleX(1);
+// 	transform-origin: left;
+// }
 
 // ===================== HEADER ===============
 
-header {
+#home {
 	color: $white;
 
 	h1 {
@@ -189,7 +353,7 @@ header {
 
 	.logo-hw {
 		margin-left: 1em;
-		width: 70%;
+		max-width: 70%;
 	}
 
 	.hero-img {
@@ -254,6 +418,9 @@ header {
 		color: $white;
 	}
 }
+
+// PHOTO SLIDER UPPER ============================
+
 // PORTFOLIO SECTION
 
 .portfolio {
@@ -303,6 +470,9 @@ header {
 // FEATURES SECTION
 
 .features {
+	margin: 4em 0em 4em 0em;
+	background-color: #fff;
+
 	i {
 		margin-top: 20px;
 		font-size: 30px;
@@ -327,6 +497,95 @@ header {
 		cursor: default;
 	}
 }
+
+// SECTION DESCRIPTION  TABS BUTTONS
+
+.nav-pills {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+// -------- FUNCTION DESCRIPTION START -------
+
+.function-description-row {
+	max-width: 120rem;
+	padding: 1.5rem;
+	display: grid;
+	// gap: 5em;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 5rem auto;
+}
+
+.img-holder {
+	margin-bottom: 5em;
+	transition: transform 0.3s ease;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+.function-description-img {
+	height: auto;
+	box-shadow: 2px 2px 5px $box-shadow-color;
+	width: 80%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+.product-details-holder {
+	position: relative;
+	// top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	// margin-left: 1em;
+}
+.product-description-title {
+	font-family: "Play", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: $black;
+	text-shadow: 1px 1px 2px rgb(63, 63, 63);
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 6em;
+}
+
+.short-description {
+	margin-top: 1em;
+	text-transform: none;
+	font-size: 1.8rem;
+	color: $black;
+	line-height: 3rem;
+	text-align: center;
+}
+
+// -------- FUNCTION DESCRIPTION END -------
+
+// -------------- SPECIFICATION MOTOR TABLE ------------------
+.specification-motor-table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4rem;
+	line-height: 1.5em;
+	padding: 1em;
+	color: $black;
+
+	tr,
+	td,
+	th {
+		border: 1px solid black;
+	}
+	th,
+	td {
+		padding: 0.5em;
+	}
+}
+
+// <!-- ------------------	POWIĄZANE PRODUKTY ----------- -->
 
 .features-hero {
 	position: relative;
@@ -360,16 +619,34 @@ header {
 
 // =============== MOTOR CARDS ANIMATED SECTION===================
 
-.motor-cards{
-	
-	background-image: url("../image/fishing-boat_1920.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
+.motor-cards {
+	position: relative;
+	background-image: url("/image/fishing-boat2_1920.jpg");
 	background-size: cover;
+	background-attachment: fixed;
 	z-index: 0;
+	.osapian-series {
+		color: $white;
+	}
+
+	.underline-text {
+		color: $white;
+		text-align: center;
+		font-size: 2rem;
+		padding: 0;
+		margin: 0;
+	}
 }
- 
+
+.motor-shadow {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -5;
+}
+
 .cardbox {
 	display: flex;
 	justify-content: center;
@@ -388,12 +665,12 @@ header {
 	align-items: left;
 	line-height: normal;
 	border-radius: 10px;
-	// border: 1px solid black;
+	border: none;
 	box-shadow: 2px 2px 7px black;
 	background-color: rgba(255, 255, 255, 0.9);
 	transition: all 0.6s;
 	&:hover {
-		box-shadow: 1px 1px 20px rgba(255, 69, 0, 0.9);
+		box-shadow: 1px 1px 20px $orangered;
 		// border: none;
 	}
 
@@ -401,7 +678,12 @@ header {
 		line-height: 1.5em;
 		font-size: 1.6rem;
 	}
-	.card-news, .card-news2{
+	.card-news,
+	.card-news2,
+	.card-bestseller,
+	.card-bestseller2,
+	.card-bestseller3,
+	.card-voltage {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -410,20 +692,66 @@ header {
 		border-top-right-radius: 10px;
 		border-bottom-left-radius: 10px;
 		font-size: 1.5rem;
-		font-weight: bold;
-		// text-shadow: 1px 1px 1px $text-shadow-color;
+		font-weight: 600;
 		font-family: "Play", sans-serif;
 		transition: 1s;
 		opacity: 1;
 		visibility: visible;
+		text-transform: uppercase;
 	}
-	.card-news2{
+
+	.card-news2,
+	.card-bestseller,
+	.card-bestseller2,
+	.card-bestseller3 {
 		background: $black;
 		color: $white;
+		letter-spacing: 1px;
+	}
+	.card-bestseller2 {
+		font-size: 1.3rem;
+	}
+
+	.card-bestseller3 {
+		font-size: 1.2rem;
+	}
+
+	.card-voltage,
+	.card-lbs {
+		font-family: "Play", sans-serif;
+		top: 0;
+		left: 0;
+		height: 40px;
+		width: 60px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 0;
+		font-size: 1.8rem;
+		background: $voltage48-color;
+		color: $white;
+		transition: 0.5s;
+	}
+
+	.card-lbs {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 90%;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 0px;
 	}
 }
-
-.cards:hover .card-news, .card-news2 {
+.cards:hover .card-news,
+.cards:hover .card-news2,
+.cards:hover .card-bestseller,
+.cards:hover .card-bestseller2,
+.cards:hover .card-bestseller3,
+.cards:hover .card-voltage,
+.cards:hover .card-lbs {
 	opacity: 0;
 	visibility: hidden;
 }
@@ -459,6 +787,10 @@ header {
 	opacity: 1;
 	visibility: visible;
 	padding-left: 20px;
+}
+
+.motor-card-img {
+	z-index: 100;
 }
 
 .button-motor {
@@ -497,6 +829,10 @@ header {
 .cards:hover .card-heading {
 	transform: translateX(-15%);
 	text-shadow: 1px 1px 2px rgb(255, 69, 0);
+}
+
+.osapian-slim-heading {
+	font-size: 2.5rem;
 }
 
 // ======================MOTORS CARD SECTION================
@@ -568,7 +904,7 @@ header {
 	&__box {
 		margin: 1em 0;
 		background-color: $pure-white;
-		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.2);
+		box-shadow: 2px 2px 10px rgba(46, 46, 46, 0.9);
 		overflow: hidden;
 
 		&-img {
@@ -586,7 +922,7 @@ header {
 
 		&-heading {
 			text-align: center;
-			font-size: 2.5rem;
+			font-size: 3rem;
 		}
 
 		&-text {
@@ -598,13 +934,13 @@ header {
 			background-color: $btn-color;
 			text-transform: uppercase;
 			margin-bottom: 1em;
-			width: 35%;
+			width: 45%;
 			height: auto;
 			padding: 1em;
 			border: none;
 			border-radius: 10px;
 			cursor: pointer;
-			font-size: 1.2rem;
+			font-size: 1.5rem;
 			font-weight: bold;
 			box-shadow: 2px 2px 5px $black;
 
@@ -615,73 +951,6 @@ header {
 	}
 }
 
-// ------------------ SECTION ACCESSORY ----------------
-
-// .accessory {
-// 	position: relative;
-// 	background-image: url("/image/fishing-boat2_1920.jpg");
-// 	background-size: cover;
-// 	background-attachment: fixed;
-// 	z-index: 0;
-
-// 	h2 {
-// 		color: $white;
-// 		text-shadow: 1px 1px 2px $black;
-// 		// text-shadow: 1px 1px 2px $black;
-// 	}
-
-// 	.accessory-bg {
-// 		background-color: rgba(0, 0, 0, 0.8);
-// 	}
-
-// 	.accessory-box {
-// 		margin: 20px 10px;
-// 		padding: 30px;
-// 		background-color: $white;
-// 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-// 		transition: transform 0.5s;
-// 		.btn {
-// 			padding: 12px 30px;
-// 			font-size: 1.3rem;
-// 			font-weight: bold;
-// 		}
-// 		.btn:hover {
-// 			background-color: rgba(255, 111, 0, 0.8);
-// 		}
-
-// 		.box-heading {
-// 			color: $black;
-// 			text-transform: uppercase;
-// 			font-size: 2.5rem;
-// 			font-weight: bold;
-// 			text-shadow: 1px 1px 1px rgb(133, 133, 133);
-// 		}
-
-// 		span {
-// 			font-weight: bold;
-// 		}
-
-// 		i {
-// 			padding: 0 5px;
-// 			font-size: 24px;
-// 		}
-
-// 		button {
-// 			padding: 10px 20px;
-// 			text-transform: uppercase;
-// 		}
-
-// 		.accessory-tag {
-// 			font-size: 20px;
-// 			font-weight: bold;
-// 		}
-// 	}
-
-// 	.accessory-box:hover {
-// 		transform: scale(1.05);
-// 	}
-// }
-
 // AKCESORIA SEKCJA
 
 .akcesoria {
@@ -690,7 +959,6 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
-	height: 70vh;
 
 	h2 {
 		color: $light-gray;
@@ -709,6 +977,7 @@ header {
 	}
 
 	.card {
+		margin-top: 3em;
 		transition: transform 0.3s;
 		img {
 			height: 250px;
@@ -721,98 +990,13 @@ header {
 	}
 
 	.card-title {
-		margin-top: 2em;
+		margin-top: 1em;
 		font-size: 2.5em;
 		text-align: center;
 		font-weight: 500;
 		text-shadow: 1px 1px 1px $black;
 		text-transform: uppercase;
 	}
-}
-
-// ------------------- WHERE TO BUY SECTION --------------
-
-.buy {
-	position: relative;
-	height: 100%;
-	background: rgb(120, 120, 120);
-	background: linear-gradient(
-		0deg,
-		rgba(120, 120, 120, 1) 0%,
-		rgba(255, 255, 255, 1) 100%
-	);
-
-	.card-buy {
-		margin-top: 2em;
-		position: relative;
-	}
-
-	.card-bg {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(80, 80, 80, 0.8);
-		border-radius: 20px;
-	}
-
-	.card-inside {
-		background-image: url("../image/buy-1920.jpg");
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.4);
-		position: relative;
-		border-radius: 20px;
-		color: $white;
-	}
-
-	.card-title {
-		font-size: 2.5rem;
-		text-shadow: 1px 1px 2px $black;
-		text-align: center;
-		margin: 2em 1em;
-	}
-
-	.card-text {
-		text-align: center;
-		margin: 2em 1em 0em 1em;
-		font-size: 1.5em;
-	}
-	.buy-btn {
-		position: relative;
-		left: 28%;
-		width: 40%;
-		background-color: rgb(0, 159, 190);
-		text-transform: uppercase;
-		margin: 2.5em 1em;
-		padding: 1em;
-		border: none;
-		border-radius: 10px;
-		cursor: pointer;
-		font-size: 1.4rem;
-		font-weight: bold;
-		box-shadow: 1px 1px 10px 2px $white;
-
-		&:before {
-			background-color: $main-color;
-		}
-	}
-
-	// .img-buy {
-	// 	position: relative;
-	// 	background-image: url("../image/Cayman_buy1.jpg");
-	// 	background-size: cover;
-	// 	margin-top: 8em;
-	// 	margin-bottom: 5em;
-	// 	border-radius: 5px;
-	// 	box-shadow: 0px 0px 15px 2px $white;
-	// 	height: 400px;
-	// 	transition: 0.3s;
-
-	// 	&:hover {
-	// 		scale: 0.95;
-	// 	}
-	// }
 }
 
 // SECTION PHOTO START
@@ -830,7 +1014,7 @@ header {
 	position: relative;
 	background-image: url("../image/Footer-1920.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 0 60%;
 	background-size: cover;
 	z-index: 0;
 	box-shadow: 0px -3px 20px 5px rgb(85, 85, 85);
@@ -927,6 +1111,21 @@ footer {
 	}
 }
 
+@media (max-width: 400px) {
+	.product-img a,
+	.product-img {
+		height: 190px;
+	}
+	.product-box-offer {
+		top: 10px;
+		left: 20px;
+	}
+}
+
+.motor-draft-img {
+	max-width: 100%;
+}
+
 @media (min-width: 576px) {
 	.fa-phone,
 	.fa-at {
@@ -955,7 +1154,7 @@ footer {
 	.card {
 		img {
 			height: 300px;
-			object-fit: cover;
+			object-fit: scale-down;
 		}
 	}
 
@@ -1003,6 +1202,16 @@ footer {
 			}
 		}
 	}
+
+	.card-group {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.motor-draft-img {
+		max-width: 85%;
+	}
 }
 
 @media (max-width: 667px) {
@@ -1016,10 +1225,9 @@ footer {
 			height: 600px;
 		}
 	}
-	.card-news{
+	.card-news {
 		position: absolute;
 		transform: translateY(500%);
-		
 	}
 
 	.cards .motor-card-img {
@@ -1029,20 +1237,23 @@ footer {
 	.cards:hover .motor-card-img {
 		bottom: 10%;
 		left: 50%;
-		height: 280px;
+		height: 250px;
 	}
 	.cards .content {
 		position: relative;
 		width: 100%;
 		left: 0;
 	}
-
-	.button-motor {
-		right: 4%;
+	.card-news,
+	.card-news2,
+	.card-bestseller,
+	.card-bestseller2,
+	.card-voltage {
+		display: none;
 	}
 
 	.cards:hover .button-motor {
-		top: 280px;
+		top: 260px;
 	}
 
 	.cards:hover .card-heading {
@@ -1051,6 +1262,9 @@ footer {
 }
 
 @media (min-width: 768px) {
+	.motor-draft-img {
+		max-width: 65%;
+	}
 	.accessory {
 		.accessory-box {
 			.box-heading {
@@ -1083,7 +1297,102 @@ footer {
 	}
 }
 
+@media (max-width: 1007px) {
+	.other-hw-acc-card-title {
+		font-size: 2.5rem;
+	}
+	.function-description-row {
+		grid-template-columns: 1fr;
+	}
+
+	.navigation-dropdown {
+		ul {
+			margin-right: 0px;
+			float: left;
+		}
+		.logo-navigation {
+			display: flex;
+			justify-content: left;
+			align-items: left;
+			padding: 10px;
+			width: 100%;
+		}
+	}
+	.navigation-dropdown .show + a,
+	.navigation-dropdown-ul1 {
+		display: none;
+	}
+
+	.navigation-dropdown ul li,
+	.navigation-dropdown ul ul li {
+		display: block;
+		width: 100%;
+		background: none;
+	}
+	.navigation-dropdown ul li a:hover {
+		box-shadow: none;
+	}
+	.show {
+		display: block;
+		color: white;
+		font-size: 18px;
+		padding: 0 20px;
+		line-height: 70px;
+		cursor: pointer;
+	}
+	.show:hover {
+		color: orangered;
+	}
+	.icon {
+		display: block;
+		color: white;
+		position: absolute;
+		top: 0;
+		right: 40px;
+		line-height: 70px;
+		cursor: pointer;
+		font-size: 25px;
+	}
+	.navigation-dropdown ul ul {
+		top: 70px;
+		border-top: 0px;
+		float: none;
+		position: static;
+		display: none;
+		opacity: 1;
+		visibility: visible;
+	}
+	.navigation-dropdown ul ul a {
+		padding-left: 40px;
+	}
+	.navigation-dropdown ul ul ul a {
+		padding-left: 80px;
+	}
+	.navigation-dropdown ul ul ul li {
+		position: static;
+	}
+	[id^="btn"]:checked + ul {
+		display: block;
+	}
+	.navigation-dropdown ul ul li {
+		border-bottom: 0px;
+	}
+	span.cancel:before {
+		content: "\f00d";
+	}
+}
+
+// OD TEGO BREAKPPINSTU ZMIENIA SIE UKLAD +++ PONAD 992PX +++
+
 @media (min-width: 992px) {
+	.product-details-holder {
+		top: 50%;
+	}
+
+	.product-description-title {
+		margin-top: 3em;
+	}
+
 	header {
 		.logo-hw {
 			width: 50%;
@@ -1096,36 +1405,111 @@ footer {
 			left: 49%;
 		}
 	}
-}
 
-@media (min-width: 1200px) {
-	header {
-		.logo-hw {
-			width: 40%;
+	.description-card-wrapper {
+		max-width: 70%;
+		width: 100%;
+		height: auto;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		.product-card-description {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			border: none;
+			.product-imgs {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
+		.product-description-content {
+			margin-top: 2em;
+
+			.product-description-content-title {
+				font-size: 3.5rem;
+				font-weight: 700;
+				text-shadow: 1px 1px 2px $text-shadow-color;
+			}
+			.product-description-content-detail-lbs {
+				font-size: 2.5rem;
+			}
+
+			.product-description-content-title,
+			.product-description-content-detail-lbs {
+				text-align: left;
+			}
+			.product-description-content-logo {
+				height: 75px;
+				width: 150px;
+			}
+			.product-description-content-detail-p {
+				font-size: 1.6rem;
+			}
 		}
 
-		.btn-home {
-			font-size: 1.4rem;
+		// ------ TABS SECTION START ---------
+
+		.section--description-tabs {
+			position: relative;
+			min-height: 100vh;
 		}
-		.fa-chevron-down {
-			left: 50%;
+		.product-description-content-new-price {
+			font-size: 1.6rem;
 		}
 	}
 
-	.help {
-		&__box {
-			&-heading {
-				padding: 2em;
-				font-size: 5rem;
+	@media (min-width: 1200px) {
+		header {
+			.logo-hw {
+				width: 40%;
 			}
-			&-text {
-				margin-top: 4em;
-				font-size: 1.7rem;
-				text-align: center;
+
+			.btn-home {
+				font-size: 1.4rem;
 			}
-			&-btn {
-				font-size: 1.5rem;
+			.fa-chevron-down {
+				left: 50%;
 			}
 		}
+
+		.help {
+			&__box {
+				&-heading {
+					padding: 2em;
+					font-size: 5rem;
+				}
+				&-text {
+					margin-top: 4em;
+					font-size: 1.7rem;
+					text-align: center;
+				}
+				&-btn {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.product-box {
+		margin: 40px 10px;
+	}
+	.p-slider {
+		width: 100%;
+	}
+	.product-slider-heading {
+		text-align: center;
+		font-size: 1.4rem;
+		display: flex;
+	}
+	.p-img a,
+	.p-img {
+		height: 200px;
 	}
 }
