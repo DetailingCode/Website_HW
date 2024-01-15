@@ -7,9 +7,13 @@
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
+.parts-add-shadow {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 .parts-help {
 	padding: 6em 0em 6em 0em;
-	width: 70%;
+	width: 75%;
 	.parts-card {
 		display: flex;
 		justify-content: center;
@@ -36,11 +40,14 @@
 			font-size: 3rem;
 			text-align: center;
 			color: #fff;
+			padding: 0.3em;
 		}
 		.parts-card-p {
 			font-size: 2.2rem;
 			color: $light-gray;
+			padding-top: 1em;
 			text-transform: uppercase;
+			text-align: center;
 		}
 		
 

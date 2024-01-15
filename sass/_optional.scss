@@ -18,6 +18,12 @@
 	box-shadow: inset -0px -9px 17px -5px rgba(66, 68, 90, 0.5);	
 }
 
+.motor-connected-parts{
+	background: none;
+	box-shadow: none;
+}
+
+
 .hw-optional-hero{
 	background-image: url(../image-accessory-640/Optional/optional-bg.jpg);
 	background-position: 0 40%;
@@ -48,6 +54,27 @@
 		);
 		
 	}
+}
+
+.motor-connected-box{
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255) 65%,
+		rgba(95, 157, 247, 1) 100%
+	);
+	transition: all 0.5s;
+
+	&:hover {
+		background: rgb(255, 255, 255);
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255) 65%,
+			rgb(44, 108, 204) 100%
+		);
+		
+	}
+
 }
 
 
