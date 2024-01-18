@@ -7,7 +7,6 @@
 	// background-attachment: fixed;
 	// z-index: 0;
 	background: $white;
-	margin-top: 5em;
 }
 
 // .motor-description-shadow {
@@ -123,6 +122,10 @@
 			padding: 0.3rem;
 			text-align: justify;
 		}
+	}
+
+	.product-details-holder-p {
+		font-size: 1rem;
 	}
 
 	.product-description-list {
@@ -272,7 +275,6 @@
 	}
 }
 
-
 @keyframes fade {
 	0% {
 		opacity: 0;
@@ -409,7 +411,6 @@
 .propeller-title {
 	padding-bottom: 1em 0 0.5em 0;
 }
- 
 
 .other-acc-propeller-section {
 	border-radius: 5px;
@@ -426,13 +427,12 @@
 	}
 }
 
-.other-acc-img{
+.other-acc-img {
 	transition: all 0.5s;
 }
 
 .other-acc-propeller-section:hover .other-acc-img {
 	transform: scale(1.15);
- 
 }
 
 .other-hw-acc-card-title {

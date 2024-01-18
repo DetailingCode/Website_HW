@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+}
+
 .bounce-top {
   display: block;
   -webkit-animation: bounce-top 2.5s infinite both;
@@ -317,7 +322,7 @@ html {
   line-height: 1.2em;
   font-size: 3.6rem;
   text-transform: uppercase;
-  text-shadow: 1px 1px 5px #181D50;
+  text-shadow: 1px 1px 5px #181d50;
 }
 
 .bottom-hero-text {
@@ -329,7 +334,6 @@ html {
 
 .product-description {
   background: #fff;
-  margin-top: 5em;
 }
 
 .description-card-wrapper {
@@ -404,6 +408,9 @@ html {
   font-size: 1.6rem;
   padding: 0.3rem;
   text-align: justify;
+}
+.product-description-content .product-details-holder-p {
+  font-size: 1rem;
 }
 .product-description-content .product-description-list {
   position: relative;
@@ -830,6 +837,7 @@ html {
 
 .product-category-text {
   font-size: 1.4rem;
+  color: black;
 }
 
 .hw-parts-hero {
@@ -901,11 +909,6 @@ html {
   transform: scale(1.03);
 }
 
-body {
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-}
-
 h2 {
   text-align: center;
   text-transform: uppercase;
@@ -935,7 +938,7 @@ h2 {
 
 .navlogo {
   margin-left: 1em;
-  height: 65px;
+  height: 70px;
   width: auto;
 }
 
@@ -1114,9 +1117,18 @@ input {
 }
 
 #home {
+  position: relative;
   color: #fff;
+  overflow: hidden;
 }
-#home h1 {
+#home video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+  top: 0;
+}
+#home .home-title {
   font-size: 3rem;
   font-family: "Play", sans-serif;
   text-transform: uppercase;
@@ -1140,24 +1152,19 @@ input {
 #home .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("../image/Aboutus2_1900.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
+  z-index: 1;
 }
 #home .hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: -10;
 }
 #home .btn-home {
-  margin-top: 2em;
-  margin-left: 1.6em;
-  padding: 1em 1.1em;
-  font-size: 1.2rem;
+  margin-top: 1em;
+  padding: 1em 1.2em;
+  font-size: 1.4rem;
   background-color: rgb(255, 111, 0);
   color: black;
   font-weight: bold;
@@ -1166,12 +1173,12 @@ input {
   text-decoration: none;
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 3px #fff;
+  box-shadow: 0px 0px 5px #fff;
   cursor: pointer;
 }
 #home .btn-home:hover {
   scale: 1.05;
-  font-weight: bold;
+  box-shadow: 0px 0px 10px #fff;
 }
 #home .hero-text {
   display: flex;
@@ -1179,9 +1186,11 @@ input {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  padding: 10px;
   text-align: center;
   z-index: 5;
+}
+#home .hero-text h1 {
+  text-shadow: 1px 1px 2px black;
 }
 #home .btn-outline-light {
   text-transform: uppercase;
@@ -1192,6 +1201,10 @@ input {
   bottom: 20px;
   font-size: 20px;
   color: #fff;
+}
+
+.photo-slider {
+  z-index: 10;
 }
 
 .portfolio {
@@ -1273,7 +1286,8 @@ input {
 }
 
 .img-holder {
-  margin-bottom: 5em;
+  margin-bottom: 1em;
+  margin-top: 2em;
   transition: transform 0.3s ease;
 }
 .img-holder:hover {
@@ -1291,8 +1305,10 @@ input {
 
 .product-details-holder {
   position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-description-title {
@@ -1301,9 +1317,8 @@ input {
   text-align: center;
   color: black;
   text-shadow: 1px 1px 2px rgb(63, 63, 63);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-top: 6em;
 }
 
 .short-description {
@@ -1424,12 +1439,12 @@ input {
 .cards .card-bestseller3,
 .cards .card-voltage {
   position: absolute;
-  top: 0;
+  top: 30%;
   right: 0;
   background: #ff4500;
   padding: 10px 10px;
-  border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
   font-size: 1.5rem;
   font-weight: 600;
   font-family: "Play", sans-serif;
@@ -1441,10 +1456,12 @@ input {
 .cards .card-news2,
 .cards .card-bestseller,
 .cards .card-bestseller2,
-.cards .card-bestseller3 {
+.cards .card-bestseller3,
+.cards .card-voltage {
   background: black;
   color: #fff;
   letter-spacing: 1px;
+  display: visible;
 }
 .cards .card-bestseller2 {
   font-size: 1.3rem;
@@ -1749,6 +1766,10 @@ footer p {
   .logo-hw {
     margin-left: 0px;
   }
+  p {
+    font-size: 1.4rem;
+    line-height: 1.2em;
+  }
 }
 @media (max-width: 400px) {
   .product-img a,
@@ -1765,6 +1786,9 @@ footer p {
 }
 
 @media (min-width: 576px) {
+  .home-title {
+    font-size: 3.5rem;
+  }
   .fa-phone,
 .fa-at {
     font-size: 1.6rem;
@@ -1780,6 +1804,7 @@ footer p {
   }
   p {
     font-size: 1.4rem;
+    line-height: 1.2em;
   }
   .card-body {
     height: 150px;
@@ -1832,18 +1857,21 @@ footer p {
     width: 100%;
     left: 0;
   }
-  .card-news,
-.card-news2,
-.card-bestseller,
-.card-bestseller2,
-.card-voltage {
-    display: none;
-  }
   .cards:hover .button-motor {
     top: 260px;
   }
   .cards:hover .card-heading {
     transform: translateX(0%);
+  }
+  .card-news2,
+.card-bestseller,
+.card-bestseller2,
+.card-bestseller3,
+.card-voltage {
+    display: none;
+  }
+  .function-description-row {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 768px) {
@@ -1890,6 +1918,13 @@ footer p {
     padding: 1em;
     font-size: 1.5rem;
   }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.2em;
+  }
+  .product-description-title {
+    font-size: 2.2rem;
+  }
 }
 .help-heading {
   margin-top: 1.5em;
@@ -1898,13 +1933,19 @@ footer p {
 .contact p {
   font-size: 1.6rem;
 }
+.contact .card-news2,
+.contact .card-bestseller,
+.contact .card-bestseller2,
+.contact .card-bestseller3 {
+  background: black;
+  color: #fff;
+  letter-spacing: 1px;
+  display: visible;
+}
 
 @media (max-width: 1007px) {
   .other-hw-acc-card-title {
     font-size: 2.5rem;
-  }
-  .function-description-row {
-    grid-template-columns: 1fr;
   }
   .navigation-dropdown ul {
     margin-right: 0px;
@@ -1980,12 +2021,6 @@ footer p {
   }
 }
 @media (min-width: 992px) {
-  .product-details-holder {
-    top: 50%;
-  }
-  .product-description-title {
-    margin-top: 3em;
-  }
   header .logo-hw {
     width: 50%;
   }
@@ -2041,6 +2076,13 @@ footer p {
   }
   .description-card-wrapper .product-description-content-new-price {
     font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 1.2em;
+  }
+  .product-description-title {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 992px) and (min-width: 1200px) {
