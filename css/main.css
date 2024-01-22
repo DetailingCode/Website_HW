@@ -332,6 +332,10 @@ body {
   color: #fff;
 }
 
+.slim-icon {
+  font-size: 2rem;
+}
+
 .product-description {
   background: #fff;
 }
@@ -404,10 +408,15 @@ body {
 .product-description-content .product-description-content-detail .fa-star {
   color: rgb(255, 69, 0);
 }
-.product-description-content .product-description-content-detail .product-description-content-detail-p {
+.product-description-content .product-description-content-detail .product-description-content-detail-p,
+.product-description-content .product-description-content-detail .product-description-content-detail-power {
   font-size: 1.6rem;
-  padding: 0.3rem;
+  padding: 0.5rem;
   text-align: justify;
+}
+.product-description-content .product-description-content-detail .product-description-content-detail-power {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 .product-description-content .product-details-holder-p {
   font-size: 1rem;
@@ -1027,7 +1036,7 @@ nav ul ul li {
   float: none;
   display: list-item;
   background: rgba(0, 0, 0, 0.9);
-  border-bottom: 1px solid rgba(255, 69, 0, 0.9);
+  border-bottom: 1px groove #fff7e9;
   transition: all 0.2s ease-in-out;
 }
 

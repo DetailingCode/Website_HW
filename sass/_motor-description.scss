@@ -1,5 +1,7 @@
 // MOTOR DESCRIPTION START
-
+.slim-icon{
+	font-size: 2rem;
+}
 .product-description {
 	// position: relative;
 	// background-image: url("/background/osapian-bg.JPG");
@@ -117,10 +119,15 @@
 			color: $star-available;
 		}
 
-		.product-description-content-detail-p {
+		.product-description-content-detail-p,
+		.product-description-content-detail-power {
 			font-size: 1.6rem;
-			padding: 0.3rem;
+			padding: 0.5rem;
 			text-align: justify;
+		}
+		.product-description-content-detail-power{
+			font-size: 1.8rem;
+			font-weight: bold;
 		}
 	}
 

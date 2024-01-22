@@ -125,7 +125,7 @@ nav ul ul li {
 	float: none;
 	display: list-item;
 	background: rgba(0, 0, 0, 0.9);
-	border-bottom: 1px solid rgba(255, 69, 0, 0.9);
+	border-bottom: 1px groove $ui-bones;
 	transition: all 0.2s ease-in-out;
 }
 nav ul ul li a {
