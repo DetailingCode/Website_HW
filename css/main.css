@@ -1303,13 +1303,19 @@ input {
   transform: scale(1.05);
 }
 
-.function-description-img {
+.function-description-img,
+.function-description-maximizer {
   height: auto;
-  box-shadow: 2px 2px 5px rgb(129, 129, 129);
+  box-shadow: 2px 2px 8px rgb(129, 129, 129);
   width: 80%;
   position: relative;
   left: 50%;
   transform: translate(-50%);
+  transition: all 0.5s;
+}
+
+.function-description-maximizer {
+  box-shadow: none;
 }
 
 .product-details-holder {

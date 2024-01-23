@@ -539,13 +539,19 @@ input {
 	}
 }
 
-.function-description-img {
+.function-description-img,
+.function-description-maximizer {
 	height: auto;
-	box-shadow: 2px 2px 5px $box-shadow-color;
+	box-shadow: 2px 2px 8px $box-shadow-color;
 	width: 80%;
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
+	transition: all 0.5s;
+
+}
+.function-description-maximizer {
+	box-shadow: none;
 }
 .product-details-holder {
 	position: relative;
