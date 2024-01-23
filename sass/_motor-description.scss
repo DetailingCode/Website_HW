@@ -1,5 +1,5 @@
 // MOTOR DESCRIPTION START
-.slim-icon{
+.slim-icon {
 	font-size: 2rem;
 }
 .product-description {
@@ -9,6 +9,7 @@
 	// background-attachment: fixed;
 	// z-index: 0;
 	background: $white;
+	margin-top: 3em;
 }
 
 // .motor-description-shadow {
@@ -97,7 +98,7 @@
 	}
 
 	.product-description-content-title {
-		font-size: 4rem;
+		font-size: 2.5rem;
 		text-transform: capitalize;
 		font-weight: 700;
 		position: relative;
@@ -108,6 +109,7 @@
 	.product-description-content-detail-lbs,
 	.product-description-content-title {
 		text-align: center;
+		font-size: 2.2rem;
 	}
 
 	.product-description-content-detail {
@@ -125,7 +127,7 @@
 			padding: 0.5rem;
 			text-align: justify;
 		}
-		.product-description-content-detail-power{
+		.product-description-content-detail-power {
 			font-size: 1.8rem;
 			font-weight: bold;
 		}

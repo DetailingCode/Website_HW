@@ -338,6 +338,7 @@ body {
 
 .product-description {
   background: #fff;
+  margin-top: 3em;
 }
 
 .description-card-wrapper {
@@ -391,7 +392,7 @@ body {
   transform: translate(-50%);
 }
 .product-description-content .product-description-content-title {
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-transform: capitalize;
   font-weight: 700;
   position: relative;
@@ -401,6 +402,7 @@ body {
 .product-description-content .product-description-content-detail-lbs,
 .product-description-content .product-description-content-title {
   text-align: center;
+  font-size: 2.2rem;
 }
 .product-description-content .product-description-content-detail h3 {
   font-size: 2.5rem;
@@ -1300,7 +1302,7 @@ input {
   transition: transform 0.3s ease;
 }
 .img-holder:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .function-description-img,

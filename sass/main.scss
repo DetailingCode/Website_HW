@@ -533,9 +533,8 @@ input {
 	margin-bottom: 1em;
 	margin-top: 2em;
 	transition: transform 0.3s ease;
-
 	&:hover {
-		transform: scale(1.05);
+		transform: scale(1.03);
 	}
 }
 
@@ -548,7 +547,6 @@ input {
 	left: 50%;
 	transform: translate(-50%);
 	transition: all 0.5s;
-
 }
 .function-description-maximizer {
 	box-shadow: none;
