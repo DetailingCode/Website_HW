@@ -109,11 +109,16 @@ body {
   max-width: 1100px;
 }
 
-.underline2 {
+.underline2,
+.underline3 {
   margin: 0 auto 40px;
   width: 400px;
   height: 4px;
   background-color: #ff4500;
+}
+
+.underline3 {
+  background-color: #3F8CB3;
 }
 
 .shadow-blue,
@@ -180,7 +185,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #009fbe;
   text-transform: uppercase;
   width: 100%;
   height: auto;
@@ -193,7 +197,7 @@ body {
   box-shadow: 2px 2px 5px black;
 }
 .tabs-button:hover {
-  background-color: rgb(255, 111, 0);
+  background-color: #3F8CB3;
 }
 
 .connected-product-btn {
@@ -602,6 +606,7 @@ body {
 }
 .other-hw-motors .other-hw-motors-card-title {
   font-size: 3.5em;
+  letter-spacing: 2px;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -622,7 +627,8 @@ body {
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   transition: all 0.3s;
 }
-.other-hw-motors .other-hw-motors-card {
+.other-hw-motors .other-hw-motors-card,
+.other-hw-motors .other-protruar-motors {
   border-radius: 5px;
   background-color: #fdfdfd;
   background-image: url("/background/other-motors-bg.png");
@@ -630,8 +636,15 @@ body {
   border: none;
   transform: all 0.5s;
 }
-.other-hw-motors .other-hw-motors-card:hover {
+.other-hw-motors .other-hw-motors-card:hover,
+.other-hw-motors .other-protruar-motors:hover {
   background-image: url("/background/other-motors-bg-hover.png");
+}
+.other-hw-motors .other-protruar-motors {
+  background-image: url("/background/protruar-other-bg.png");
+}
+.other-hw-motors .other-protruar-motors:hover {
+  background-image: url("/background/protruar-other-bg-hover.png");
 }
 .other-hw-motors .other-hw-motors-img {
   height: 350px;

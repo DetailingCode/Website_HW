@@ -9,11 +9,15 @@
 	max-width: 1100px;
 }
 
-.underline2 {
+.underline2,
+.underline3 {
 	margin: 0 auto 40px;
 	width: 400px;
 	height: 4px;
 	background-color: $orangered;
+}
+.underline3 {
+	background-color: $ui-digitblue;
 }
 
 .shadow-blue,
@@ -25,7 +29,6 @@
 	background-color: rgba(67, 140, 173, 0.7);
 	z-index: -1;
 }
-
 
 .btn-info {
 	background-color: $btn-color;
@@ -83,7 +86,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: $btn-color;
 	text-transform: uppercase;
 	width: 100%;
 	height: auto;
@@ -96,10 +98,10 @@
 	box-shadow: 2px 2px 5px $black;
 
 	&:hover {
-		background-color: $main-color;
+		background-color: $ui-digitblue;
 	}
 }
-
+ 
 .connected-product-btn {
 	padding: 1em 1.5em;
 	width: 100%;
@@ -146,7 +148,7 @@
 	}
 }
 .btn-other-models,
-.propeller-btn{
+.propeller-btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -182,8 +184,6 @@
 		transform: scale(0.97);
 	}
 }
-
- 
 
 // ============ KARTY PODSTRONY ===========
 .product-box {
