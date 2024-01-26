@@ -339,7 +339,8 @@
 		font-weight: bold;
 	}
 
-	.other-hw-motors-card-title {
+	.other-hw-motors-card-title,
+	.other-hw-motors-card-title2 {
 		font-size: 3.5em;
 		letter-spacing: 2px;
 		color: $white;
@@ -351,6 +352,10 @@
 		text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
 		opacity: 1;
 		transition: all 0.3s;
+	}
+
+	.other-hw-motors-card-title2 {
+		font-size: 3rem;
 	}
 
 	.other-hw-motors-card-p {
@@ -379,14 +384,12 @@
 			background-image: url("/background/other-motors-bg-hover.png");
 		}
 	}
-	.other-protruar-motors{
+	.other-protruar-motors {
 		background-image: url("/background/protruar-other-bg.png");
 		&:hover {
 			background-image: url("/background/protruar-other-bg-hover.png");
 		}
 	}
-	
-
 
 	.other-hw-motors-img {
 		height: 350px;

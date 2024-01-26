@@ -604,7 +604,8 @@ body {
   padding-top: 0.5em;
   font-weight: bold;
 }
-.other-hw-motors .other-hw-motors-card-title {
+.other-hw-motors .other-hw-motors-card-title,
+.other-hw-motors .other-hw-motors-card-title2 {
   font-size: 3.5em;
   letter-spacing: 2px;
   color: #fff;
@@ -616,6 +617,9 @@ body {
   text-shadow: 1px 2px 4px rgb(0, 0, 0);
   opacity: 1;
   transition: all 0.3s;
+}
+.other-hw-motors .other-hw-motors-card-title2 {
+  font-size: 3rem;
 }
 .other-hw-motors .other-hw-motors-card-p {
   font-size: 2rem;
