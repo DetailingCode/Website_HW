@@ -403,6 +403,10 @@ body {
   color: #12263a;
   margin: 1rem 0;
 }
+.product-description-content .fa-anchor {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 .product-description-content .product-description-content-detail-lbs,
 .product-description-content .product-description-content-title {
   text-align: center;
