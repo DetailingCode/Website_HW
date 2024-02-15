@@ -106,9 +106,13 @@
 		margin: 1rem 0;
 	}
 
-	.fa-anchor{
+	.fa-anchor,
+	.fa-location-dot,
+	.fa-gamepad,
+	.fa-microchip {
 		font-size: 2.5rem;
-font-weight: bold;
+		font-weight: bold;
+		margin-right: 0.3em;
 	}
 
 	.product-description-content-detail-lbs,
@@ -130,10 +134,10 @@ font-weight: bold;
 		.product-description-content-detail-power {
 			font-size: 1.6rem;
 			padding: 0.5rem;
-			text-align: justify;
+			text-align: left;
 		}
 		.product-description-content-detail-power {
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 			font-weight: bold;
 		}
 	}
@@ -199,6 +203,20 @@ font-weight: bold;
 		margin: 0px;
 		color: $hr-color;
 	}
+}
+
+.helmsman-link {
+	text-decoration: none;
+	color: $dark;
+	transition: all 0.3s;
+	&:hover {
+		color: $ui-blue;
+	}
+}
+
+.anchor-remote,
+.fa-gauge-simple-high {
+	font-size: 3rem;
 }
 
 // ============ TABLE SPECIFICATION OF MOTORS =============
@@ -343,7 +361,7 @@ font-weight: bold;
 		padding-top: 0.5em;
 		font-weight: bold;
 	}
-	
+
 	.other-hw-motors-card-title,
 	.other-hw-motors-card-title2 {
 		font-size: 3.5em;
