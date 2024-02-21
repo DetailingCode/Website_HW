@@ -754,6 +754,10 @@ body {
   transition: all 0.3s;
 }
 
+.fa-circle-arrow-right {
+  color: black;
+}
+
 .hw-propeller-hero {
   background-image: url(../background/propeller.webp);
   background-position: 0 30%;
