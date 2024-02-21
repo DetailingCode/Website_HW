@@ -426,11 +426,12 @@ body {
 .product-description-content .product-description-content-detail .product-description-content-detail-power {
   font-size: 1.6rem;
   padding: 0.5rem;
-  text-align: left;
+  text-align: justify;
 }
 .product-description-content .product-description-content-detail .product-description-content-detail-power {
   font-size: 1.6rem;
   font-weight: bold;
+  text-align: left;
 }
 .product-description-content .product-details-holder-p {
   font-size: 1rem;
@@ -609,12 +610,17 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 75%;
-  padding: 1em;
   margin-top: 3em;
 }
 
 .helmsman-app-description {
   padding-top: 1em;
+  max-width: 95%;
+  margin-top: 0.2em;
+}
+
+.helmsman-app-img {
+  padding-top: 4em;
 }
 
 .other-hw-motors {
@@ -844,7 +850,7 @@ body {
 
 .hw-optional {
   position: relative;
-  padding-top: 6em;
+  padding-top: 1em;
   z-index: 0;
   width: 100%;
   height: 100%;
