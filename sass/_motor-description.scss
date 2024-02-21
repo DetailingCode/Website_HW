@@ -207,10 +207,11 @@
 
 .helmsman-link {
 	text-decoration: none;
-	color: $dark;
+	color: $ui-blue;
+	font-weight: bold;
 	transition: all 0.3s;
 	&:hover {
-		color: $ui-blue;
+		color: $ui-orange;
 	}
 }
 
@@ -326,7 +327,8 @@
 
 // ======= OBRAZ BUDOWA SILNIKA NAD OPISEM SILNIKA ==============
 
-.motor-draft-img {
+.motor-draft-img, 
+.helmsman-app-description {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -334,6 +336,11 @@
 	padding: 1em;
 	margin-top: 3em;
 }
+
+.helmsman-app-description{
+	padding-top: 1em;
+}
+
 
 // ======= SEKCJA POZOSTALE MODELE SILNIKOW ==============
 
@@ -492,3 +499,4 @@
 	opacity: 1;
 	transition: all 0.3s;
 }
+ 

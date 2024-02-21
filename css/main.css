@@ -118,7 +118,7 @@ body {
 }
 
 .underline3 {
-  background-color: #3F8CB3;
+  background-color: #417cf0;
 }
 
 .shadow-blue,
@@ -132,7 +132,7 @@ body {
 }
 
 .btn-info {
-  background-color: #3F8CB3;
+  background-color: #417cf0;
   text-transform: uppercase;
   margin: 1em 0 1em 0;
   width: 150px;
@@ -197,7 +197,7 @@ body {
   box-shadow: 2px 2px 5px black;
 }
 .tabs-button:hover {
-  background-color: #3F8CB3;
+  background-color: #417cf0;
 }
 
 .connected-product-btn {
@@ -229,7 +229,7 @@ body {
   align-items: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: #3F8CB3;
+  background-color: #417cf0;
   box-shadow: 0px 0px 10px black;
   width: 100%;
   height: 40px;
@@ -486,11 +486,12 @@ body {
 
 .helmsman-link {
   text-decoration: none;
-  color: #2e2e2e;
+  color: #1746a2;
+  font-weight: bold;
   transition: all 0.3s;
 }
 .helmsman-link:hover {
-  color: #1746a2;
+  color: #ff731d;
 }
 
 .anchor-remote,
@@ -602,13 +603,18 @@ body {
   margin-bottom: 3em;
 }
 
-.motor-draft-img {
+.motor-draft-img,
+.helmsman-app-description {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 75%;
   padding: 1em;
   margin-top: 3em;
+}
+
+.helmsman-app-description {
+  padding-top: 1em;
 }
 
 .other-hw-motors {
@@ -963,6 +969,10 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 4rem;
+}
+
+[id] {
+  scroll-margin-top: 90px;
 }
 
 .underline {
