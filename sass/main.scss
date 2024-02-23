@@ -15,7 +15,7 @@ h2 {
 	font-size: 4rem;
 }
 [id]{
-	scroll-margin-top: 90px;
+	scroll-margin-top: 80px;
 }
 
 .underline {
@@ -487,12 +487,13 @@ input {
 	}
 
 	.features-card-title {
-		font-size: 18px;
+		font-size: 20px;
 		text-transform: uppercase;
+		padding-bottom: 0.3em;
 	}
 
 	.features-card-text {
-		font-size: 15px;
+		font-size: 16px;
 	}
 
 	.features-hover {
@@ -501,7 +502,7 @@ input {
 
 	.features-hover:hover {
 		color: $main-color;
-		scale: 1.05;
+		scale: 1.03;
 		cursor: default;
 	}
 }

@@ -982,7 +982,7 @@ h2 {
 }
 
 [id] {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 80px;
 }
 
 .underline {
@@ -1322,18 +1322,19 @@ input {
   font-size: 30px;
 }
 .features .features-card-title {
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
+  padding-bottom: 0.3em;
 }
 .features .features-card-text {
-  font-size: 15px;
+  font-size: 16px;
 }
 .features .features-hover {
   transition: all 0.3s;
 }
 .features .features-hover:hover {
   color: rgb(255, 111, 0);
-  scale: 1.05;
+  scale: 1.03;
   cursor: default;
 }
 
