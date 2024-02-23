@@ -1716,6 +1716,7 @@ input {
 }
 .akcesoria h2 {
   color: #ddd;
+  margin-top: 0.5em;
 }
 .akcesoria p {
   text-align: center;
@@ -1729,9 +1730,10 @@ input {
   z-index: -5;
 }
 .akcesoria .card {
+  border-radius: 10px;
   margin-top: 3em;
   margin-bottom: 5em;
-  transition: transform 0.3s;
+  transition: all 0.4s;
 }
 .akcesoria .card img {
   height: 250px;
@@ -1740,13 +1742,13 @@ input {
 }
 .akcesoria .card:hover {
   transform: scale(0.96);
+  box-shadow: 0px 0px 10px rgb(255, 111, 0);
 }
 .akcesoria .card-title {
   margin-top: 1em;
   font-size: 2.5em;
   text-align: center;
-  font-weight: 500;
-  text-shadow: 1px 1px 1px black;
+  font-weight: 600;
   text-transform: uppercase;
 }
 

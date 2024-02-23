@@ -14,7 +14,7 @@ h2 {
 	text-transform: uppercase;
 	font-size: 4rem;
 }
-[id]{
+[id] {
 	scroll-margin-top: 79px;
 }
 
@@ -200,7 +200,6 @@ input {
 	position: relative;
 }
 
-
 // nav {
 // 	text-transform: uppercase;
 // 	transition: background-color 0.6s;
@@ -369,7 +368,6 @@ input {
 			font-family: "Play", sans-serif;
 			font-weight: bold;
 			font-size: 2.6rem;
-			 
 		}
 
 		.home-title {
@@ -385,8 +383,6 @@ input {
 			margin-left: 1em;
 			max-width: 70%;
 		}
-
-	
 
 		.btn-home {
 			margin-top: 1em;
@@ -979,6 +975,7 @@ input {
 
 	h2 {
 		color: $light-gray;
+		margin-top: 0.5em;
 	}
 	p {
 		text-align: center;
@@ -994,9 +991,11 @@ input {
 	}
 
 	.card {
+		border-radius: 10px;
+
 		margin-top: 3em;
 		margin-bottom: 5em;
-		transition: transform 0.3s;
+		transition: all 0.4s;
 		img {
 			height: 250px;
 			object-fit: scale-down;
@@ -1005,14 +1004,15 @@ input {
 
 	.card:hover {
 		transform: scale(0.96);
+		box-shadow: 0px 0px 10px $main-color;
 	}
 
 	.card-title {
 		margin-top: 1em;
 		font-size: 2.5em;
 		text-align: center;
-		font-weight: 500;
-		text-shadow: 1px 1px 1px $black;
+		font-weight: 600;
+		// text-shadow: 1px 1px 1px $black;
 		text-transform: uppercase;
 	}
 }
