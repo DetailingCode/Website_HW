@@ -982,7 +982,7 @@ h2 {
 }
 
 [id] {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 79px;
 }
 
 .underline {
@@ -1182,10 +1182,6 @@ input {
   position: relative;
 }
 
-.motor-slider-up {
-  padding-top: 70px;
-}
-
 #home {
   position: relative;
   color: #fff;
@@ -1194,7 +1190,18 @@ input {
 #home .hero-img {
   position: relative;
   height: 100vh;
+  background-image: url("../image/Aboutus2_1900.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   z-index: 1;
+}
+#home .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
 }
 #home .home-video {
   position: absolute;
@@ -1232,13 +1239,6 @@ input {
 #home .hero-text .logo-hw {
   margin-left: 1em;
   max-width: 70%;
-}
-#home .hero-text .hero-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: -10;
 }
 #home .hero-text .btn-home {
   margin-top: 1em;
@@ -1730,6 +1730,7 @@ input {
 }
 .akcesoria .card {
   margin-top: 3em;
+  margin-bottom: 5em;
   transition: transform 0.3s;
 }
 .akcesoria .card img {
