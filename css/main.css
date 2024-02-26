@@ -668,7 +668,6 @@ body {
 .other-hw-motors .other-hw-motors-card,
 .other-hw-motors .other-protruar-motors {
   border-radius: 5px;
-  background-color: #fdfdfd;
   background-image: url("/background/other-motors-bg.png");
   background-size: cover;
   border: none;
@@ -677,12 +676,6 @@ body {
 .other-hw-motors .other-hw-motors-card:hover,
 .other-hw-motors .other-protruar-motors:hover {
   background-image: url("/background/other-motors-bg-hover.png");
-}
-.other-hw-motors .other-protruar-motors {
-  background-image: url("/background/protruar-other-bg.png");
-}
-.other-hw-motors .other-protruar-motors:hover {
-  background-image: url("/background/protruar-other-bg-hover.png");
 }
 .other-hw-motors .other-hw-motors-img {
   height: 350px;
@@ -1010,6 +1003,11 @@ h2 {
   margin-left: 1em;
   height: 70px;
   width: auto;
+  filter: drop-shadow(1px 0px 8px #ff731d);
+  transition: all 1s;
+}
+.navlogo:hover {
+  filter: drop-shadow(0px 0px 0px #ff731d);
 }
 
 .link,
@@ -1356,10 +1354,6 @@ input {
 .img-holder {
   margin-bottom: 1em;
   margin-top: 2em;
-  transition: transform 0.3s ease;
-}
-.img-holder:hover {
-  transform: scale(1.03);
 }
 
 .function-description-img,

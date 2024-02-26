@@ -410,7 +410,7 @@
 		border-radius: 5px;
 		// background-color: #000000;
 		// background-image: linear-gradient(0deg, #444444 0%, #ffffff 74%);
-		background-color: #fdfdfd;
+		
 		background-image: url("/background/other-motors-bg.png");
 		// background-attachment: fixed;
 		background-size: cover;
@@ -420,12 +420,12 @@
 			background-image: url("/background/other-motors-bg-hover.png");
 		}
 	}
-	.other-protruar-motors {
-		background-image: url("/background/protruar-other-bg.png");
-		&:hover {
-			background-image: url("/background/protruar-other-bg-hover.png");
-		}
-	}
+	// .other-protruar-motors {
+	// 	background-image: url("/background/protruar-other-bg.png");
+	// 	&:hover {
+	// 		background-image: url("/background/protruar-other-bg-hover.png");
+	// 	}
+	// }
 
 	.other-hw-motors-img {
 		height: 350px;
