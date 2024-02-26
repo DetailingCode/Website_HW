@@ -19,6 +19,7 @@ $light-white: #eee;
 $dark: #2e2e2e;
 $light-gray: #ddd;
 $black: black;
+<<<<<<< HEAD
 $btn-color: #009fbe;
 $btn-darkblue: rgb(13, 110, 253);
 $underline-blue: #0d6efd;
@@ -42,3 +43,22 @@ $section-gradient: linear-gradient(
 	rgba(0, 0, 0, 1) 50%,
 	#00d4ff 100%
 );
+=======
+$btn-color: #FF6F00;
+$btn-color-hover: #6B7F82;
+$secondary-color: #f30000;
+
+$pure-white: #fff;
+$light-white: #eee;
+$dark: #2e2e2e;
+$green-color: #00ffaa;
+$green-color-hover: #0fe29c;
+
+$light-blue-gradient: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75));
+$blue-gradient: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75));
+$purple-gradient: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75));
+$blue-gradient-solid: linear-gradient(45deg, rgb(20, 105, 241), rgb(42, 10, 184));
+$light-blue-gradient-solid: linear-gradient(180deg, rgb(255,111,0), rgb(0, 0, 0));
+$heading-card-gradient: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
+
+>>>>>>> f7d80d2ecdf4d3ebe732c2631d32701a1d8b3d9d
