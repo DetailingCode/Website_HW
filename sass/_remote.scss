@@ -1,0 +1,57 @@
+
+.shadow-grey {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 181, 212, 0.4);
+	z-index: -1;
+}
+
+
+.hw-remote{
+    position: relative;
+	padding-top: 6em;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: rgb(189,195,199);
+	background: linear-gradient(0deg, rgba(189,195,199,1) 0%, rgba(44,62,80,1) 100%);
+    box-shadow: inset -0px -9px 17px 0px rgba(66, 68, 90, 1);
+    .hw-remote-box {
+        background: rgb(255, 255, 255);
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255) 65%,
+			rgba(191, 163, 136, 1) 100%
+		);
+		transition: all 0.5s;
+
+		&:hover {
+			background: rgb(255, 255, 255);
+			background: linear-gradient(
+				180deg,
+				rgba(255, 255, 255) 65%,
+				rgb(187, 130, 77) 100%
+			);
+    }
+}
+}
+
+.hw-remote-hero{
+	background-image: url(../background/Cayman-bg.jpg);
+	background-position: 0 70%;
+	background-size: cover;
+}
+
+
+.hw-remote-box-img{
+    opacity: 1;
+    transition: all 0.5s;
+
+}
+.hw-remote-box:hover .hw-remote-box-img{
+    transform: scale(0.95);
+    opacity: 1;
+
+}

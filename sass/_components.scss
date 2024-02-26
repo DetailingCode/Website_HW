@@ -1,10 +1,55 @@
 .wrapper {
 	margin: 0 auto;
-	width: 100%;
+	// width: 100%;
 	max-width: 1200px;
 }
+.wrapper-tabs {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1100px;
+}
 
-.btn-special-animation {
+.underline2,
+.underline3 {
+	margin: 0 auto 40px;
+	width: 400px;
+	height: 4px;
+	background-color: $orangered;
+}
+.underline3 {
+	background-color: $ui-digitblue;
+}
+
+.shadow-blue,
+.parts-shadow,
+.parts-add-shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(67, 140, 173, 0.7);
+	z-index: -1;
+}
+
+.btn-info {
+	background-color: $ui-digitblue;
+	text-transform: uppercase;
+	margin: 1em 0 1em 0;
+	width: 150px;
+	height: auto;
+	padding: 1em;
+	border: none;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	font-size: 1.5rem;
+	font-weight: bold;
+	box-shadow: 2px 2px 5px $black;
+
+	&:hover {
+		background-color: $main-color;
+	}
+}
+
+.btn-animation {
 	position: relative;
 	transition: background-color 0.3s;
 	overflow: hidden;
@@ -19,18 +64,181 @@
 		width: 100%;
 		height: 100%;
 		transform: scaleX(0);
-		transform-origin: right;
-		transition: transform 0.3s;
+		transform-origin: center;
+		transition: transform 0.5s;
 		z-index: -1;
 	}
 	&:hover::before {
 		transform: scaleX(1);
-		transform-origin: left;
+		transform-origin: center;
 	}
 }
 
-@mixin cardPosition {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+.section-padding {
+	padding: 6em 2em;
 }
+
+.btn-info {
+	background-color: $btn-bg;
+}
+
+.tabs-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	width: 100%;
+	height: auto;
+	padding: 0.5em 2em;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 1.5rem;
+	font-weight: bold;
+	box-shadow: 2px 2px 5px $black;
+
+	&:hover {
+		background-color: $ui-digitblue;
+	}
+}
+
+.connected-product-btn {
+	padding: 1em 1.5em;
+	width: 100%;
+	box-shadow: none;
+	&:hover {
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+		background: none;
+	}
+}
+
+.card-box-shadow {
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+}
+.card-box-shadow-more-motors {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+	transition: all 0.3s;
+	&:hover {
+		transform: scale(0.95);
+		box-shadow: 0px 0px 15px $orangered;
+	}
+}
+
+.btn-connected {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: $white;
+	background-color: $ui-digitblue;
+	box-shadow: 0px 00px 10px $black;
+	width: 100%;
+	height: 40px;
+	padding: 1em;
+	margin-top: 1em;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+	font-weight: bold;
+	transition: all 0.3s;
+	&:hover {
+		color: $black;
+		box-shadow: 0px 0px 10px $orangered;
+	}
+}
+.btn-other-models,
+.propeller-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: $black;
+	background-color: $white;
+	// box-shadow: 0px 0px 10px $black;
+	width: 100%;
+	height: 40px;
+	padding: 1em;
+	margin-top: 1em;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+	font-weight: bold;
+	transition: all 0.3s;
+	&:hover {
+		box-shadow: 0px 0px 5px $black;
+		transform: scale(1.02);
+	}
+}
+.propeller-btn {
+	width: 100%;
+	box-shadow: 2px 2px 5px $black;
+	font-size: 1.2rem;
+	color: $white;
+	background-color: $dark;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: $black;
+		transform: scale(0.97);
+	}
+}
+
+// ============ KARTY PODSTRONY ===========
+.product-box {
+	display: flex;
+	justify-content: left;
+	flex-direction: column;
+	max-width: 300px;
+	min-height: 350px;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 20px 20px;
+	position: relative;
+	background-color: $white;
+	transition: transform 0.3s ease;
+	&:hover {
+		transform: scale(1.02);
+		max-width: 300px;
+		min-height: 350px;
+	}
+}
+
+// ========== OBRAZEK NAGŁOWEK PODSTRON ============== START
+
+.top-bg {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	background-size: cover;
+	z-index: 0;
+}
+
+.top-bg-shadow {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -1;
+}
+
+.top-hero-heading,
+.bottom-hero-text {
+	line-height: 1.2em;
+	font-size: 3.6rem;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 5px $ui-darkblue;
+}
+
+.bottom-hero-text {
+	font-size: 1.6rem;
+	text-shadow: none;
+	text-transform: none;
+	color: $white;
+}
+
+// ========== OBRAZEK NAGŁOWEK PODSTRON ============== END
+
+ 
