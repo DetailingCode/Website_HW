@@ -620,14 +620,14 @@ body {
 .other-hw-motors .other-hw-motors-card,
 .other-hw-motors .other-protruar-motors {
   border-radius: 5px;
-  background-image: url("/background/other-motors-bg.png");
+  background-image: url("../background/other-motors-bg.png");
   background-size: cover;
   border: none;
   transform: all 0.5s;
 }
 .other-hw-motors .other-hw-motors-card:hover,
 .other-hw-motors .other-protruar-motors:hover {
-  background-image: url("/background/other-motors-bg-hover.png");
+  background-image: url("../background/other-motors-bg-hover.png");
 }
 .other-hw-motors .other-hw-motors-img {
   height: 350px;
