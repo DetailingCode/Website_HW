@@ -1445,7 +1445,7 @@ input {
 
 .motor-cards {
   position: relative;
-  background-image: url("/image/fishing-boat2_1920.jpg");
+  background-image: url("../image/fishing-boat2_1920.jpg");
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
@@ -1703,7 +1703,7 @@ input {
 
 .akcesoria {
   position: relative;
-  background-image: url("/image/fishing-boat2_1920.jpg");
+  background-image: url("../image/fishing-boat_1920.jpg");
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
