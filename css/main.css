@@ -1268,8 +1268,9 @@ input {
   color: #fff;
 }
 
-.photo-slider {
+.motor-slider-up {
   z-index: 10;
+  padding-top: 79px;
 }
 
 .portfolio {
