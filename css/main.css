@@ -1806,6 +1806,12 @@ input {
   font-size: 1.5rem;
 }
 
+.private-site {
+  background-image: url(../background/priv-bg.jpg);
+  background-position: 0 40%;
+  background-size: cover;
+}
+
 .contact {
   position: relative;
   background-image: url("../image/Footer-1920.jpg");

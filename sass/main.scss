@@ -1064,7 +1064,6 @@ input {
 	box-shadow: 1px 1px 17px #adadad, -10px -10px 17px #ffffff;
 	transition: all 0.4s;
 	&:hover {
-		 
 		box-shadow: 1px 1px 15px $dark;
 	}
 }
@@ -1077,15 +1076,20 @@ input {
 	color: $ui-blue;
 }
 
-.warunki-strony{
+.warunki-strony {
 	background-image: url(../background/warunki-strony-bg.jpg);
-	background-position: 0 30%;	
+	background-position: 0 30%;
 }
-.text-private-website{
+
+.text-private-website {
 	text-align: justify;
 	font-size: 1.5rem;
 }
-
+.private-site {
+	background-image: url(../background/priv-bg.jpg);
+	background-position: 0 40%;
+	background-size: cover;
+}
 // -------------------------------------------------------------
 .contact {
 	position: relative;
