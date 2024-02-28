@@ -1058,7 +1058,7 @@ input {
 // ========= SEKCJA DYSTRYBUTORZY
 
 .distributor-card {
-	border: 2px solid $box-shadow-color;
+	border: 1px solid $box-shadow-color;
 	border-radius: 10px;
 	color: $ui-darkblue;
 	box-shadow: 1px 1px 17px #adadad, -10px -10px 17px #ffffff;
@@ -1075,6 +1075,15 @@ input {
 .distributor-link {
 	text-decoration: none;
 	color: $ui-blue;
+}
+
+.warunki-strony{
+	background-image: url(../background/warunki-strony-bg.jpg);
+	background-position: 0 30%;	
+}
+.text-private-website{
+	text-align: justify;
+	font-size: 1.5rem;
 }
 
 // -------------------------------------------------------------

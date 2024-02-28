@@ -1777,7 +1777,7 @@ input {
 }
 
 .distributor-card {
-  border: 2px solid rgb(129, 129, 129);
+  border: 1px solid rgb(129, 129, 129);
   border-radius: 10px;
   color: #181d50;
   box-shadow: 1px 1px 17px #adadad, -10px -10px 17px #ffffff;
@@ -1794,6 +1794,16 @@ input {
 .distributor-link {
   text-decoration: none;
   color: #1746a2;
+}
+
+.warunki-strony {
+  background-image: url(../background/warunki-strony-bg.jpg);
+  background-position: 0 30%;
+}
+
+.text-private-website {
+  text-align: justify;
+  font-size: 1.5rem;
 }
 
 .contact {
