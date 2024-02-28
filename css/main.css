@@ -1766,6 +1766,36 @@ input {
   width: auto;
 }
 
+.faq-hero {
+  background-image: url(../background/poradnik.jpg);
+  background-position: 0 60%;
+}
+
+.buy-hero {
+  background-image: url(../background/buy-bg.jpg);
+  background-position: 0 80%;
+}
+
+.distributor-card {
+  border: 2px solid rgb(129, 129, 129);
+  border-radius: 10px;
+  color: #181d50;
+  box-shadow: 1px 1px 17px #adadad, -10px -10px 17px #ffffff;
+  transition: all 0.4s;
+}
+.distributor-card:hover {
+  box-shadow: 1px 1px 15px #2e2e2e;
+}
+
+.distributor-title {
+  font-weight: bold;
+}
+
+.distributor-link {
+  text-decoration: none;
+  color: #1746a2;
+}
+
 .contact {
   position: relative;
   background-image: url("../image/Footer-1920.jpg");
