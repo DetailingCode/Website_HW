@@ -18,7 +18,8 @@ body {
 
 .bounce-top {
   display: block;
-  animation: bounce-top 2.5s infinite both;
+  -webkit-animation: bounce-top 2.5s infinite both;
+          animation: bounce-top 2.5s infinite both;
   color: white;
 }
 
@@ -33,9 +34,10 @@ body {
  * animation bounce-top
  * ----------------------------------------
  */
-@keyframes bounce-top {
+@-webkit-keyframes bounce-top {
   0% {
     transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 1;
   }
@@ -44,18 +46,54 @@ body {
   }
   40% {
     transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   65% {
     transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   25%, 55%, 75%, 87% {
     transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   100% {
     transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     opacity: 1;
   }
@@ -501,7 +539,8 @@ body {
      object-position: center;
   -o-object-fit: contain;
      object-fit: contain;
-  animation: fade 1s ease;
+  -webkit-animation: fade 1s ease;
+          animation: fade 1s ease;
 }
 .connected-product .p-img-back {
   display: none;
@@ -542,6 +581,15 @@ body {
   text-align: center;
   color: black;
   z-index: 100;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
@@ -620,14 +668,14 @@ body {
 .other-hw-motors .other-hw-motors-card,
 .other-hw-motors .other-protruar-motors {
   border-radius: 5px;
-  background-image: url("../background/other-motors-bg.png");
+  background-image: url("/background/other-motors-bg.png");
   background-size: cover;
   border: none;
   transform: all 0.5s;
 }
 .other-hw-motors .other-hw-motors-card:hover,
 .other-hw-motors .other-protruar-motors:hover {
-  background-image: url("../background/other-motors-bg-hover.png");
+  background-image: url("/background/other-motors-bg-hover.png");
 }
 .other-hw-motors .other-hw-motors-img {
   height: 350px;
@@ -824,6 +872,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 6em;
 }
 
 .hw-optional-box {
@@ -1220,9 +1269,8 @@ input {
   color: #fff;
 }
 
-.motor-slider-up {
+.photo-slider {
   z-index: 10;
-  padding-top: 79px;
 }
 
 .portfolio {
@@ -1707,6 +1755,17 @@ input {
   height: 50vh;
 }
 
+.company-contact-hero {
+  background-image: url(../background/finance-4858797_1920.jpg);
+  background-position: 0 35%;
+  background-size: cover;
+}
+
+.google-map {
+  height: 400px;
+  width: auto;
+}
+
 .contact {
   position: relative;
   background-image: url("../image/Footer-1920.jpg");
@@ -1797,7 +1856,7 @@ footer p {
 }
 @media (max-width: 400px) {
   .product-img a,
-  .product-img {
+.product-img {
     height: 190px;
   }
   .product-box-offer {
@@ -1814,7 +1873,7 @@ footer p {
     font-size: 3.5rem;
   }
   .fa-phone,
-  .fa-at {
+.fa-at {
     font-size: 1.6rem;
   }
   header .fa-chevron-down {
@@ -1888,10 +1947,10 @@ footer p {
     transform: translateX(0%);
   }
   .card-news2,
-  .card-bestseller,
-  .card-bestseller2,
-  .card-bestseller3,
-  .card-voltage {
+.card-bestseller,
+.card-bestseller2,
+.card-bestseller3,
+.card-voltage {
     display: none;
   }
   .function-description-row {
@@ -1983,11 +2042,11 @@ footer p {
     width: 100%;
   }
   .navigation-dropdown .show + a,
-  .navigation-dropdown-ul1 {
+.navigation-dropdown-ul1 {
     display: none;
   }
   .navigation-dropdown ul li,
-  .navigation-dropdown ul ul li {
+.navigation-dropdown ul ul li {
     display: block;
     width: 100%;
     background: none;
@@ -2084,7 +2143,7 @@ footer p {
     font-size: 2.5rem;
   }
   .description-card-wrapper .product-description-content .product-description-content-title,
-  .description-card-wrapper .product-description-content .product-description-content-detail-lbs {
+.description-card-wrapper .product-description-content .product-description-content-detail-lbs {
     text-align: left;
   }
   .description-card-wrapper .product-description-content .product-description-content-logo {
@@ -2145,7 +2204,7 @@ footer p {
     display: flex;
   }
   .p-img a,
-  .p-img {
+.p-img {
     height: 200px;
   }
 }/*# sourceMappingURL=main.css.map */

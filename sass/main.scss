@@ -429,9 +429,9 @@ input {
 
 // PHOTO SLIDER UPPER ============================
 
-.motor-slider-up {
+.photo-slider {
 	z-index: 10;
-	padding-top: 79px;
+	 
 	 
 }
 
@@ -1034,6 +1034,24 @@ input {
 	}
 }
 
+// ============ SITE CONTACT 
+
+ 
+
+.company-contact-hero{
+	background-image: url(../background/finance-4858797_1920.jpg);
+	background-position: 0 35%;
+	background-size: cover;
+}
+
+.google-map{
+height: 400px;
+width: auto;
+}
+
+
+ 
+
 .contact {
 	position: relative;
 	background-image: url("../image/Footer-1920.jpg");
@@ -1112,6 +1130,8 @@ input {
 		}
 	}
 }
+
+
 
 footer {
 	p {
