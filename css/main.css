@@ -109,6 +109,12 @@ body {
   max-width: 1100px;
 }
 
+.wrapper-table {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
 .underline2,
 .underline3 {
   margin: 0 auto 40px;
@@ -1815,6 +1821,16 @@ input {
 .pricelist-bg {
   background-image: url(../background/cennik-bg.jpg);
   background-position: 0 50%;
+}
+
+.shipping-bg {
+  background-image: url(../background/shipping-bg.jpg);
+  background-position: 0 55%;
+}
+
+.warranty-site {
+  background-image: url(../background/warranty-bg.jpg);
+  background-position: 0 15%;
 }
 
 .contact {
