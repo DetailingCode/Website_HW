@@ -1833,6 +1833,20 @@ input {
   background-position: 0 15%;
 }
 
+.download-site {
+  background-image: url(../background/download-bg.png);
+  background-position: 0 73%;
+}
+
+.download-link {
+  text-decoration: none;
+  color: #181d50;
+  transition: 0.3s;
+}
+.download-link:hover {
+  color: #ff731d;
+}
+
 .contact {
   position: relative;
   background-image: url("../image/Footer-1920.jpg");

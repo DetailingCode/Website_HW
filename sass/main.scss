@@ -1106,8 +1106,20 @@ input {
 	background-image: url(../background/warranty-bg.jpg);
 	background-position: 0 15%;
 }
+.download-site
+{
+	background-image: url(../background/download-bg.png);
+	background-position: 0 73%;
+}
 
-
+.download-link{
+	text-decoration: none;
+	color: $ui-darkblue;
+	transition: 0.3s;
+	&:hover{
+		color: $ui-orange;
+	}
+}
 
 
 // -------------------------------------------------------------
