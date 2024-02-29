@@ -1812,6 +1812,11 @@ input {
   background-size: cover;
 }
 
+.pricelist-bg {
+  background-image: url(../background/cennik-bg.jpg);
+  background-position: 0 50%;
+}
+
 .contact {
   position: relative;
   background-image: url("../image/Footer-1920.jpg");
