@@ -1202,6 +1202,69 @@ input {
 	}
 }
 
+// =====================
+// COOKIES COOKIES
+// =====================
+
+
+
+.hide {
+	display: none;
+}
+
+.cookie-box {
+	position: fixed;
+	bottom: 0;
+	padding: 2em;
+	font-size: 1.6rem;
+	height: 300px;
+	width: 100%;
+	text-align: center;
+	background-color: $dark;
+	color: $ui-bones;
+	opacity: 0;
+	transform: translateY(100%);
+	animation: showcookies 0.5s 0.5s forwards;
+	z-index: 111111111;
+}
+
+.cookie-box::before {
+	position: absolute;
+	top: -130px;
+	right: 50px;
+	width: 200px;
+	height: 200px;
+	background-image: url(../image/cookies.png);
+	background-size: cover;
+	content: '';
+	z-index: 111111111;
+}
+
+.cookie-btn {
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	font-size: 1.6rem;
+	border-radius: 1em;
+	border: 2px solid black;
+	color: #000;
+	background-color: none;
+	cursor: pointer;
+	transition: all 0.3s;
+	z-index: 1111111111;
+	&:hover {
+		background-color: #fa8a22;
+	}
+}
+
+@keyframes showcookies {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
 footer {
 	p {
 		margin-bottom: 0;
@@ -1213,6 +1276,8 @@ footer {
 // =====================
 // START MEDIA QUERIES
 // =====================
+
+
 
 @media (min-width: 368px) {
 	.info-text {
@@ -1491,6 +1556,7 @@ footer {
 		line-height: 70px;
 		cursor: pointer;
 		font-size: 25px;
+		padding: 0em 1em 0em 1em;
 	}
 	.navigation-dropdown ul ul {
 		top: 70px;
