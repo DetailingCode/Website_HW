@@ -429,6 +429,10 @@ input {
 	z-index: 10;
 }
 
+.motor-slider-up{
+	padding-top:75px;
+}
+
 // PORTFOLIO SECTION
 
 .portfolio {
@@ -1516,7 +1520,7 @@ footer {
 			display: flex;
 			justify-content: left;
 			align-items: left;
-			padding: 10px;
+			 
 			width: 100%;
 		}
 	}

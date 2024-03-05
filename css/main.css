@@ -1278,6 +1278,10 @@ input {
   z-index: 10;
 }
 
+.motor-slider-up {
+  padding-top: 75px;
+}
+
 .portfolio {
   background: rgb(120, 120, 120);
   background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
@@ -2180,7 +2184,6 @@ footer p {
     display: flex;
     justify-content: left;
     align-items: left;
-    padding: 10px;
     width: 100%;
   }
   .navigation-dropdown .show + a,
