@@ -1011,12 +1011,33 @@ h2 {
   height: 75px;
   width: auto;
   filter: drop-shadow(1px 0px 8px #ff731d);
-  transition: all 1s;
-}
-.navlogo:hover {
-  filter: drop-shadow(0px 0px 0px #ff731d);
+  -webkit-animation: navLogoAnimation 5s linear infinite;
+          animation: navLogoAnimation 5s linear infinite;
 }
 
+@-webkit-keyframes navLogoAnimation {
+  0% {
+    filter: drop-shadow(1px 0px 8px #ff731d);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 0px #ff731d);
+  }
+  100% {
+    filter: drop-shadow(1px 0px 8px #ff731d);
+  }
+}
+
+@keyframes navLogoAnimation {
+  0% {
+    filter: drop-shadow(1px 0px 8px #ff731d);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 0px #ff731d);
+  }
+  100% {
+    filter: drop-shadow(1px 0px 8px #ff731d);
+  }
+}
 .link,
 .link::after,
 .link::before {
@@ -1786,14 +1807,13 @@ input {
 }
 
 .distributor-card {
-  border: 1px solid rgb(129, 129, 129);
   border-radius: 10px;
   color: #181d50;
-  box-shadow: 1px 1px 17px #adadad, -10px -10px 17px #ffffff;
+  box-shadow: 3px 3px 10px #292929, -10px -10px 17px #ffffff;
   transition: all 0.4s;
 }
 .distributor-card:hover {
-  box-shadow: 1px 1px 15px #2e2e2e;
+  box-shadow: 3px 3px 20px #000000, -10px -10px 17px #ffffff;
 }
 
 .distributor-title {

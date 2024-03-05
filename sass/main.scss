@@ -52,9 +52,17 @@ h2 {
 	height: 75px;
 	width: auto;
 	filter: drop-shadow(1px 0px 8px $ui-orange);
-	transition: all 1s;
-	&:hover {
+	animation: navLogoAnimation 5s linear infinite;
+}
+@keyframes navLogoAnimation {
+	0% {
+		filter: drop-shadow(1px 0px 8px $ui-orange);
+	}
+	50% {
 		filter: drop-shadow(0px 0px 0px $ui-orange);
+	}
+	100% {
+		filter: drop-shadow(1px 0px 8px $ui-orange);
 	}
 }
 
@@ -429,8 +437,8 @@ input {
 	z-index: 10;
 }
 
-.motor-slider-up{
-	padding-top:75px;
+.motor-slider-up {
+	padding-top: 75px;
 }
 
 // PORTFOLIO SECTION
@@ -1060,13 +1068,15 @@ input {
 // ========= SEKCJA DYSTRYBUTORZY
 
 .distributor-card {
-	border: 1px solid $box-shadow-color;
+	// border: 1px solid gold;
 	border-radius: 10px;
 	color: $ui-darkblue;
-	box-shadow: 1px 1px 17px #adadad, -10px -10px 17px #ffffff;
+	box-shadow: 3px 3px 10px #292929, -10px -10px 17px #ffffff;
 	transition: all 0.4s;
+	 
 	&:hover {
-		box-shadow: 1px 1px 15px $dark;
+		box-shadow: 3px 3px 20px #000000, -10px -10px 17px #ffffff;
+		
 	}
 }
 .distributor-title {
@@ -1093,36 +1103,31 @@ input {
 	background-size: cover;
 }
 
-.pricelist-bg
-{
+.pricelist-bg {
 	background-image: url(../background/cennik-bg.jpg);
 	background-position: 0 50%;
 }
-.shipping-bg
-{
+.shipping-bg {
 	background-image: url(../background/shipping-bg.jpg);
 	background-position: 0 55%;
 }
-.warranty-site
-{
+.warranty-site {
 	background-image: url(../background/warranty-bg.jpg);
 	background-position: 0 15%;
 }
-.download-site
-{
+.download-site {
 	background-image: url(../background/download-bg.png);
 	background-position: 0 73%;
 }
 
-.download-link{
+.download-link {
 	text-decoration: none;
 	color: $ui-darkblue;
 	transition: 0.3s;
-	&:hover{
+	&:hover {
 		color: $ui-orange;
 	}
 }
-
 
 // -------------------------------------------------------------
 .contact {
@@ -1208,8 +1213,6 @@ input {
 // COOKIES COOKIES
 // =====================
 
-
-
 .hide {
 	display: none;
 }
@@ -1238,7 +1241,7 @@ input {
 	height: 200px;
 	background-image: url(../image/cookies.png);
 	background-size: cover;
-	content: '';
+	content: "";
 	z-index: 111111111;
 }
 
@@ -1265,8 +1268,6 @@ input {
 	}
 }
 
-
-
 footer {
 	p {
 		margin-bottom: 0;
@@ -1278,8 +1279,6 @@ footer {
 // =====================
 // START MEDIA QUERIES
 // =====================
-
-
 
 @media (min-width: 368px) {
 	.info-text {
@@ -1520,7 +1519,7 @@ footer {
 			display: flex;
 			justify-content: left;
 			align-items: left;
-			 
+
 			width: 100%;
 		}
 	}
