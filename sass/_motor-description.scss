@@ -411,13 +411,13 @@
 		// background-color: #000000;
 		// background-image: linear-gradient(0deg, #444444 0%, #ffffff 74%);
 		
-		background-image: url("/background/other-motors-bg.png");
+		background-image: url("../background/other-motors-bg.png");
 		// background-attachment: fixed;
 		background-size: cover;
 		border: none;
 		transform: all 0.5s;
 		&:hover {
-			background-image: url("/background/other-motors-bg-hover.png");
+			background-image: url("../background/other-motors-bg-hover.png");
 		}
 	}
 	// .other-protruar-motors {

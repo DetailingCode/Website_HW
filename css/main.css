@@ -674,14 +674,14 @@ body {
 .other-hw-motors .other-hw-motors-card,
 .other-hw-motors .other-protruar-motors {
   border-radius: 5px;
-  background-image: url("/background/other-motors-bg.png");
+  background-image: url("../background/other-motors-bg.png");
   background-size: cover;
   border: none;
   transform: all 0.5s;
 }
 .other-hw-motors .other-hw-motors-card:hover,
 .other-hw-motors .other-protruar-motors:hover {
-  background-image: url("/background/other-motors-bg-hover.png");
+  background-image: url("../background/other-motors-bg-hover.png");
 }
 .other-hw-motors .other-hw-motors-img {
   height: 350px;
@@ -1344,7 +1344,8 @@ input {
 
 .features {
   padding: 4em 0em 4em 0em;
-  background-color: #fff;
+  background: rgb(207, 207, 207);
+  background: linear-gradient(180deg, rgb(207, 207, 207) 0%, rgb(255, 255, 255) 100%);
 }
 .features i {
   margin-top: 20px;
@@ -1472,6 +1473,23 @@ input {
 }
 .features-hero .features-hero-item .features-hero-title {
   font-size: 24px;
+}
+
+.achievements .achievements-list {
+  padding: 20px 0;
+}
+.achievements i {
+  font-size: 6rem;
+  color: #ff731d;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+.achievements .achievement-number {
+  font-size: 2.6rem;
+}
+.achievements .achievement-text {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .motor-cards {
@@ -1711,8 +1729,7 @@ input {
   font-size: 3rem;
 }
 .help__box-text {
-  margin-bottom: 1em;
-  font-size: 1.5rem;
+  padding: 3em 0;
 }
 .help__box-btn {
   background-color: #009fbe;
@@ -1727,8 +1744,9 @@ input {
   font-size: 1.5rem;
   font-weight: bold;
   box-shadow: 2px 2px 5px black;
+  transition: all 0.3s;
 }
-.help__box-btn:before {
+.help__box-btn:hover {
   background-color: rgb(255, 111, 0);
 }
 
@@ -1868,6 +1886,11 @@ input {
 }
 .download-link:hover {
   color: #ff731d;
+}
+
+.availability-site {
+  background-image: url(../background/availability-bg.jpg);
+  background-position: 0 73%;
 }
 
 .contact {
@@ -2158,10 +2181,8 @@ footer p {
     text-align: center;
   }
   .help__box-heading {
-    padding: 3em 3em;
     text-align: center;
-    font-size: 3rem;
-    margin: 0 auto;
+    margin: 5em 1.5em;
   }
   .help__box-btn {
     padding: 1em;
@@ -2333,6 +2354,10 @@ footer p {
   .product-description-title {
     font-size: 2.5rem;
   }
+  .help__box-heading {
+    text-align: center;
+    margin: 6em 2.5em;
+  }
 }
 @media (min-width: 992px) and (min-width: 1200px) {
   header .logo-hw {
@@ -2344,14 +2369,13 @@ footer p {
   header .fa-chevron-down {
     left: 50%;
   }
-  .help__box-heading {
-    padding: 2em;
-    font-size: 5rem;
-  }
   .help__box-text {
     margin-top: 4em;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-align: center;
+  }
+  .help__box-heading {
+    margin-left: 2.5em;
   }
   .help__box-btn {
     font-size: 1.5rem;

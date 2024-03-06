@@ -491,7 +491,12 @@ input {
 
 .features {
 	padding: 4em 0em 4em 0em;
-	background-color: #fff;
+	background: rgb(207, 207, 207);
+	background: linear-gradient(
+		180deg,
+		rgba(207, 207, 207, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
 
 	i {
 		margin-top: 20px;
@@ -636,6 +641,27 @@ input {
 		.features-hero-title {
 			font-size: 24px;
 		}
+	}
+}
+
+// ACHIEVEMENTS SECTION
+
+.achievements {
+	.achievements-list {
+		padding: 20px 0;
+	}
+	i {
+		font-size: 6rem;
+		color: $ui-orange;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+	}
+	.achievement-number {
+		font-size: 2.6rem;
+	}
+	.achievement-text {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-weight: bold;
 	}
 }
 
@@ -951,8 +977,7 @@ input {
 		}
 
 		&-text {
-			margin-bottom: 1em;
-			font-size: 1.5rem;
+			padding: 3em 0;
 		}
 
 		&-btn {
@@ -968,8 +993,8 @@ input {
 			font-size: 1.5rem;
 			font-weight: bold;
 			box-shadow: 2px 2px 5px $black;
-
-			&:before {
+			transition: all 0.3s;
+			&:hover {
 				background-color: $main-color;
 			}
 		}
@@ -1073,10 +1098,9 @@ input {
 	color: $ui-darkblue;
 	box-shadow: 3px 3px 10px #292929, -10px -10px 17px #ffffff;
 	transition: all 0.4s;
-	 
+
 	&:hover {
 		box-shadow: 3px 3px 20px #000000, -10px -10px 17px #ffffff;
-		
 	}
 }
 .distributor-title {
@@ -1128,6 +1152,14 @@ input {
 		color: $ui-orange;
 	}
 }
+
+.availability-site {
+	background-image: url(../background/availability-bg.jpg);
+	background-position: 0 73%;
+}
+
+ 
+
 
 // -------------------------------------------------------------
 .contact {
@@ -1462,10 +1494,8 @@ footer {
 			}
 
 			&-heading {
-				padding: 3em 3em;
 				text-align: center;
-				font-size: 3rem;
-				margin: 0 auto;
+				margin: 5em 1.5em;
 			}
 
 			&-btn {
@@ -1669,6 +1699,11 @@ footer {
 		font-size: 2.5rem;
 	}
 
+	.help__box-heading {
+		text-align: center;
+		margin: 6em 2.5em;
+	}
+
 	@media (min-width: 1200px) {
 		header {
 			.logo-hw {
@@ -1685,14 +1720,13 @@ footer {
 
 		.help {
 			&__box {
-				&-heading {
-					padding: 2em;
-					font-size: 5rem;
-				}
 				&-text {
 					margin-top: 4em;
-					font-size: 1.7rem;
+					font-size: 1.8rem;
 					text-align: center;
+				}
+				&-heading {
+					margin-left: 2.5em;
 				}
 				&-btn {
 					font-size: 1.5rem;
