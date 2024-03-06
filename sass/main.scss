@@ -499,8 +499,9 @@ input {
 	);
 
 	i {
-		margin-top: 20px;
-		font-size: 30px;
+		margin-top: 2em;
+		font-size: 4rem;
+	 
 	}
 
 	.features-card-title {
@@ -521,6 +522,9 @@ input {
 		color: $main-color;
 		scale: 1.03;
 		cursor: default;
+		i{
+			text-shadow: 1px 1px 2px $dark;
+		}
 	}
 }
 

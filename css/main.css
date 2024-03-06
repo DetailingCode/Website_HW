@@ -1348,8 +1348,8 @@ input {
   background: linear-gradient(180deg, rgb(207, 207, 207) 0%, rgb(255, 255, 255) 100%);
 }
 .features i {
-  margin-top: 20px;
-  font-size: 30px;
+  margin-top: 2em;
+  font-size: 4rem;
 }
 .features .features-card-title {
   font-size: 20px;
@@ -1366,6 +1366,9 @@ input {
   color: rgb(255, 111, 0);
   scale: 1.03;
   cursor: default;
+}
+.features .features-hover:hover i {
+  text-shadow: 1px 1px 2px #2e2e2e;
 }
 
 .nav-pills {
