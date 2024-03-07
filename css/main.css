@@ -1896,6 +1896,19 @@ input {
   background-position: 0 73%;
 }
 
+.availability-table, td, th, tr {
+  border: 1px solid black;
+}
+
+.availability-link {
+  text-decoration: none;
+  color: #181d50;
+  transition: all 0.3s;
+}
+.availability-link:hover {
+  color: #ff731d;
+}
+
 .contact {
   position: relative;
   background-image: url("../image/Footer-1920.jpg");

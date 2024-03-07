@@ -1162,8 +1162,19 @@ input {
 	background-position: 0 73%;
 }
 
- 
+.availability-table, td,th,tr{
+	border: 1px solid black;
+}
 
+.availability-link {
+	text-decoration: none;
+	color: $ui-darkblue;
+	transition: all .3s;
+	&:hover{
+		color: $ui-orange;
+	}
+
+}
 
 // -------------------------------------------------------------
 .contact {
