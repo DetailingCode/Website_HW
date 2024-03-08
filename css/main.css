@@ -1882,6 +1882,13 @@ input {
   background-position: 0 73%;
 }
 
+.table,
+th,
+tr,
+td {
+  border: 1px solid #2e2e2e;
+}
+
 .download-link {
   text-decoration: none;
   color: #181d50;
@@ -1894,19 +1901,6 @@ input {
 .availability-site {
   background-image: url(../background/availability-bg.jpg);
   background-position: 0 73%;
-}
-
-.availability-table, td, th, tr {
-  border: 1px solid black;
-}
-
-.availability-link {
-  text-decoration: none;
-  color: #181d50;
-  transition: all 0.3s;
-}
-.availability-link:hover {
-  color: #ff731d;
 }
 
 .contact {
@@ -2025,6 +2019,15 @@ input {
 }
 .cookie-btn:hover {
   background-color: #fa8a22;
+}
+
+.availability-link {
+  text-decoration: none;
+  color: #181d50;
+  transition: all 0.3s;
+}
+.availability-link:hover {
+  color: #ff731d;
 }
 
 @-webkit-keyframes showcookies {

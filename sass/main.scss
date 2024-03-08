@@ -501,7 +501,6 @@ input {
 	i {
 		margin-top: 2em;
 		font-size: 4rem;
-	 
 	}
 
 	.features-card-title {
@@ -522,7 +521,7 @@ input {
 		color: $main-color;
 		scale: 1.03;
 		cursor: default;
-		i{
+		i {
 			text-shadow: 1px 1px 2px $dark;
 		}
 	}
@@ -1148,6 +1147,13 @@ input {
 	background-position: 0 73%;
 }
 
+.table,
+th,
+tr,
+td {
+	border: 1px solid $dark;
+}
+
 .download-link {
 	text-decoration: none;
 	color: $ui-darkblue;
@@ -1160,20 +1166,6 @@ input {
 .availability-site {
 	background-image: url(../background/availability-bg.jpg);
 	background-position: 0 73%;
-}
-
-.availability-table, td,th,tr{
-	border: 1px solid black;
-}
-
-.availability-link {
-	text-decoration: none;
-	color: $ui-darkblue;
-	transition: all .3s;
-	&:hover{
-		color: $ui-orange;
-	}
-
 }
 
 // -------------------------------------------------------------
@@ -1305,6 +1297,15 @@ input {
 	z-index: 1111111111;
 	&:hover {
 		background-color: #fa8a22;
+	}
+}
+
+.availability-link {
+	text-decoration: none;
+	color: $ui-darkblue;
+	transition: all 0.3s;
+	&:hover {
+		color: $ui-orange;
 	}
 }
 
