@@ -1168,13 +1168,18 @@ td {
 	background-position: 0 73%;
 }
 
-.poradnik-tekst{
- text-align: justify;
- font-size: 1.6rem;
+.poradnik-tekst {
+	text-align: justify;
+	font-size: 1.6rem;
 }
 
-.question{
-	margin-top: 8em;
+.question-text {
+	text-align: left;
+	font-size: 1.6rem;
+}
+
+.question {
+	margin-top: 6em;
 }
 
 // -------------------------------------------------------------

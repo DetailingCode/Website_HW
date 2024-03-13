@@ -1908,8 +1908,13 @@ td {
   font-size: 1.6rem;
 }
 
+.question-text {
+  text-align: left;
+  font-size: 1.6rem;
+}
+
 .question {
-  margin-top: 8em;
+  margin-top: 6em;
 }
 
 .contact {
