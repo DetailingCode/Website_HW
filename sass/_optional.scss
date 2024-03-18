@@ -13,23 +13,26 @@
 	width: 100%;
 	height: 100%;
 	margin: auto;
-	background: rgb(189,195,199);
-	background: linear-gradient(0deg, rgba(189,195,199,1) 0%, rgba(44,62,80,1) 100%);
-	box-shadow: inset -0px -9px 17px -5px rgba(66, 68, 90, 0.5);	
+	background: rgb(189, 195, 199);
+	background: linear-gradient(
+		0deg,
+		rgba(189, 195, 199, 1) 0%,
+		rgba(44, 62, 80, 1) 100%
+	);
+	box-shadow: inset -0px -9px 17px -5px rgba(66, 68, 90, 0.5);
 }
 
-.motor-connected-parts{
+.motor-connected-parts {
 	background: none;
 	box-shadow: none;
 }
 
-
-.hw-optional-hero{
-	background-image: url(../image-accessory-640/Optional/optional-bg.jpg);
+.hw-optional-hero {
+	background-image: url(../background/optional-bg.jpg);
 	background-position: 0 40%;
 }
 
-.hw-optional-text{
+.hw-optional-text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -53,11 +56,10 @@
 			rgba(255, 255, 255) 65%,
 			rgb(141, 98, 58) 100%
 		);
-		
 	}
 }
 
-.motor-connected-box{
+.motor-connected-box {
 	background: rgb(255, 255, 255);
 	background: linear-gradient(
 		180deg,
@@ -73,15 +75,10 @@
 			rgba(255, 255, 255) 65%,
 			rgb(44, 108, 204) 100%
 		);
-		
 	}
-
 }
 
-
-
-
-.product-category-text{
+.product-category-text {
 	font-size: 1.4rem;
 	color: $black;
 }

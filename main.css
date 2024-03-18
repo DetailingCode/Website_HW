@@ -869,7 +869,7 @@ body {
 }
 
 .hw-optional-hero {
-  background-image: url(../background/optional-bg.jpg);
+  background-image: url(../image-accessory-640/optional/optional-bg.jpg);
   background-position: 0 40%;
 }
 
@@ -2061,11 +2061,6 @@ footer p {
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 1.2rem;
-}
-
-.hw-optional-hero {
-  background-image: url(../background/optional-bg.jpg);
-  background-position: 0 40%;
 }
 
 @media (min-width: 368px) {
