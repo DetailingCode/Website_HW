@@ -1977,6 +1977,23 @@ td {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.contact .contact-us .contact-items .toyama-logo {
+  width: 150px;
+  height: auto;
+  transition: all 0.3s;
+}
+.contact .contact-us .contact-items .toyama-logo:hover {
+  filter: drop-shadow(0px 0px 2px #fff7e9);
+  cursor: pointer;
+}
+.contact .contact-us .contact-items .toyama-link {
+  text-decoration: none;
+  color: #fff7e9;
+  transition: all 0.3s;
+}
+.contact .contact-us .contact-items .toyama-link:hover {
+  color: red;
+}
 .contact .contact-us .contact-items .social-media .social-icon {
   transition: color 0.5s;
 }

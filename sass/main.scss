@@ -1252,6 +1252,25 @@ td {
 				text-transform: uppercase;
 				letter-spacing: 2px;
 			}
+			.toyama-logo {
+				width: 150px;
+				height: auto;
+				transition: all 0.3s;
+				&:hover {
+					filter: drop-shadow(0px 0px 2px $ui-bones);
+					cursor: pointer;
+				}
+			}
+
+			.toyama-link {
+				text-decoration: none;
+				color: $ui-bones;
+				transition: all 0.3s;
+				&:hover {
+					color: $ui-red;
+				}
+			}
+
 			.social-media {
 				.social-icon {
 					transition: color 0.5s;
